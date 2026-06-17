@@ -1,4 +1,4 @@
-from qdrant_client import QdrantClient
+from qdrant_client import AsyncQdrantClient
 from app.conf.app_config import QdrantConfig, app_config
 
 class QdrantClientManager:
@@ -11,7 +11,7 @@ class QdrantClientManager:
         :param config: Qdrant 连接配置实例
         """
         # Qdrant 客户端实例，初始未连接为 None
-        self.client: QdrantClient | None = None
+        self.client: AsyncQdrantClient | None = None
         # 保存向量库配置信息
         self.config: QdrantConfig = config
 
@@ -21,7 +21,7 @@ class QdrantClientManager:
 
     def init(self) -> None:
         """创建并初始化 Qdrant 客户端连接"""
-        self.client = QdrantClient(url=self._get_url())
+        self.client = AsyncQdrantClient(url=self._get_url())
 
     def close(self) -> None:
         """关闭客户端连接，释放资源"""
