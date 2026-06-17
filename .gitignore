@@ -3,3 +3,5 @@
 /.venv/
 /docker/
 /docker-compose.yaml
+__pycache__/
+*.pyc
