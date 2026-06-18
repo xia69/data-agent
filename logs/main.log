@@ -1,0 +1,6 @@
+2026-06-18 16:45:40.802 | INFO     | __main__:main:31 - Loguru test started.
+2026-06-18 16:45:40.802 | SUCCESS  | __main__:main:33 - Loguru is working.
+2026-06-18 16:45:40.802 | INFO     | __main__:main:37 - Simple calculation result: 2
+2026-06-18 16:46:31.800 | INFO     | __main__:main:31 - Loguru test started.
+2026-06-18 16:46:31.800 | SUCCESS  | __main__:main:33 - Loguru is working.
+2026-06-18 16:46:31.801 | INFO     | __main__:main:37 - Simple calculation result: 2

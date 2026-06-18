@@ -1,16 +1,44 @@
-# This is a sample Python script.
+import sys
+from pathlib import Path
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+from loguru import logger
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+from app.conf.app_config import app_config
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+def setup_logger() -> None:
+    logger.remove()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    console_config = app_config.logging.console
+    if console_config.enable:
+        logger.add(sys.stdout, level=console_config.level)
+
+    file_config = app_config.logging.file
+    if file_config.enable:
+        log_dir = Path(file_config.path)
+        log_dir.mkdir(parents=True, exist_ok=True)
+        logger.add(
+            log_dir / "main.log",
+            level=file_config.level,
+            rotation=file_config.rotation,
+            retention=file_config.retention,
+            encoding="utf-8",
+        )
+
+
+def main() -> None:
+    setup_logger()
+    logger.info("Loguru test started.")
+    logger.debug("Console level may hide this debug line if level is above DEBUG.")
+    logger.success("Loguru is working.")
+
+    try:
+        test_value = 1 + 1
+        logger.info("Simple calculation result: {}", test_value)
+    except Exception:
+        logger.exception("Unexpected error during Loguru smoke test.")
+        raise
+
+
+if __name__ == "__main__":
+    main()

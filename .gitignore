@@ -1,7 +1,12 @@
 /conf/
 /.idea/
 /.venv/
-/docker/
+/docker/*
+!/docker/docker-compose.yaml
+!/docker/mysql/
+/docker/mysql/*
+!/docker/mysql/*.sql
+!/docker/mysql/*.sh
 /docker-compose.yaml
 __pycache__/
 *.pyc
