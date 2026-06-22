@@ -1,0 +1,33 @@
+2026-06-22 10:07:19.489 | INFO     | __main__:build:8 - Building with config: \paank
+2026-06-22 14:00:53.581 | INFO     | __main__:build:12 - Building with config: conf\meta_config.yaml
+2026-06-22 14:00:53.711 | INFO     | app.services.meta_knowledge_service:build:21 - 🚀 开始基于配置构建元数据知识库: conf\meta_config.yaml
+2026-06-22 14:00:53.765 | ERROR    | app.services.meta_knowledge_service:build:31 - ❌ 解析 YAML 配置文件失败: Structured config of type `MetricConfig` has missing mandatory value: alias
+    full_key: metrics[0].alias
+    reference_type=MetricConfig
+    object_type=MetricConfig
+2026-06-22 14:05:06.067 | INFO     | __main__:build:12 - Building with config: conf\meta_config.yaml
+2026-06-22 14:05:06.119 | INFO     | app.services.meta_knowledge_service:build:21 - 🚀 开始基于配置构建元数据知识库: conf\meta_config.yaml
+2026-06-22 14:05:06.172 | INFO     | app.services.meta_knowledge_service:build:29 - ✅ 配置文件解析并合并成功
+2026-06-22 14:05:06.172 | INFO     | app.services.meta_knowledge_service:build:35 - 📦 扫描到 5 张表的配置，准备同步...
+2026-06-22 14:05:06.172 | INFO     | app.services.meta_knowledge_service:build:40 -   -> 处理表: dim_region [角色: dim]
+2026-06-22 14:05:06.357 | INFO     | app.services.meta_knowledge_service:build:40 -   -> 处理表: dim_customer [角色: dim]
+2026-06-22 14:05:06.390 | INFO     | app.services.meta_knowledge_service:build:40 -   -> 处理表: dim_product [角色: dim]
+2026-06-22 14:05:06.394 | INFO     | app.services.meta_knowledge_service:build:40 -   -> 处理表: dim_date [角色: dim]
+2026-06-22 14:05:06.406 | INFO     | app.services.meta_knowledge_service:build:40 -   -> 处理表: fact_order [角色: fact]
+2026-06-22 14:05:06.422 | INFO     | app.services.meta_knowledge_service:build:83 - 📊 扫描到 2 个核心指标配置，准备同步...
+2026-06-22 14:05:06.422 | INFO     | app.services.meta_knowledge_service:build:85 -   -> 处理指标: GMV
+2026-06-22 14:05:06.422 | INFO     | app.services.meta_knowledge_service:build:85 -   -> 处理指标: AOV
+2026-06-22 14:05:06.422 | INFO     | app.services.meta_knowledge_service:build:92 - 🎉 元数据知识库构建流程执行完毕！
+2026-06-22 14:54:48.463 | INFO     | __main__:build:12 - Building with config: conf\meta_config.yaml
+2026-06-22 14:54:48.599 | INFO     | app.services.meta_knowledge_service:build:23 - 🚀 开始基于配置构建元数据知识库: conf\meta_config.yaml
+2026-06-22 14:54:48.663 | INFO     | app.services.meta_knowledge_service:build:31 - ✅ 配置文件解析并合并成功
+2026-06-22 14:54:48.664 | INFO     | app.services.meta_knowledge_service:build:37 - 📦 扫描到 5 张表的配置，准备同步...
+2026-06-22 14:54:48.664 | INFO     | app.services.meta_knowledge_service:build:42 -   -> 处理表: dim_region [角色: dim]
+2026-06-22 14:54:48.829 | INFO     | app.services.meta_knowledge_service:build:42 -   -> 处理表: dim_customer [角色: dim]
+2026-06-22 14:54:48.846 | INFO     | app.services.meta_knowledge_service:build:42 -   -> 处理表: dim_product [角色: dim]
+2026-06-22 14:54:48.856 | INFO     | app.services.meta_knowledge_service:build:42 -   -> 处理表: dim_date [角色: dim]
+2026-06-22 14:54:48.869 | INFO     | app.services.meta_knowledge_service:build:42 -   -> 处理表: fact_order [角色: fact]
+2026-06-22 14:54:48.932 | INFO     | app.services.meta_knowledge_service:build:91 - 📊 扫描到 2 个核心指标配置，准备同步...
+2026-06-22 14:54:48.933 | INFO     | app.services.meta_knowledge_service:build:93 -   -> 处理指标: GMV
+2026-06-22 14:54:48.933 | INFO     | app.services.meta_knowledge_service:build:93 -   -> 处理指标: AOV
+2026-06-22 14:54:48.933 | INFO     | app.services.meta_knowledge_service:build:100 - 🎉 元数据知识库构建流程执行完毕！

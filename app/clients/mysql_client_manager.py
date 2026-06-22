@@ -47,8 +47,8 @@ class MysqlClientManager(object):
 
 
 # 一个dw数仓，一个元数据
-meta_mysql_clientManager = MysqlClientManager(app_config.db_meta)
-dw_mysql_clientManager = MysqlClientManager(app_config.db_dw)
+meta_mysql_client_manager = MysqlClientManager(app_config.db_meta)
+dw_mysql_client_manager = MysqlClientManager(app_config.db_dw)
 
 # test数据库连接
 if __name__ == '__main__':
