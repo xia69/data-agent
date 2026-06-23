@@ -31,3 +31,208 @@
 2026-06-22 14:54:48.933 | INFO     | app.services.meta_knowledge_service:build:93 -   -> 处理指标: GMV
 2026-06-22 14:54:48.933 | INFO     | app.services.meta_knowledge_service:build:93 -   -> 处理指标: AOV
 2026-06-22 14:54:48.933 | INFO     | app.services.meta_knowledge_service:build:100 - 🎉 元数据知识库构建流程执行完毕！
+2026-06-22 17:30:24.471 | INFO     | __main__:build:19 - Building with config: conf\meta_config.yaml
+2026-06-22 17:30:24.606 | INFO     | app.services.meta_knowledge_service:build:33 - 🚀 开始基于配置构建元数据知识库: conf\meta_config.yaml
+2026-06-22 17:30:24.665 | INFO     | app.services.meta_knowledge_service:build:41 - ✅ 配置文件解析并合并成功
+2026-06-22 17:30:24.665 | INFO     | app.services.meta_knowledge_service:build:47 - 📦 扫描到 5 张表的配置，准备同步...
+2026-06-22 17:30:24.666 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_region [角色: dim]
+2026-06-22 17:30:24.987 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_customer [角色: dim]
+2026-06-22 17:30:25.001 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_product [角色: dim]
+2026-06-22 17:30:25.010 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_date [角色: dim]
+2026-06-22 17:30:25.020 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: fact_order [角色: fact]
+2026-06-22 17:32:32.819 | INFO     | __main__:build:19 - Building with config: conf\meta_config.yaml
+2026-06-22 17:32:32.900 | INFO     | app.services.meta_knowledge_service:build:33 - 🚀 开始基于配置构建元数据知识库: conf\meta_config.yaml
+2026-06-22 17:32:32.964 | INFO     | app.services.meta_knowledge_service:build:41 - ✅ 配置文件解析并合并成功
+2026-06-22 17:32:32.964 | INFO     | app.services.meta_knowledge_service:build:47 - 📦 扫描到 5 张表的配置，准备同步...
+2026-06-22 17:32:32.964 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_region [角色: dim]
+2026-06-22 17:32:32.993 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_customer [角色: dim]
+2026-06-22 17:32:32.999 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_product [角色: dim]
+2026-06-22 17:32:33.005 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_date [角色: dim]
+2026-06-22 17:32:33.011 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: fact_order [角色: fact]
+2026-06-22 17:34:07.589 | INFO     | __main__:build:19 - Building with config: conf\meta_config.yaml
+2026-06-22 17:34:07.677 | INFO     | app.services.meta_knowledge_service:build:33 - 🚀 开始基于配置构建元数据知识库: conf\meta_config.yaml
+2026-06-22 17:34:07.732 | INFO     | app.services.meta_knowledge_service:build:41 - ✅ 配置文件解析并合并成功
+2026-06-22 17:34:07.732 | INFO     | app.services.meta_knowledge_service:build:47 - 📦 扫描到 5 张表的配置，准备同步...
+2026-06-22 17:34:07.733 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_region [角色: dim]
+2026-06-22 17:34:07.756 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_customer [角色: dim]
+2026-06-22 17:34:07.761 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_product [角色: dim]
+2026-06-22 17:34:07.766 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_date [角色: dim]
+2026-06-22 17:34:07.773 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: fact_order [角色: fact]
+2026-06-22 17:35:55.799 | INFO     | __main__:build:19 - Building with config: conf\meta_config.yaml
+2026-06-22 17:35:55.873 | INFO     | app.services.meta_knowledge_service:build:33 - 🚀 开始基于配置构建元数据知识库: conf\meta_config.yaml
+2026-06-22 17:35:55.929 | INFO     | app.services.meta_knowledge_service:build:41 - ✅ 配置文件解析并合并成功
+2026-06-22 17:35:55.929 | INFO     | app.services.meta_knowledge_service:build:47 - 📦 扫描到 5 张表的配置，准备同步...
+2026-06-22 17:35:55.929 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_region [角色: dim]
+2026-06-22 17:35:55.948 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_customer [角色: dim]
+2026-06-22 17:35:55.954 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_product [角色: dim]
+2026-06-22 17:35:55.959 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_date [角色: dim]
+2026-06-22 17:35:55.964 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: fact_order [角色: fact]
+2026-06-22 17:38:54.268 | INFO     | __main__:build:19 - Building with config: conf\meta_config.yaml
+2026-06-22 17:38:54.343 | INFO     | app.services.meta_knowledge_service:build:33 - 🚀 开始基于配置构建元数据知识库: conf\meta_config.yaml
+2026-06-22 17:38:54.413 | INFO     | app.services.meta_knowledge_service:build:41 - ✅ 配置文件解析并合并成功
+2026-06-22 17:38:54.413 | INFO     | app.services.meta_knowledge_service:build:47 - 📦 扫描到 5 张表的配置，准备同步...
+2026-06-22 17:38:54.413 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_region [角色: dim]
+2026-06-22 17:38:54.440 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_customer [角色: dim]
+2026-06-22 17:38:54.450 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_product [角色: dim]
+2026-06-22 17:38:54.457 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_date [角色: dim]
+2026-06-22 17:38:54.463 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: fact_order [角色: fact]
+2026-06-22 17:40:37.671 | INFO     | __main__:build:19 - Building with config: conf\meta_config.yaml
+2026-06-22 17:40:37.822 | INFO     | app.services.meta_knowledge_service:build:33 - 🚀 开始基于配置构建元数据知识库: conf\meta_config.yaml
+2026-06-22 17:40:37.899 | INFO     | app.services.meta_knowledge_service:build:41 - ✅ 配置文件解析并合并成功
+2026-06-22 17:40:37.899 | INFO     | app.services.meta_knowledge_service:build:47 - 📦 扫描到 5 张表的配置，准备同步...
+2026-06-22 17:40:37.900 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_region [角色: dim]
+2026-06-22 17:40:37.945 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_customer [角色: dim]
+2026-06-22 17:40:37.953 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_product [角色: dim]
+2026-06-22 17:40:37.965 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_date [角色: dim]
+2026-06-22 17:40:37.978 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: fact_order [角色: fact]
+2026-06-22 17:42:48.245 | INFO     | __main__:build:19 - Building with config: conf\meta_config.yaml
+2026-06-22 17:42:48.345 | INFO     | app.services.meta_knowledge_service:build:33 - 🚀 开始基于配置构建元数据知识库: conf\meta_config.yaml
+2026-06-22 17:42:48.422 | INFO     | app.services.meta_knowledge_service:build:41 - ✅ 配置文件解析并合并成功
+2026-06-22 17:42:48.423 | INFO     | app.services.meta_knowledge_service:build:47 - 📦 扫描到 5 张表的配置，准备同步...
+2026-06-22 17:42:48.423 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_region [角色: dim]
+2026-06-22 17:42:48.449 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_customer [角色: dim]
+2026-06-22 17:42:48.459 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_product [角色: dim]
+2026-06-22 17:42:48.470 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_date [角色: dim]
+2026-06-22 17:42:48.486 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: fact_order [角色: fact]
+2026-06-22 17:44:38.179 | INFO     | __main__:build:19 - Building with config: conf\meta_config.yaml
+2026-06-22 17:44:38.265 | INFO     | app.services.meta_knowledge_service:build:33 - 🚀 开始基于配置构建元数据知识库: conf\meta_config.yaml
+2026-06-22 17:44:38.329 | INFO     | app.services.meta_knowledge_service:build:41 - ✅ 配置文件解析并合并成功
+2026-06-22 17:44:38.330 | INFO     | app.services.meta_knowledge_service:build:47 - 📦 扫描到 5 张表的配置，准备同步...
+2026-06-22 17:44:38.331 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_region [角色: dim]
+2026-06-22 17:44:38.354 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_customer [角色: dim]
+2026-06-22 17:44:38.360 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_product [角色: dim]
+2026-06-22 17:44:38.365 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_date [角色: dim]
+2026-06-22 17:44:38.370 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: fact_order [角色: fact]
+2026-06-22 17:46:40.411 | INFO     | __main__:build:19 - Building with config: conf\meta_config.yaml
+2026-06-22 17:46:40.490 | INFO     | app.services.meta_knowledge_service:build:33 - 🚀 开始基于配置构建元数据知识库: conf\meta_config.yaml
+2026-06-22 17:46:40.556 | INFO     | app.services.meta_knowledge_service:build:41 - ✅ 配置文件解析并合并成功
+2026-06-22 17:46:40.557 | INFO     | app.services.meta_knowledge_service:build:47 - 📦 扫描到 5 张表的配置，准备同步...
+2026-06-22 17:46:40.558 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_region [角色: dim]
+2026-06-22 17:46:40.573 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_customer [角色: dim]
+2026-06-22 17:46:40.582 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_product [角色: dim]
+2026-06-22 17:46:40.586 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_date [角色: dim]
+2026-06-22 17:46:40.592 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: fact_order [角色: fact]
+2026-06-22 17:49:57.498 | INFO     | __main__:build:19 - Building with config: conf\meta_config.yaml
+2026-06-22 17:49:57.576 | INFO     | app.services.meta_knowledge_service:build:33 - 🚀 开始基于配置构建元数据知识库: conf\meta_config.yaml
+2026-06-22 17:49:57.633 | INFO     | app.services.meta_knowledge_service:build:41 - ✅ 配置文件解析并合并成功
+2026-06-22 17:49:57.634 | INFO     | app.services.meta_knowledge_service:build:47 - 📦 扫描到 5 张表的配置，准备同步...
+2026-06-22 17:49:57.635 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_region [角色: dim]
+2026-06-22 17:49:57.652 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_customer [角色: dim]
+2026-06-22 17:49:57.657 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_product [角色: dim]
+2026-06-22 17:49:57.661 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_date [角色: dim]
+2026-06-22 17:49:57.668 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: fact_order [角色: fact]
+2026-06-22 17:50:54.996 | INFO     | __main__:build:19 - Building with config: conf\meta_config.yaml
+2026-06-22 17:50:55.075 | INFO     | app.services.meta_knowledge_service:build:33 - 🚀 开始基于配置构建元数据知识库: conf\meta_config.yaml
+2026-06-22 17:50:55.141 | INFO     | app.services.meta_knowledge_service:build:41 - ✅ 配置文件解析并合并成功
+2026-06-22 17:50:55.142 | INFO     | app.services.meta_knowledge_service:build:47 - 📦 扫描到 5 张表的配置，准备同步...
+2026-06-22 17:50:55.142 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_region [角色: dim]
+2026-06-22 17:50:55.164 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_customer [角色: dim]
+2026-06-22 17:50:55.171 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_product [角色: dim]
+2026-06-22 17:50:55.177 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_date [角色: dim]
+2026-06-22 17:50:55.183 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: fact_order [角色: fact]
+2026-06-22 17:52:35.227 | INFO     | __main__:build:19 - Building with config: conf\meta_config.yaml
+2026-06-22 17:52:35.313 | INFO     | app.services.meta_knowledge_service:build:33 - 🚀 开始基于配置构建元数据知识库: conf\meta_config.yaml
+2026-06-22 17:52:35.376 | INFO     | app.services.meta_knowledge_service:build:41 - ✅ 配置文件解析并合并成功
+2026-06-22 17:52:35.377 | INFO     | app.services.meta_knowledge_service:build:47 - 📦 扫描到 5 张表的配置，准备同步...
+2026-06-22 17:52:35.378 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_region [角色: dim]
+2026-06-22 17:52:35.401 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_customer [角色: dim]
+2026-06-22 17:52:35.410 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_product [角色: dim]
+2026-06-22 17:52:35.419 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_date [角色: dim]
+2026-06-22 17:52:35.427 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: fact_order [角色: fact]
+2026-06-22 17:53:22.932 | INFO     | __main__:build:19 - Building with config: conf\meta_config.yaml
+2026-06-22 17:53:23.010 | INFO     | app.services.meta_knowledge_service:build:33 - 🚀 开始基于配置构建元数据知识库: conf\meta_config.yaml
+2026-06-22 17:53:23.067 | INFO     | app.services.meta_knowledge_service:build:41 - ✅ 配置文件解析并合并成功
+2026-06-22 17:53:23.068 | INFO     | app.services.meta_knowledge_service:build:47 - 📦 扫描到 5 张表的配置，准备同步...
+2026-06-22 17:53:23.068 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_region [角色: dim]
+2026-06-22 17:53:23.086 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_customer [角色: dim]
+2026-06-22 17:53:23.090 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_product [角色: dim]
+2026-06-22 17:53:23.095 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_date [角色: dim]
+2026-06-22 17:53:23.099 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: fact_order [角色: fact]
+2026-06-22 17:54:06.859 | INFO     | __main__:build:19 - Building with config: conf\meta_config.yaml
+2026-06-22 17:54:06.929 | INFO     | app.services.meta_knowledge_service:build:33 - 🚀 开始基于配置构建元数据知识库: conf\meta_config.yaml
+2026-06-22 17:54:06.984 | INFO     | app.services.meta_knowledge_service:build:41 - ✅ 配置文件解析并合并成功
+2026-06-22 17:54:06.985 | INFO     | app.services.meta_knowledge_service:build:47 - 📦 扫描到 5 张表的配置，准备同步...
+2026-06-22 17:54:06.986 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_region [角色: dim]
+2026-06-22 17:54:07.006 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_customer [角色: dim]
+2026-06-22 17:54:07.009 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_product [角色: dim]
+2026-06-22 17:54:07.014 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_date [角色: dim]
+2026-06-22 17:54:07.019 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: fact_order [角色: fact]
+2026-06-22 17:54:35.800 | INFO     | __main__:build:19 - Building with config: conf\meta_config.yaml
+2026-06-22 17:54:35.872 | INFO     | app.services.meta_knowledge_service:build:33 - 🚀 开始基于配置构建元数据知识库: conf\meta_config.yaml
+2026-06-22 17:54:35.937 | INFO     | app.services.meta_knowledge_service:build:41 - ✅ 配置文件解析并合并成功
+2026-06-22 17:54:35.939 | INFO     | app.services.meta_knowledge_service:build:47 - 📦 扫描到 5 张表的配置，准备同步...
+2026-06-22 17:54:35.939 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_region [角色: dim]
+2026-06-22 17:54:35.963 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_customer [角色: dim]
+2026-06-22 17:54:35.969 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_product [角色: dim]
+2026-06-22 17:54:35.974 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_date [角色: dim]
+2026-06-22 17:54:35.978 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: fact_order [角色: fact]
+2026-06-22 17:55:41.475 | INFO     | __main__:build:19 - Building with config: conf\meta_config.yaml
+2026-06-22 17:55:41.545 | INFO     | app.services.meta_knowledge_service:build:33 - 🚀 开始基于配置构建元数据知识库: conf\meta_config.yaml
+2026-06-22 17:55:41.600 | INFO     | app.services.meta_knowledge_service:build:41 - ✅ 配置文件解析并合并成功
+2026-06-22 17:55:41.602 | INFO     | app.services.meta_knowledge_service:build:47 - 📦 扫描到 5 张表的配置，准备同步...
+2026-06-22 17:55:41.602 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_region [角色: dim]
+2026-06-22 17:55:41.622 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_customer [角色: dim]
+2026-06-22 17:55:41.627 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_product [角色: dim]
+2026-06-22 17:55:41.630 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_date [角色: dim]
+2026-06-22 17:55:41.636 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: fact_order [角色: fact]
+2026-06-22 17:56:04.733 | INFO     | app.services.meta_knowledge_service:build:163 - 📊 扫描到 2 个核心指标配置，准备同步...
+2026-06-22 17:56:04.733 | INFO     | app.services.meta_knowledge_service:build:165 -   -> 处理指标: GMV
+2026-06-22 17:56:04.733 | INFO     | app.services.meta_knowledge_service:build:165 -   -> 处理指标: AOV
+2026-06-22 17:56:04.733 | INFO     | app.services.meta_knowledge_service:build:172 - 🎉 元数据知识库构建流程执行完毕！
+2026-06-22 17:56:30.904 | INFO     | __main__:build:19 - Building with config: conf\meta_config.yaml
+2026-06-22 17:56:30.974 | INFO     | app.services.meta_knowledge_service:build:33 - 🚀 开始基于配置构建元数据知识库: conf\meta_config.yaml
+2026-06-22 17:56:31.030 | INFO     | app.services.meta_knowledge_service:build:41 - ✅ 配置文件解析并合并成功
+2026-06-22 17:56:31.032 | INFO     | app.services.meta_knowledge_service:build:47 - 📦 扫描到 5 张表的配置，准备同步...
+2026-06-22 17:56:31.033 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_region [角色: dim]
+2026-06-22 17:56:31.047 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_customer [角色: dim]
+2026-06-22 17:56:31.053 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_product [角色: dim]
+2026-06-22 17:56:31.057 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_date [角色: dim]
+2026-06-22 17:56:31.061 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: fact_order [角色: fact]
+2026-06-22 17:56:53.383 | INFO     | app.services.meta_knowledge_service:build:163 - 📊 扫描到 2 个核心指标配置，准备同步...
+2026-06-22 17:56:53.383 | INFO     | app.services.meta_knowledge_service:build:165 -   -> 处理指标: GMV
+2026-06-22 17:56:53.383 | INFO     | app.services.meta_knowledge_service:build:165 -   -> 处理指标: AOV
+2026-06-22 17:56:53.383 | INFO     | app.services.meta_knowledge_service:build:172 - 🎉 元数据知识库构建流程执行完毕！
+2026-06-22 17:57:10.147 | INFO     | __main__:build:19 - Building with config: conf\meta_config.yaml
+2026-06-22 17:57:10.218 | INFO     | app.services.meta_knowledge_service:build:33 - 🚀 开始基于配置构建元数据知识库: conf\meta_config.yaml
+2026-06-22 17:57:10.275 | INFO     | app.services.meta_knowledge_service:build:41 - ✅ 配置文件解析并合并成功
+2026-06-22 17:57:10.276 | INFO     | app.services.meta_knowledge_service:build:47 - 📦 扫描到 5 张表的配置，准备同步...
+2026-06-22 17:57:10.277 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_region [角色: dim]
+2026-06-22 17:57:10.293 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_customer [角色: dim]
+2026-06-22 17:57:10.298 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_product [角色: dim]
+2026-06-22 17:57:10.303 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_date [角色: dim]
+2026-06-22 17:57:10.307 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: fact_order [角色: fact]
+2026-06-22 17:57:32.502 | INFO     | app.services.meta_knowledge_service:build:163 - 📊 扫描到 2 个核心指标配置，准备同步...
+2026-06-22 17:57:32.503 | INFO     | app.services.meta_knowledge_service:build:165 -   -> 处理指标: GMV
+2026-06-22 17:57:32.503 | INFO     | app.services.meta_knowledge_service:build:165 -   -> 处理指标: AOV
+2026-06-22 17:57:32.503 | INFO     | app.services.meta_knowledge_service:build:172 - 🎉 元数据知识库构建流程执行完毕！
+2026-06-22 17:58:08.797 | INFO     | __main__:build:19 - Building with config: conf\meta_config.yaml
+2026-06-22 17:58:08.869 | INFO     | app.services.meta_knowledge_service:build:33 - 🚀 开始基于配置构建元数据知识库: conf\meta_config.yaml
+2026-06-22 17:58:08.925 | INFO     | app.services.meta_knowledge_service:build:41 - ✅ 配置文件解析并合并成功
+2026-06-22 17:58:08.925 | INFO     | app.services.meta_knowledge_service:build:47 - 📦 扫描到 5 张表的配置，准备同步...
+2026-06-22 17:58:08.925 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_region [角色: dim]
+2026-06-22 17:58:08.945 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_customer [角色: dim]
+2026-06-22 17:58:08.949 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_product [角色: dim]
+2026-06-22 17:58:08.953 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_date [角色: dim]
+2026-06-22 17:58:08.957 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: fact_order [角色: fact]
+2026-06-22 17:59:53.561 | INFO     | __main__:build:19 - Building with config: conf\meta_config.yaml
+2026-06-22 17:59:53.713 | INFO     | app.services.meta_knowledge_service:build:33 - 🚀 开始基于配置构建元数据知识库: conf\meta_config.yaml
+2026-06-22 17:59:53.794 | INFO     | app.services.meta_knowledge_service:build:41 - ✅ 配置文件解析并合并成功
+2026-06-22 17:59:53.796 | INFO     | app.services.meta_knowledge_service:build:47 - 📦 扫描到 5 张表的配置，准备同步...
+2026-06-22 17:59:53.796 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_region [角色: dim]
+2026-06-22 17:59:53.852 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_customer [角色: dim]
+2026-06-22 17:59:53.861 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_product [角色: dim]
+2026-06-22 17:59:53.866 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_date [角色: dim]
+2026-06-22 17:59:53.873 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: fact_order [角色: fact]
+2026-06-22 18:02:43.417 | INFO     | __main__:build:19 - Building with config: conf\meta_config.yaml
+2026-06-22 18:02:43.492 | INFO     | app.services.meta_knowledge_service:build:33 - 🚀 开始基于配置构建元数据知识库: conf\meta_config.yaml
+2026-06-22 18:02:43.551 | INFO     | app.services.meta_knowledge_service:build:41 - ✅ 配置文件解析并合并成功
+2026-06-22 18:02:43.552 | INFO     | app.services.meta_knowledge_service:build:47 - 📦 扫描到 5 张表的配置，准备同步...
+2026-06-22 18:02:43.553 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_region [角色: dim]
+2026-06-22 18:02:43.573 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_customer [角色: dim]
+2026-06-22 18:02:43.577 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_product [角色: dim]
+2026-06-22 18:02:43.582 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: dim_date [角色: dim]
+2026-06-22 18:02:43.588 | INFO     | app.services.meta_knowledge_service:build:52 -   -> 处理表: fact_order [角色: fact]
+2026-06-22 18:03:07.084 | INFO     | app.services.meta_knowledge_service:build:163 - 📊 扫描到 2 个核心指标配置，准备同步...
+2026-06-22 18:03:07.085 | INFO     | app.services.meta_knowledge_service:build:165 -   -> 处理指标: GMV
+2026-06-22 18:03:07.085 | INFO     | app.services.meta_knowledge_service:build:165 -   -> 处理指标: AOV
+2026-06-22 18:03:07.085 | INFO     | app.services.meta_knowledge_service:build:172 - 🎉 元数据知识库构建流程执行完毕！

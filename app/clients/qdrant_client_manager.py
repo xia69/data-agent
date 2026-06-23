@@ -23,9 +23,9 @@ class QdrantClientManager:
         """创建并初始化 Qdrant 客户端连接"""
         self.client = AsyncQdrantClient(url=self._get_url())
 
-    def close(self) -> None:
+    async def close(self) -> None:
         """关闭客户端连接，释放资源"""
-        self.client.close()
+        await self.client.close()
 
 # 基于全局配置实例化管理器，项目全局单例
 qdrant_client_manager = QdrantClientManager(app_config.qdrant)

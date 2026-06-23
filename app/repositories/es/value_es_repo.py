@@ -1,4 +1,9 @@
+from dataclasses import asdict
+
 from elasticsearch import AsyncElasticsearch
+
+from app.entities.value_info import ValueInfo
+
 
 class ValueESRepository:
     index_name = "value_index"
@@ -20,3 +25,18 @@ class ValueESRepository:
                 index=self.index_name,
                 mappings=self.index_mappings
             )
+
+    async def index(self, value_infos: list[ValueInfo], batch_size=20):
+        for i in range(0, len(value_infos), batch_size):
+            batch_value_infos = value_infos[i:i + batch_size]
+            batch_operations = []
+            for value_info in batch_value_infos:
+                batch_operations.append(
+                    {
+                        "index": {
+                            "_index": self.index_name
+                        }
+                    }
+                )
+                batch_operations.append(asdict(value_info))
+            await self.client.bulk(operations=batch_operations)

@@ -37,7 +37,7 @@ class MysqlClientManager(object):
         if self.engine is not None:
             await self.engine.dispose()
             self.engine = None
-            print("🛑 数据库连接池已安全关闭")
+            print("[OK] 数据库连接池已安全关闭")
 
     def get_session(self) -> async_sessionmaker[AsyncSession]:
         """安全获取 session_factory 的方法"""

@@ -9,6 +9,7 @@ from app.conf.meta_config import MetaConfig
 from app.core.log import logger
 from app.entities.column_info import ColumnInfo
 from app.entities.table_info import TableInfo
+from app.entities.value_info import ValueInfo
 from app.repositories.es.value_es_repo import ValueESRepository
 from app.repositories.mysql.dw.dw_mysql_repository import DWMySQLRepository
 from app.repositories.mysql.meta.meta_mysql_repository import MetaMySQLRepository
@@ -78,9 +79,6 @@ class MetaKnowledgeService:
                             table_id=table.name
                         )
                         column_infos.append(column_info)
-            print(table_infos)
-            print("*" * 100)
-            print(column_infos)
 
             # 对应代码中循环结束后，将收集到的列表物理保存到 MySQL 的操作
             async with self.meta_mysql_repository.session.begin():
@@ -124,6 +122,33 @@ class MetaKnowledgeService:
 
             # 将向量数据批量 Upsert 进 Qdrant
             await self.column_qdrant_repository.upsert(ids, embeddings, payloads)
+
+            # 指定维度字段，建立全文索引
+            # # 2.3 对指定的维度字段取值建立全文索引
+            await self.value_es_repository.ensure_index()
+
+            value_infos: list[ValueInfo] = []
+            for table in meta_config.tables:
+                for column in table.columns:
+                    if column.sync:
+                        # 查询字段取值
+                        current_column_values = await self.dw_mysql_repository.get_column_values(
+                            table.name,
+                            column.name,
+                            limit=100000
+                        )
+
+                        current_values_infos = [
+                            ValueInfo(
+                                id=f"{table.name}.{column.name}.{current_column_value}",
+                                value=current_column_value,
+                                column_id=f"{table.name}.{column.name}"
+                            )
+                            for current_column_value in current_column_values
+                        ]
+                        value_infos.extend(current_values_infos)
+
+            await self.value_es_repository.index(value_infos)
 
         else:
             logger.warning("⚠️ 配置中未找到 tables 节点")
