@@ -289,3 +289,18 @@
 2026-06-23 10:16:04.108 | INFO     | app.services.meta_knowledge_service:build:239 - ✅ 业务指标向量索引构建完毕！全线竣工！🎉
 2026-06-23 10:16:04.109 | INFO     | app.services.meta_knowledge_service:build:247 - 🎉 元数据知识库构建流程执行完毕！
 2026-06-24 11:42:33.852 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['华北地区', '华北地区销售总额', '销售总额']
+2026-06-24 14:19:11.433 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-24 14:19:11.435 | INFO     | app.agent.nodes.recall_column:recall_column:18 - 字段召回输入关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-24 14:19:23.226 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['华北地区', '销售总额', '华北地区销售总额']
+2026-06-24 14:19:23.228 | INFO     | app.agent.nodes.recall_column:recall_column:18 - 字段召回输入关键词: ['华北地区', '销售总额', '华北地区销售总额']
+2026-06-24 14:19:43.934 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['华北地区销售总额', '销售总额', '华北地区']
+2026-06-24 14:19:43.935 | INFO     | app.agent.nodes.recall_column:recall_column:18 - 字段召回输入关键词: ['华北地区销售总额', '销售总额', '华北地区']
+2026-06-24 14:19:59.319 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['销售总额', '华北地区销售总额', '华北地区']
+2026-06-24 14:19:59.321 | INFO     | app.agent.nodes.recall_column:recall_column:18 - 字段召回输入关键词: ['销售总额', '华北地区销售总额', '华北地区']
+2026-06-24 16:56:48.510 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['华北地区', '销售总额', '华北地区销售总额']
+2026-06-24 16:57:00.615 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-24 16:57:20.735 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['销售总额', '华北地区销售总额', '华北地区']
+2026-06-24 16:57:22.518 | INFO     | app.agent.nodes.recall_column:recall_column:30 - 结巴关键词: ['销售总额', '华北地区销售总额', '华北地区']
+2026-06-24 16:57:22.518 | INFO     | app.agent.nodes.recall_column:recall_column:31 - LLM扩展词: ['地区', '销售金额']
+2026-06-24 16:57:22.518 | INFO     | app.agent.nodes.recall_column:recall_column:32 - 最终召回关键词: ['华北地区销售总额', '销售总额', '地区', '华北地区', '销售金额']
+2026-06-24 16:57:39.718 | INFO     | app.agent.nodes.recall_column:recall_column:48 - 字段召回结果: 3 个字段

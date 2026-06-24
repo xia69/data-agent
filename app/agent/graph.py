@@ -24,6 +24,9 @@ from app.agent.nodes import (
     validate_sql,
 )
 from app.agent.state import DataAgentState
+from app.clients.embedding_client_manager import embedding_client_manager
+from app.clients.qdrant_client_manager import qdrant_client_manager
+from app.repositories.qdrant.column_qdrant_repo import ColumnQdrantRepository
 
 # StateGraph: LangGraph 的核心构造器
 #   - state_schema: 共享状态结构，所有节点都能读写
@@ -74,14 +77,23 @@ if __name__ == '__main__':
     import asyncio
 
     async def test():
+
+        # 引入基建
+        qdrant_client_manager.init()
+        embedding_client_manager.init()
+
         state = DataAgentState(query="华北地区销售总额")
-        context = DataAgentContext()
+        context = DataAgentContext(
+            column_qdrant_repository=ColumnQdrantRepository(qdrant_client_manager.client),
+            embedding_client=embedding_client_manager.client,
+        )
 
         print("开始测试 Agent 图...")
-        async for chunk in graph.astream(state, context, stream_mode="custom"):
+        async for chunk in graph.astream(state, context=context, stream_mode="custom"):
             if chunk:
                 print(chunk)
 
         print("测试完毕")
+        await qdrant_client_manager.close()
 
     asyncio.run(test())

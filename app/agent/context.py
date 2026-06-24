@@ -1,5 +1,10 @@
 from typing import TypedDict
 
+from langchain_huggingface import HuggingFaceEndpointEmbeddings
+
+from app.repositories.qdrant.column_qdrant_repo import ColumnQdrantRepository
+
 
 class DataAgentContext(TypedDict):
-    pass
+    column_qdrant_repository: ColumnQdrantRepository
+    embedding_client: HuggingFaceEndpointEmbeddings

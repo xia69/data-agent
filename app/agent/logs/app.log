@@ -1,2 +1,14 @@
 2026-06-24 11:42:55.848 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['华北地区销售总额', '销售总额', '华北地区']
 2026-06-24 14:15:22.837 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-24 14:22:28.483 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['销售总额', '华北地区', '华北地区销售总额']
+2026-06-24 16:58:46.485 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['华北地区', '销售总额', '华北地区销售总额']
+2026-06-24 16:58:48.120 | INFO     | app.agent.nodes.recall_column:recall_column:30 - 结巴关键词: ['华北地区', '销售总额', '华北地区销售总额']
+2026-06-24 16:58:48.120 | INFO     | app.agent.nodes.recall_column:recall_column:31 - LLM扩展词: ['地区', '销售金额']
+2026-06-24 16:58:48.121 | INFO     | app.agent.nodes.recall_column:recall_column:32 - 最终召回关键词: ['销售金额', '华北地区销售总额', '华北地区', '销售总额', '地区']
+2026-06-24 16:58:52.299 | INFO     | app.agent.nodes.recall_column:recall_column:48 - 字段召回结果: 3 个字段
+2026-06-24 17:00:18.410 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['华北地区', '华北地区销售总额', '销售总额']
+2026-06-24 17:00:21.287 | INFO     | app.agent.nodes.recall_column:recall_column:30 - 结巴关键词: ['华北地区', '华北地区销售总额', '销售总额']
+2026-06-24 17:00:21.287 | INFO     | app.agent.nodes.recall_column:recall_column:31 - LLM扩展词: ['销售金额', '地区']
+2026-06-24 17:00:21.287 | INFO     | app.agent.nodes.recall_column:recall_column:32 - 最终召回关键词: ['地区', '销售金额', '销售总额', '华北地区', '华北地区销售总额']
+2026-06-24 17:00:25.363 | INFO     | app.agent.nodes.recall_column:recall_column:48 - 字段召回结果: 3 个字段
+2026-06-24 17:00:25.363 | INFO     | app.agent.nodes.recall_column:recall_column:49 - 召回字段: ['dim_region.region_name', 'fact_order.order_amount', 'fact_order.order_quantity']
