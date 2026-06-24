@@ -1,0 +1,2 @@
+2026-06-24 11:42:55.848 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['华北地区销售总额', '销售总额', '华北地区']
+2026-06-24 14:15:22.837 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['华北地区销售总额', '华北地区', '销售总额']
