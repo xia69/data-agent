@@ -353,3 +353,3671 @@
 2026-06-25 14:28:38.579 | INFO     | app.agent.nodes.recall_metric:recall_metric:49 - 召回指标: ['GMV', 'AOV']
 2026-06-25 14:28:39.867 | INFO     | app.agent.nodes.recall_column:recall_column:48 - 字段召回结果: 3 个字段
 2026-06-25 14:28:39.867 | INFO     | app.agent.nodes.recall_column:recall_column:49 - 召回字段: ['dim_region.region_name', 'fact_order.order_amount', 'fact_order.order_quantity']
+2026-06-25 16:36:13.622 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['销售总额', '华北地区销售总额', '华北地区']
+2026-06-25 16:36:15.930 | INFO     | app.agent.nodes.recall_column:recall_column:30 - 结巴关键词: ['销售总额', '华北地区销售总额', '华北地区']
+2026-06-25 16:36:15.930 | INFO     | app.agent.nodes.recall_column:recall_column:31 - LLM扩展词: ['销售额', '地区']
+2026-06-25 16:36:15.930 | INFO     | app.agent.nodes.recall_column:recall_column:32 - 最终召回关键词: ['销售额', '销售总额', '华北地区', '地区', '华北地区销售总额']
+2026-06-25 16:36:16.215 | INFO     | app.agent.nodes.recall_metric:recall_metric:31 - 结巴关键词: ['销售总额', '华北地区销售总额', '华北地区']
+2026-06-25 16:36:16.215 | INFO     | app.agent.nodes.recall_metric:recall_metric:32 - LLM扩展词: ['销售总额', '销售额', '销售收入', '总销售额', 'GMV']
+2026-06-25 16:36:16.215 | INFO     | app.agent.nodes.recall_metric:recall_metric:33 - 最终指标召回关键词: ['总销售额', '华北地区销售总额', 'GMV', '销售额', '销售总额', '华北地区', '销售收入']
+2026-06-25 16:36:17.813 | INFO     | app.agent.nodes.recall_value:recall_value:30 - 结巴关键词: ['销售总额', '华北地区销售总额', '华北地区']
+2026-06-25 16:36:17.813 | INFO     | app.agent.nodes.recall_value:recall_value:31 - LLM扩展词: ['华北地区']
+2026-06-25 16:36:17.813 | INFO     | app.agent.nodes.recall_value:recall_value:32 - 最终取值召回关键词: ['销售总额', '华北地区销售总额', '华北地区']
+2026-06-25 16:36:17.845 | INFO     | app.agent.nodes.recall_value:recall_value:46 - 取值召回结果: 1 条
+2026-06-25 16:36:17.846 | INFO     | app.agent.nodes.recall_value:recall_value:47 - 召回取值: ['华北']
+2026-06-25 16:36:30.219 | INFO     | app.agent.nodes.recall_column:recall_column:48 - 字段召回结果: 3 个字段
+2026-06-25 16:36:30.219 | INFO     | app.agent.nodes.recall_column:recall_column:49 - 召回字段: ['fact_order.order_amount', 'fact_order.order_quantity', 'dim_region.region_name']
+2026-06-25 16:36:31.157 | INFO     | app.agent.nodes.recall_metric:recall_metric:48 - 指标召回结果: 2 个指标
+2026-06-25 16:36:31.157 | INFO     | app.agent.nodes.recall_metric:recall_metric:49 - 召回指标: ['GMV', 'AOV']
+2026-06-25 16:36:31.442 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:38 - MySQL 补全: 3 个字段, 2 张表
+2026-06-25 16:36:31.442 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:71 - 合并结果: 2 张表, 2 个指标
+2026-06-25 16:40:57.141 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 16:40:58.854 | INFO     | app.agent.nodes.recall_value:recall_value:30 - 结巴关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 16:40:58.854 | INFO     | app.agent.nodes.recall_value:recall_value:31 - LLM扩展词: ['华北地区']
+2026-06-25 16:40:58.854 | INFO     | app.agent.nodes.recall_value:recall_value:32 - 最终取值召回关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 16:40:58.869 | INFO     | app.agent.nodes.recall_value:recall_value:46 - 取值召回结果: 1 条
+2026-06-25 16:40:58.869 | INFO     | app.agent.nodes.recall_value:recall_value:47 - 召回取值: ['华北']
+2026-06-25 16:40:59.347 | INFO     | app.agent.nodes.recall_column:recall_column:30 - 结巴关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 16:40:59.347 | INFO     | app.agent.nodes.recall_column:recall_column:31 - LLM扩展词: ['地区', '销售金额']
+2026-06-25 16:40:59.347 | INFO     | app.agent.nodes.recall_column:recall_column:32 - 最终召回关键词: ['华北地区', '销售总额', '华北地区销售总额', '销售金额', '地区']
+2026-06-25 16:41:00.146 | INFO     | app.agent.nodes.recall_metric:recall_metric:31 - 结巴关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 16:41:00.146 | INFO     | app.agent.nodes.recall_metric:recall_metric:32 - LLM扩展词: ['销售总额', '销售额', '销售收入', '销售金额', 'GMV']
+2026-06-25 16:41:00.147 | INFO     | app.agent.nodes.recall_metric:recall_metric:33 - 最终指标召回关键词: ['销售收入', '华北地区', '销售额', '销售总额', '华北地区销售总额', '销售金额', 'GMV']
+2026-06-25 16:41:02.677 | INFO     | app.agent.nodes.recall_column:recall_column:48 - 字段召回结果: 3 个字段
+2026-06-25 16:41:02.678 | INFO     | app.agent.nodes.recall_column:recall_column:49 - 召回字段: ['dim_region.region_name', 'fact_order.order_amount', 'fact_order.order_quantity']
+2026-06-25 16:41:03.833 | INFO     | app.agent.nodes.recall_metric:recall_metric:48 - 指标召回结果: 2 个指标
+2026-06-25 16:41:03.833 | INFO     | app.agent.nodes.recall_metric:recall_metric:49 - 召回指标: ['GMV', 'AOV']
+2026-06-25 16:41:03.856 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:38 - MySQL 补全: 3 个字段, 2 张表
+2026-06-25 16:41:03.856 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:71 - 合并结果: 2 张表, 2 个指标
+2026-06-25 16:49:40.492 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['销售总额', '华北地区销售总额', '华北地区']
+2026-06-25 16:49:42.988 | INFO     | app.agent.nodes.recall_value:recall_value:30 - 结巴关键词: ['销售总额', '华北地区销售总额', '华北地区']
+2026-06-25 16:49:42.989 | INFO     | app.agent.nodes.recall_value:recall_value:31 - LLM扩展词: ['华北地区']
+2026-06-25 16:49:42.989 | INFO     | app.agent.nodes.recall_value:recall_value:32 - 最终取值召回关键词: ['销售总额', '华北地区销售总额', '华北地区']
+2026-06-25 16:49:43.021 | INFO     | app.agent.nodes.recall_value:recall_value:46 - 取值召回结果: 1 条
+2026-06-25 16:49:43.022 | INFO     | app.agent.nodes.recall_value:recall_value:47 - 召回取值: ['华北']
+2026-06-25 16:49:43.136 | INFO     | app.agent.nodes.recall_metric:recall_metric:31 - 结巴关键词: ['销售总额', '华北地区销售总额', '华北地区']
+2026-06-25 16:49:43.136 | INFO     | app.agent.nodes.recall_metric:recall_metric:32 - LLM扩展词: ['销售总额', '销售额', '销售收入', 'GMV', '销售金额', '总销售额']
+2026-06-25 16:49:43.136 | INFO     | app.agent.nodes.recall_metric:recall_metric:33 - 最终指标召回关键词: ['华北地区销售总额', '华北地区', 'GMV', '销售金额', '总销售额', '销售额', '销售总额', '销售收入']
+2026-06-25 16:49:46.209 | INFO     | app.agent.nodes.recall_column:recall_column:30 - 结巴关键词: ['销售总额', '华北地区销售总额', '华北地区']
+2026-06-25 16:49:46.209 | INFO     | app.agent.nodes.recall_column:recall_column:31 - LLM扩展词: ['地区', '销售金额']
+2026-06-25 16:49:46.209 | INFO     | app.agent.nodes.recall_column:recall_column:32 - 最终召回关键词: ['华北地区销售总额', '华北地区', '销售金额', '销售总额', '地区']
+2026-06-25 16:49:49.485 | INFO     | app.agent.nodes.recall_column:recall_column:48 - 字段召回结果: 3 个字段
+2026-06-25 16:49:49.486 | INFO     | app.agent.nodes.recall_column:recall_column:49 - 召回字段: ['fact_order.order_amount', 'fact_order.order_quantity', 'dim_region.region_name']
+2026-06-25 16:49:50.484 | INFO     | app.agent.nodes.recall_metric:recall_metric:48 - 指标召回结果: 2 个指标
+2026-06-25 16:49:50.485 | INFO     | app.agent.nodes.recall_metric:recall_metric:49 - 召回指标: ['GMV', 'AOV']
+2026-06-25 16:49:50.515 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:46 - MySQL 补全: 11 个字段(含主外键), 2 张表
+2026-06-25 16:49:50.515 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:79 - 合并结果: 2 张表, 2 个指标
+2026-06-25 17:05:10.778 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['华北地区', '华北地区销售总额', '销售总额']
+2026-06-25 17:05:12.732 | INFO     | app.agent.nodes.recall_metric:recall_metric:31 - 结巴关键词: ['华北地区', '华北地区销售总额', '销售总额']
+2026-06-25 17:05:12.732 | INFO     | app.agent.nodes.recall_metric:recall_metric:32 - LLM扩展词: ['销售总额', '销售额', '销售收入', '销售金额', '总销售额']
+2026-06-25 17:05:12.732 | INFO     | app.agent.nodes.recall_metric:recall_metric:33 - 最终指标召回关键词: ['华北地区销售总额', '总销售额', '销售收入', '销售额', '销售金额', '华北地区', '销售总额']
+2026-06-25 17:05:15.810 | INFO     | app.agent.nodes.recall_value:recall_value:30 - 结巴关键词: ['华北地区', '华北地区销售总额', '销售总额']
+2026-06-25 17:05:15.810 | INFO     | app.agent.nodes.recall_value:recall_value:31 - LLM扩展词: ['华北地区', '销售总额']
+2026-06-25 17:05:15.810 | INFO     | app.agent.nodes.recall_value:recall_value:32 - 最终取值召回关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 17:05:15.811 | INFO     | app.agent.nodes.recall_column:recall_column:30 - 结巴关键词: ['华北地区', '华北地区销售总额', '销售总额']
+2026-06-25 17:05:15.811 | INFO     | app.agent.nodes.recall_column:recall_column:31 - LLM扩展词: ['销售额', '地区']
+2026-06-25 17:05:15.811 | INFO     | app.agent.nodes.recall_column:recall_column:32 - 最终召回关键词: ['华北地区销售总额', '销售额', '华北地区', '销售总额', '地区']
+2026-06-25 17:05:15.839 | INFO     | app.agent.nodes.recall_value:recall_value:46 - 取值召回结果: 1 条
+2026-06-25 17:05:15.840 | INFO     | app.agent.nodes.recall_value:recall_value:47 - 召回取值: ['华北']
+2026-06-25 17:05:18.379 | INFO     | app.agent.nodes.recall_column:recall_column:48 - 字段召回结果: 3 个字段
+2026-06-25 17:05:18.379 | INFO     | app.agent.nodes.recall_column:recall_column:49 - 召回字段: ['fact_order.order_amount', 'fact_order.order_quantity', 'dim_region.region_name']
+2026-06-25 17:05:18.986 | INFO     | app.agent.nodes.recall_metric:recall_metric:48 - 指标召回结果: 2 个指标
+2026-06-25 17:05:18.986 | INFO     | app.agent.nodes.recall_metric:recall_metric:49 - 召回指标: ['GMV', 'AOV']
+2026-06-25 17:05:19.009 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:46 - MySQL 补全: 11 个字段(含主外键), 2 张表
+2026-06-25 17:05:19.009 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:79 - 合并结果: 2 张表, 2 个指标
+2026-06-25 17:05:19.014 | INFO     | app.agent.nodes.filter_table:filter_table:23 - 候选表 YAML:
+- name: dim_region
+  role: dim
+  description: 地区维度表，用于描述订单发生的地理区域信息。
+  columns:
+  - name: region_name
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 华中
+    - 华北
+    - 华东
+    - 华南
+    - 西南
+    description: 订单所属的大区名称，如华东、华南等。
+    alias:
+    - 地区
+    - 区域
+    - 大区
+  - name: country
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 中国
+    description: 地区所属国家名称。
+    alias:
+    - 国家
+    - 国家名称
+  - name: province
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 北京市
+    - 浙江省
+    - 上海市
+    - 湖北省
+    - 四川省
+    - 广东省
+    description: 订单所属的省份名称。
+    alias:
+    - 省份
+    - 省
+    - 所在省份
+  - name: region_id
+    type: varchar(20)
+    role: primary_key
+    examples:
+    - R005
+    - R003
+    - R006
+    - R004
+    - R001
+    - R002
+    description: 地区唯一标识。
+    alias:
+    - 地区 ID
+    - 区域 ID
+- name: fact_order
+  role: fact
+  description: 订单事实表，记录订单数量和金额等核心指标。
+  columns:
+  - name: order_amount
+    type: float
+    role: measure
+    examples:
+    - 899.0
+    - 8999.0
+    - 40.0
+    - 200.0
+    - 299.0
+    - 6999.0
+    - 9499.0
+    - 60.0
+    - 125.0
+    - 1399.0
+    description: 订单金额。
+    alias:
+    - 销售额
+    - 订单金额
+    - 收入
+  - name: order_quantity
+    type: int
+    role: measure
+    examples:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 8
+    - 10
+    - 12
+    - 25
+    description: 订单中商品的购买数量。
+    alias:
+    - 销量
+    - 购买数量
+    - 件数
+  - name: customer_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - C010
+    - C019
+    - C002
+    - C005
+    - C008
+    - C001
+    - C007
+    - C003
+    - C012
+    - C015
+    description: 关联客户维度的外键。
+    alias:
+    - 客户 ID
+    - 用户 ID
+  - name: date_id
+    type: int
+    role: foreign_key
+    examples:
+    - 20250101
+    - 20250102
+    - 20250103
+    - 20250104
+    - 20250105
+    - 20250106
+    - 20250107
+    - 20250108
+    - 20250109
+    - 20250110
+    description: 关联时间维度的外键。
+    alias:
+    - 日期
+    - 下单日期
+  - name: order_id
+    type: varchar(30)
+    role: primary_key
+    examples:
+    - ORD20250105001
+    - ORD20250101001
+    - ORD20250103002
+    - ORD20250102001
+    - ORD20250104001
+    - ORD20250102002
+    - ORD20250106001
+    - ORD20250105002
+    - ORD20250103001
+    - ORD20250101002
+    description: 订单唯一标识。
+    alias:
+    - 订单 ID
+  - name: product_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - P008
+    - P003
+    - P010
+    - P002
+    - P012
+    - P013
+    - P011
+    - P006
+    - P014
+    - P001
+    description: 关联商品维度的外键。
+    alias:
+    - 商品 ID
+    - 产品 ID
+  - name: region_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - R005
+    - R003
+    - R006
+    - R004
+    - R001
+    - R002
+    description: 关联地区维度的外键。
+    alias:
+    - 地区 ID
+    - 区域 ID
+
+2026-06-25 17:05:21.308 | INFO     | app.agent.nodes.filter_table:filter_table:28 - LLM 选定: {'dim_region': ['region_name', 'region_id'], 'fact_order': ['order_amount', 'region_id']}
+2026-06-25 17:05:21.308 | INFO     | app.agent.nodes.filter_table:filter_table:38 - 过滤后: 2 张表
+2026-06-25 17:16:19.964 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 17:16:21.743 | INFO     | app.agent.nodes.recall_column:recall_column:30 - 结巴关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 17:16:21.743 | INFO     | app.agent.nodes.recall_column:recall_column:31 - LLM扩展词: ['销售金额', '地区']
+2026-06-25 17:16:21.743 | INFO     | app.agent.nodes.recall_column:recall_column:32 - 最终召回关键词: ['华北地区', '地区', '华北地区销售总额', '销售金额', '销售总额']
+2026-06-25 17:16:24.826 | INFO     | app.agent.nodes.recall_metric:recall_metric:31 - 结巴关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 17:16:24.826 | INFO     | app.agent.nodes.recall_metric:recall_metric:32 - LLM扩展词: ['销售总额', '销售额', '总销售额', '销售收入', 'GMV']
+2026-06-25 17:16:24.826 | INFO     | app.agent.nodes.recall_metric:recall_metric:33 - 最终指标召回关键词: ['华北地区', '销售收入', '销售额', 'GMV', '华北地区销售总额', '总销售额', '销售总额']
+2026-06-25 17:16:24.827 | INFO     | app.agent.nodes.recall_value:recall_value:30 - 结巴关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 17:16:24.827 | INFO     | app.agent.nodes.recall_value:recall_value:31 - LLM扩展词: ['华北地区', '华北']
+2026-06-25 17:16:24.827 | INFO     | app.agent.nodes.recall_value:recall_value:32 - 最终取值召回关键词: ['华北地区销售总额', '华北', '华北地区', '销售总额']
+2026-06-25 17:16:24.909 | INFO     | app.agent.nodes.recall_value:recall_value:46 - 取值召回结果: 1 条
+2026-06-25 17:16:24.910 | INFO     | app.agent.nodes.recall_value:recall_value:47 - 召回取值: ['华北']
+2026-06-25 17:16:27.966 | INFO     | app.agent.nodes.recall_column:recall_column:48 - 字段召回结果: 3 个字段
+2026-06-25 17:16:27.966 | INFO     | app.agent.nodes.recall_column:recall_column:49 - 召回字段: ['dim_region.region_name', 'fact_order.order_amount', 'fact_order.order_quantity']
+2026-06-25 17:16:29.172 | INFO     | app.agent.nodes.recall_metric:recall_metric:48 - 指标召回结果: 2 个指标
+2026-06-25 17:16:29.172 | INFO     | app.agent.nodes.recall_metric:recall_metric:49 - 召回指标: ['GMV', 'AOV']
+2026-06-25 17:16:29.207 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:46 - MySQL 补全: 11 个字段(含主外键), 2 张表
+2026-06-25 17:16:29.208 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:79 - 合并结果: 2 张表, 2 个指标
+2026-06-25 17:16:29.210 | INFO     | app.agent.nodes.filter_metric:filter_metric:25 - 候选指标: ["GMV", "AOV"]
+2026-06-25 17:16:29.216 | INFO     | app.agent.nodes.filter_table:filter_table:23 - 候选表 YAML:
+- name: dim_region
+  role: dim
+  description: 地区维度表，用于描述订单发生的地理区域信息。
+  columns:
+  - name: region_name
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 华中
+    - 华北
+    - 西南
+    - 华南
+    - 华东
+    description: 订单所属的大区名称，如华东、华南等。
+    alias:
+    - 地区
+    - 区域
+    - 大区
+  - name: country
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 中国
+    description: 地区所属国家名称。
+    alias:
+    - 国家
+    - 国家名称
+  - name: province
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 四川省
+    - 广东省
+    - 浙江省
+    - 上海市
+    - 湖北省
+    - 北京市
+    description: 订单所属的省份名称。
+    alias:
+    - 省份
+    - 省
+    - 所在省份
+  - name: region_id
+    type: varchar(20)
+    role: primary_key
+    examples:
+    - R002
+    - R003
+    - R001
+    - R005
+    - R006
+    - R004
+    description: 地区唯一标识。
+    alias:
+    - 地区 ID
+    - 区域 ID
+- name: fact_order
+  role: fact
+  description: 订单事实表，记录订单数量和金额等核心指标。
+  columns:
+  - name: order_amount
+    type: float
+    role: measure
+    examples:
+    - 899.0
+    - 8999.0
+    - 40.0
+    - 200.0
+    - 299.0
+    - 6999.0
+    - 9499.0
+    - 60.0
+    - 125.0
+    - 1399.0
+    description: 订单金额。
+    alias:
+    - 销售额
+    - 订单金额
+    - 收入
+  - name: order_quantity
+    type: int
+    role: measure
+    examples:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 8
+    - 10
+    - 12
+    - 25
+    description: 订单中商品的购买数量。
+    alias:
+    - 销量
+    - 购买数量
+    - 件数
+  - name: customer_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - C001
+    - C007
+    - C002
+    - C015
+    - C010
+    - C012
+    - C008
+    - C003
+    - C005
+    - C019
+    description: 关联客户维度的外键。
+    alias:
+    - 客户 ID
+    - 用户 ID
+  - name: date_id
+    type: int
+    role: foreign_key
+    examples:
+    - 20250101
+    - 20250102
+    - 20250103
+    - 20250104
+    - 20250105
+    - 20250106
+    - 20250107
+    - 20250108
+    - 20250109
+    - 20250110
+    description: 关联时间维度的外键。
+    alias:
+    - 日期
+    - 下单日期
+  - name: order_id
+    type: varchar(30)
+    role: primary_key
+    examples:
+    - ORD20250102001
+    - ORD20250104001
+    - ORD20250105002
+    - ORD20250101002
+    - ORD20250102002
+    - ORD20250103002
+    - ORD20250105001
+    - ORD20250101001
+    - ORD20250103001
+    - ORD20250106001
+    description: 订单唯一标识。
+    alias:
+    - 订单 ID
+  - name: product_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - P006
+    - P003
+    - P010
+    - P011
+    - P014
+    - P001
+    - P008
+    - P002
+    - P012
+    - P013
+    description: 关联商品维度的外键。
+    alias:
+    - 商品 ID
+    - 产品 ID
+  - name: region_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - R002
+    - R003
+    - R001
+    - R004
+    - R006
+    - R005
+    description: 关联地区维度的外键。
+    alias:
+    - 地区 ID
+    - 区域 ID
+
+2026-06-25 17:16:30.595 | INFO     | app.agent.nodes.filter_metric:filter_metric:30 - LLM 选定: ['GMV']
+2026-06-25 17:16:30.595 | INFO     | app.agent.nodes.filter_metric:filter_metric:33 - 过滤后: 1 个指标
+2026-06-25 17:16:34.222 | INFO     | app.agent.nodes.filter_table:filter_table:28 - LLM 选定: {'dim_region': ['region_name', 'region_id'], 'fact_order': ['order_amount', 'region_id']}
+2026-06-25 17:16:34.222 | INFO     | app.agent.nodes.filter_table:filter_table:38 - 过滤后: 2 张表
+2026-06-25 17:26:01.452 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 17:26:03.846 | INFO     | app.agent.nodes.recall_metric:recall_metric:31 - 结巴关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 17:26:03.846 | INFO     | app.agent.nodes.recall_metric:recall_metric:32 - LLM扩展词: ['销售总额', '销售额', '销售收入', '销售金额', '总销售额', '累计销售额', 'GMV']
+2026-06-25 17:26:03.846 | INFO     | app.agent.nodes.recall_metric:recall_metric:33 - 最终指标召回关键词: ['销售额', '销售总额', '华北地区销售总额', '总销售额', 'GMV', '销售金额', '累计销售额', '销售收入', '华北地区']
+2026-06-25 17:26:06.948 | INFO     | app.agent.nodes.recall_column:recall_column:30 - 结巴关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 17:26:06.948 | INFO     | app.agent.nodes.recall_column:recall_column:31 - LLM扩展词: ['销售金额', '地区']
+2026-06-25 17:26:06.948 | INFO     | app.agent.nodes.recall_column:recall_column:32 - 最终召回关键词: ['销售总额', '华北地区销售总额', '销售金额', '地区', '华北地区']
+2026-06-25 17:26:08.080 | INFO     | app.agent.nodes.recall_value:recall_value:30 - 结巴关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 17:26:08.080 | INFO     | app.agent.nodes.recall_value:recall_value:31 - LLM扩展词: ['华北地区', '销售总额']
+2026-06-25 17:26:08.080 | INFO     | app.agent.nodes.recall_value:recall_value:32 - 最终取值召回关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 17:26:08.140 | INFO     | app.agent.nodes.recall_value:recall_value:46 - 取值召回结果: 1 条
+2026-06-25 17:26:08.140 | INFO     | app.agent.nodes.recall_value:recall_value:47 - 召回取值: ['华北']
+2026-06-25 17:26:10.231 | INFO     | app.agent.nodes.recall_column:recall_column:48 - 字段召回结果: 3 个字段
+2026-06-25 17:26:10.232 | INFO     | app.agent.nodes.recall_column:recall_column:49 - 召回字段: ['fact_order.order_amount', 'fact_order.order_quantity', 'dim_region.region_name']
+2026-06-25 17:26:11.361 | INFO     | app.agent.nodes.recall_metric:recall_metric:48 - 指标召回结果: 2 个指标
+2026-06-25 17:26:11.362 | INFO     | app.agent.nodes.recall_metric:recall_metric:49 - 召回指标: ['GMV', 'AOV']
+2026-06-25 17:26:11.398 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:46 - MySQL 补全: 11 个字段(含主外键), 2 张表
+2026-06-25 17:26:11.399 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:79 - 合并结果: 2 张表, 2 个指标
+2026-06-25 17:26:11.400 | INFO     | app.agent.nodes.filter_metric:filter_metric:25 - 候选指标: ["GMV", "AOV"]
+2026-06-25 17:26:11.404 | INFO     | app.agent.nodes.filter_table:filter_table:23 - 候选表 YAML:
+- name: dim_region
+  role: dim
+  description: 地区维度表，用于描述订单发生的地理区域信息。
+  columns:
+  - name: region_name
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 西南
+    - 华南
+    - 华中
+    - 华东
+    - 华北
+    description: 订单所属的大区名称，如华东、华南等。
+    alias:
+    - 地区
+    - 区域
+    - 大区
+  - name: country
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 中国
+    description: 地区所属国家名称。
+    alias:
+    - 国家
+    - 国家名称
+  - name: province
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 上海市
+    - 浙江省
+    - 四川省
+    - 湖北省
+    - 广东省
+    - 北京市
+    description: 订单所属的省份名称。
+    alias:
+    - 省份
+    - 省
+    - 所在省份
+  - name: region_id
+    type: varchar(20)
+    role: primary_key
+    examples:
+    - R001
+    - R002
+    - R005
+    - R004
+    - R003
+    - R006
+    description: 地区唯一标识。
+    alias:
+    - 地区 ID
+    - 区域 ID
+- name: fact_order
+  role: fact
+  description: 订单事实表，记录订单数量和金额等核心指标。
+  columns:
+  - name: order_amount
+    type: float
+    role: measure
+    examples:
+    - 899.0
+    - 8999.0
+    - 40.0
+    - 200.0
+    - 299.0
+    - 6999.0
+    - 9499.0
+    - 60.0
+    - 125.0
+    - 1399.0
+    description: 订单金额。
+    alias:
+    - 销售额
+    - 订单金额
+    - 收入
+  - name: order_quantity
+    type: int
+    role: measure
+    examples:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 8
+    - 10
+    - 12
+    - 25
+    description: 订单中商品的购买数量。
+    alias:
+    - 销量
+    - 购买数量
+    - 件数
+  - name: customer_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - C001
+    - C012
+    - C005
+    - C019
+    - C003
+    - C007
+    - C010
+    - C002
+    - C015
+    - C008
+    description: 关联客户维度的外键。
+    alias:
+    - 客户 ID
+    - 用户 ID
+  - name: date_id
+    type: int
+    role: foreign_key
+    examples:
+    - 20250101
+    - 20250102
+    - 20250103
+    - 20250104
+    - 20250105
+    - 20250106
+    - 20250107
+    - 20250108
+    - 20250109
+    - 20250110
+    description: 关联时间维度的外键。
+    alias:
+    - 日期
+    - 下单日期
+  - name: order_id
+    type: varchar(30)
+    role: primary_key
+    examples:
+    - ORD20250103002
+    - ORD20250105001
+    - ORD20250101002
+    - ORD20250101001
+    - ORD20250105002
+    - ORD20250104001
+    - ORD20250103001
+    - ORD20250102001
+    - ORD20250106001
+    - ORD20250102002
+    description: 订单唯一标识。
+    alias:
+    - 订单 ID
+  - name: product_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - P002
+    - P008
+    - P001
+    - P006
+    - P010
+    - P012
+    - P003
+    - P013
+    - P014
+    - P011
+    description: 关联商品维度的外键。
+    alias:
+    - 商品 ID
+    - 产品 ID
+  - name: region_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - R001
+    - R002
+    - R005
+    - R004
+    - R003
+    - R006
+    description: 关联地区维度的外键。
+    alias:
+    - 地区 ID
+    - 区域 ID
+
+2026-06-25 17:26:12.584 | INFO     | app.agent.nodes.filter_metric:filter_metric:30 - LLM 选定: ['GMV']
+2026-06-25 17:26:12.585 | INFO     | app.agent.nodes.filter_metric:filter_metric:33 - 过滤后: 1 个指标
+2026-06-25 17:26:13.505 | INFO     | app.agent.nodes.filter_table:filter_table:28 - LLM 选定: {'dim_region': ['region_name', 'region_id'], 'fact_order': ['order_amount', 'region_id']}
+2026-06-25 17:26:13.505 | INFO     | app.agent.nodes.filter_table:filter_table:38 - 过滤后: 2 张表
+2026-06-25 17:26:13.509 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:32 - 日期上下文: {'date': '2026-06-25', 'weekday': 'Thursday', 'quarter': 'Q2'}
+2026-06-25 17:26:13.509 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:33 - 数据库上下文: {'dialect': 'MySQL', 'version': '8.0.46'}
+2026-06-25 17:32:16.019 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['华北地区', '销售总额', '华北地区销售总额']
+2026-06-25 17:32:18.027 | INFO     | app.agent.nodes.recall_column:recall_column:30 - 结巴关键词: ['华北地区', '销售总额', '华北地区销售总额']
+2026-06-25 17:32:18.027 | INFO     | app.agent.nodes.recall_column:recall_column:31 - LLM扩展词: ['销售金额', '地区']
+2026-06-25 17:32:18.027 | INFO     | app.agent.nodes.recall_column:recall_column:32 - 最终召回关键词: ['华北地区', '销售金额', '地区', '华北地区销售总额', '销售总额']
+2026-06-25 17:32:20.474 | INFO     | app.agent.nodes.recall_metric:recall_metric:31 - 结巴关键词: ['华北地区', '销售总额', '华北地区销售总额']
+2026-06-25 17:32:20.474 | INFO     | app.agent.nodes.recall_metric:recall_metric:32 - LLM扩展词: ['销售总额', '销售额', '销售收入', '总销售额', 'GMV']
+2026-06-25 17:32:20.474 | INFO     | app.agent.nodes.recall_metric:recall_metric:33 - 最终指标召回关键词: ['华北地区', '销售额', 'GMV', '销售收入', '总销售额', '华北地区销售总额', '销售总额']
+2026-06-25 17:32:20.475 | INFO     | app.agent.nodes.recall_value:recall_value:30 - 结巴关键词: ['华北地区', '销售总额', '华北地区销售总额']
+2026-06-25 17:32:20.475 | INFO     | app.agent.nodes.recall_value:recall_value:31 - LLM扩展词: ['华北地区']
+2026-06-25 17:32:20.475 | INFO     | app.agent.nodes.recall_value:recall_value:32 - 最终取值召回关键词: ['华北地区', '销售总额', '华北地区销售总额']
+2026-06-25 17:32:20.524 | INFO     | app.agent.nodes.recall_value:recall_value:46 - 取值召回结果: 1 条
+2026-06-25 17:32:20.525 | INFO     | app.agent.nodes.recall_value:recall_value:47 - 召回取值: ['华北']
+2026-06-25 17:32:23.754 | INFO     | app.agent.nodes.recall_column:recall_column:48 - 字段召回结果: 3 个字段
+2026-06-25 17:32:23.755 | INFO     | app.agent.nodes.recall_column:recall_column:49 - 召回字段: ['dim_region.region_name', 'fact_order.order_amount', 'fact_order.order_quantity']
+2026-06-25 17:32:25.609 | INFO     | app.agent.nodes.recall_metric:recall_metric:48 - 指标召回结果: 2 个指标
+2026-06-25 17:32:25.610 | INFO     | app.agent.nodes.recall_metric:recall_metric:49 - 召回指标: ['GMV', 'AOV']
+2026-06-25 17:32:25.653 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:46 - MySQL 补全: 11 个字段(含主外键), 2 张表
+2026-06-25 17:32:25.653 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:79 - 合并结果: 2 张表, 2 个指标
+2026-06-25 17:32:25.655 | INFO     | app.agent.nodes.filter_metric:filter_metric:25 - 候选指标: ["GMV", "AOV"]
+2026-06-25 17:32:25.661 | INFO     | app.agent.nodes.filter_table:filter_table:23 - 候选表 YAML:
+- name: dim_region
+  role: dim
+  description: 地区维度表，用于描述订单发生的地理区域信息。
+  columns:
+  - name: region_name
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 华东
+    - 西南
+    - 华北
+    - 华中
+    - 华南
+    description: 订单所属的大区名称，如华东、华南等。
+    alias:
+    - 地区
+    - 区域
+    - 大区
+  - name: country
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 中国
+    description: 地区所属国家名称。
+    alias:
+    - 国家
+    - 国家名称
+  - name: province
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 湖北省
+    - 广东省
+    - 北京市
+    - 浙江省
+    - 四川省
+    - 上海市
+    description: 订单所属的省份名称。
+    alias:
+    - 省份
+    - 省
+    - 所在省份
+  - name: region_id
+    type: varchar(20)
+    role: primary_key
+    examples:
+    - R002
+    - R004
+    - R005
+    - R001
+    - R006
+    - R003
+    description: 地区唯一标识。
+    alias:
+    - 地区 ID
+    - 区域 ID
+- name: fact_order
+  role: fact
+  description: 订单事实表，记录订单数量和金额等核心指标。
+  columns:
+  - name: order_amount
+    type: float
+    role: measure
+    examples:
+    - 899.0
+    - 8999.0
+    - 40.0
+    - 200.0
+    - 299.0
+    - 6999.0
+    - 9499.0
+    - 60.0
+    - 125.0
+    - 1399.0
+    description: 订单金额。
+    alias:
+    - 销售额
+    - 订单金额
+    - 收入
+  - name: order_quantity
+    type: int
+    role: measure
+    examples:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 8
+    - 10
+    - 12
+    - 25
+    description: 订单中商品的购买数量。
+    alias:
+    - 销量
+    - 购买数量
+    - 件数
+  - name: customer_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - C002
+    - C005
+    - C001
+    - C010
+    - C012
+    - C008
+    - C015
+    - C019
+    - C003
+    - C007
+    description: 关联客户维度的外键。
+    alias:
+    - 客户 ID
+    - 用户 ID
+  - name: date_id
+    type: int
+    role: foreign_key
+    examples:
+    - 20250101
+    - 20250102
+    - 20250103
+    - 20250104
+    - 20250105
+    - 20250106
+    - 20250107
+    - 20250108
+    - 20250109
+    - 20250110
+    description: 关联时间维度的外键。
+    alias:
+    - 日期
+    - 下单日期
+  - name: order_id
+    type: varchar(30)
+    role: primary_key
+    examples:
+    - ORD20250103002
+    - ORD20250103001
+    - ORD20250105001
+    - ORD20250105002
+    - ORD20250102001
+    - ORD20250104001
+    - ORD20250101002
+    - ORD20250101001
+    - ORD20250106001
+    - ORD20250102002
+    description: 订单唯一标识。
+    alias:
+    - 订单 ID
+  - name: product_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - P006
+    - P002
+    - P001
+    - P014
+    - P010
+    - P013
+    - P011
+    - P008
+    - P003
+    - P012
+    description: 关联商品维度的外键。
+    alias:
+    - 商品 ID
+    - 产品 ID
+  - name: region_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - R005
+    - R004
+    - R002
+    - R001
+    - R006
+    - R003
+    description: 关联地区维度的外键。
+    alias:
+    - 地区 ID
+    - 区域 ID
+
+2026-06-25 17:32:27.414 | INFO     | app.agent.nodes.filter_metric:filter_metric:30 - LLM 选定: ['GMV']
+2026-06-25 17:32:27.414 | INFO     | app.agent.nodes.filter_metric:filter_metric:33 - 过滤后: 1 个指标
+2026-06-25 17:32:28.360 | INFO     | app.agent.nodes.filter_table:filter_table:28 - LLM 选定: {'dim_region': ['region_name', 'region_id'], 'fact_order': ['order_amount', 'region_id']}
+2026-06-25 17:32:28.360 | INFO     | app.agent.nodes.filter_table:filter_table:38 - 过滤后: 2 张表
+2026-06-25 17:32:28.364 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:32 - 日期上下文: {'date': '2026-06-25', 'weekday': 'Thursday', 'quarter': 'Q2'}
+2026-06-25 17:32:28.364 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:33 - 数据库上下文: {'dialect': 'MySQL', 'version': '8.0.46'}
+2026-06-25 17:32:30.111 | INFO     | app.agent.nodes.generate_sql:generate_sql:38 - 生成的 SQL:
+SELECT SUM(f.order_amount) AS 销售总额
+FROM fact_order f
+JOIN dim_region r ON f.region_id = r.region_id
+WHERE r.region_name = '华北';
+2026-06-25 17:32:46.890 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['销售总额', '华北地区销售总额', '华北地区']
+2026-06-25 17:32:49.619 | INFO     | app.agent.nodes.recall_value:recall_value:30 - 结巴关键词: ['销售总额', '华北地区销售总额', '华北地区']
+2026-06-25 17:32:49.619 | INFO     | app.agent.nodes.recall_value:recall_value:31 - LLM扩展词: ['华北地区']
+2026-06-25 17:32:49.620 | INFO     | app.agent.nodes.recall_value:recall_value:32 - 最终取值召回关键词: ['销售总额', '华北地区销售总额', '华北地区']
+2026-06-25 17:32:49.638 | INFO     | app.agent.nodes.recall_value:recall_value:46 - 取值召回结果: 1 条
+2026-06-25 17:32:49.638 | INFO     | app.agent.nodes.recall_value:recall_value:47 - 召回取值: ['华北']
+2026-06-25 17:32:49.811 | INFO     | app.agent.nodes.recall_metric:recall_metric:31 - 结巴关键词: ['销售总额', '华北地区销售总额', '华北地区']
+2026-06-25 17:32:49.812 | INFO     | app.agent.nodes.recall_metric:recall_metric:32 - LLM扩展词: ['销售总额', '销售额', '销售收入', '总销售额', '销售金额', 'GMV']
+2026-06-25 17:32:49.812 | INFO     | app.agent.nodes.recall_metric:recall_metric:33 - 最终指标召回关键词: ['销售总额', '华北地区销售总额', '总销售额', 'GMV', '华北地区', '销售额', '销售收入', '销售金额']
+2026-06-25 17:32:52.154 | INFO     | app.agent.nodes.recall_column:recall_column:30 - 结巴关键词: ['销售总额', '华北地区销售总额', '华北地区']
+2026-06-25 17:32:52.155 | INFO     | app.agent.nodes.recall_column:recall_column:31 - LLM扩展词: ['地区', '销售额']
+2026-06-25 17:32:52.155 | INFO     | app.agent.nodes.recall_column:recall_column:32 - 最终召回关键词: ['销售总额', '华北地区销售总额', '地区', '华北地区', '销售额']
+2026-06-25 17:32:58.596 | INFO     | app.agent.nodes.recall_column:recall_column:48 - 字段召回结果: 3 个字段
+2026-06-25 17:32:58.596 | INFO     | app.agent.nodes.recall_column:recall_column:49 - 召回字段: ['fact_order.order_amount', 'fact_order.order_quantity', 'dim_region.region_name']
+2026-06-25 17:33:00.207 | INFO     | app.agent.nodes.recall_metric:recall_metric:48 - 指标召回结果: 2 个指标
+2026-06-25 17:33:00.207 | INFO     | app.agent.nodes.recall_metric:recall_metric:49 - 召回指标: ['GMV', 'AOV']
+2026-06-25 17:33:00.236 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:46 - MySQL 补全: 11 个字段(含主外键), 2 张表
+2026-06-25 17:33:00.237 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:79 - 合并结果: 2 张表, 2 个指标
+2026-06-25 17:33:00.238 | INFO     | app.agent.nodes.filter_metric:filter_metric:25 - 候选指标: ["GMV", "AOV"]
+2026-06-25 17:33:00.246 | INFO     | app.agent.nodes.filter_table:filter_table:23 - 候选表 YAML:
+- name: dim_region
+  role: dim
+  description: 地区维度表，用于描述订单发生的地理区域信息。
+  columns:
+  - name: region_name
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 华北
+    - 华南
+    - 华中
+    - 华东
+    - 西南
+    description: 订单所属的大区名称，如华东、华南等。
+    alias:
+    - 地区
+    - 区域
+    - 大区
+  - name: country
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 中国
+    description: 地区所属国家名称。
+    alias:
+    - 国家
+    - 国家名称
+  - name: province
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 上海市
+    - 四川省
+    - 浙江省
+    - 湖北省
+    - 北京市
+    - 广东省
+    description: 订单所属的省份名称。
+    alias:
+    - 省份
+    - 省
+    - 所在省份
+  - name: region_id
+    type: varchar(20)
+    role: primary_key
+    examples:
+    - R005
+    - R001
+    - R003
+    - R004
+    - R002
+    - R006
+    description: 地区唯一标识。
+    alias:
+    - 地区 ID
+    - 区域 ID
+- name: fact_order
+  role: fact
+  description: 订单事实表，记录订单数量和金额等核心指标。
+  columns:
+  - name: order_amount
+    type: float
+    role: measure
+    examples:
+    - 899.0
+    - 8999.0
+    - 40.0
+    - 200.0
+    - 299.0
+    - 6999.0
+    - 9499.0
+    - 60.0
+    - 125.0
+    - 1399.0
+    description: 订单金额。
+    alias:
+    - 销售额
+    - 订单金额
+    - 收入
+  - name: order_quantity
+    type: int
+    role: measure
+    examples:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 8
+    - 10
+    - 12
+    - 25
+    description: 订单中商品的购买数量。
+    alias:
+    - 销量
+    - 购买数量
+    - 件数
+  - name: customer_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - C001
+    - C007
+    - C019
+    - C015
+    - C005
+    - C012
+    - C002
+    - C010
+    - C003
+    - C008
+    description: 关联客户维度的外键。
+    alias:
+    - 客户 ID
+    - 用户 ID
+  - name: date_id
+    type: int
+    role: foreign_key
+    examples:
+    - 20250101
+    - 20250102
+    - 20250103
+    - 20250104
+    - 20250105
+    - 20250106
+    - 20250107
+    - 20250108
+    - 20250109
+    - 20250110
+    description: 关联时间维度的外键。
+    alias:
+    - 日期
+    - 下单日期
+  - name: order_id
+    type: varchar(30)
+    role: primary_key
+    examples:
+    - ORD20250102002
+    - ORD20250101002
+    - ORD20250105002
+    - ORD20250103001
+    - ORD20250102001
+    - ORD20250103002
+    - ORD20250105001
+    - ORD20250104001
+    - ORD20250106001
+    - ORD20250101001
+    description: 订单唯一标识。
+    alias:
+    - 订单 ID
+  - name: product_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - P012
+    - P003
+    - P013
+    - P014
+    - P011
+    - P010
+    - P008
+    - P001
+    - P002
+    - P006
+    description: 关联商品维度的外键。
+    alias:
+    - 商品 ID
+    - 产品 ID
+  - name: region_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - R005
+    - R001
+    - R003
+    - R004
+    - R002
+    - R006
+    description: 关联地区维度的外键。
+    alias:
+    - 地区 ID
+    - 区域 ID
+
+2026-06-25 17:33:02.272 | INFO     | app.agent.nodes.filter_metric:filter_metric:30 - LLM 选定: ['GMV']
+2026-06-25 17:33:02.273 | INFO     | app.agent.nodes.filter_metric:filter_metric:33 - 过滤后: 1 个指标
+2026-06-25 17:33:02.698 | INFO     | app.agent.nodes.filter_table:filter_table:28 - LLM 选定: {'dim_region': ['region_name', 'region_id'], 'fact_order': ['order_amount', 'region_id']}
+2026-06-25 17:33:02.698 | INFO     | app.agent.nodes.filter_table:filter_table:38 - 过滤后: 2 张表
+2026-06-25 17:33:02.702 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:32 - 日期上下文: {'date': '2026-06-25', 'weekday': 'Thursday', 'quarter': 'Q2'}
+2026-06-25 17:33:02.702 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:33 - 数据库上下文: {'dialect': 'MySQL', 'version': '8.0.46'}
+2026-06-25 17:33:04.565 | INFO     | app.agent.nodes.generate_sql:generate_sql:38 - 生成的 SQL:
+SELECT SUM(fo.order_amount) AS total_sales
+FROM fact_order fo
+JOIN dim_region dr ON fo.region_id = dr.region_id
+WHERE dr.region_name = '华北';
+2026-06-25 17:33:26.460 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 17:33:28.678 | INFO     | app.agent.nodes.recall_column:recall_column:30 - 结巴关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 17:33:28.678 | INFO     | app.agent.nodes.recall_column:recall_column:31 - LLM扩展词: ['地区', '销售金额']
+2026-06-25 17:33:28.678 | INFO     | app.agent.nodes.recall_column:recall_column:32 - 最终召回关键词: ['销售金额', '华北地区', '销售总额', '华北地区销售总额', '地区']
+2026-06-25 17:33:31.756 | INFO     | app.agent.nodes.recall_metric:recall_metric:31 - 结巴关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 17:33:31.756 | INFO     | app.agent.nodes.recall_metric:recall_metric:32 - LLM扩展词: ['销售总额', '销售额', '销售金额', '销售收入', '总销售额', 'GMV']
+2026-06-25 17:33:31.756 | INFO     | app.agent.nodes.recall_metric:recall_metric:33 - 最终指标召回关键词: ['销售金额', '总销售额', '华北地区', '销售总额', '华北地区销售总额', '销售额', 'GMV', '销售收入']
+2026-06-25 17:33:31.757 | INFO     | app.agent.nodes.recall_value:recall_value:30 - 结巴关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 17:33:31.757 | INFO     | app.agent.nodes.recall_value:recall_value:31 - LLM扩展词: ['华北地区', '销售总额']
+2026-06-25 17:33:31.757 | INFO     | app.agent.nodes.recall_value:recall_value:32 - 最终取值召回关键词: ['华北地区', '销售总额', '华北地区销售总额']
+2026-06-25 17:33:31.797 | INFO     | app.agent.nodes.recall_value:recall_value:46 - 取值召回结果: 1 条
+2026-06-25 17:33:31.797 | INFO     | app.agent.nodes.recall_value:recall_value:47 - 召回取值: ['华北']
+2026-06-25 17:33:34.435 | INFO     | app.agent.nodes.recall_column:recall_column:48 - 字段召回结果: 3 个字段
+2026-06-25 17:33:34.435 | INFO     | app.agent.nodes.recall_column:recall_column:49 - 召回字段: ['fact_order.order_amount', 'dim_region.region_name', 'fact_order.order_quantity']
+2026-06-25 17:33:35.813 | INFO     | app.agent.nodes.recall_metric:recall_metric:48 - 指标召回结果: 2 个指标
+2026-06-25 17:33:35.813 | INFO     | app.agent.nodes.recall_metric:recall_metric:49 - 召回指标: ['GMV', 'AOV']
+2026-06-25 17:33:35.842 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:46 - MySQL 补全: 11 个字段(含主外键), 2 张表
+2026-06-25 17:33:35.842 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:79 - 合并结果: 2 张表, 2 个指标
+2026-06-25 17:33:35.843 | INFO     | app.agent.nodes.filter_metric:filter_metric:25 - 候选指标: ["GMV", "AOV"]
+2026-06-25 17:33:35.849 | INFO     | app.agent.nodes.filter_table:filter_table:23 - 候选表 YAML:
+- name: dim_region
+  role: dim
+  description: 地区维度表，用于描述订单发生的地理区域信息。
+  columns:
+  - name: region_name
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 华北
+    - 西南
+    - 华东
+    - 华中
+    - 华南
+    description: 订单所属的大区名称，如华东、华南等。
+    alias:
+    - 地区
+    - 区域
+    - 大区
+  - name: country
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 中国
+    description: 地区所属国家名称。
+    alias:
+    - 国家
+    - 国家名称
+  - name: province
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 四川省
+    - 北京市
+    - 湖北省
+    - 上海市
+    - 浙江省
+    - 广东省
+    description: 订单所属的省份名称。
+    alias:
+    - 省份
+    - 省
+    - 所在省份
+  - name: region_id
+    type: varchar(20)
+    role: primary_key
+    examples:
+    - R004
+    - R005
+    - R001
+    - R003
+    - R006
+    - R002
+    description: 地区唯一标识。
+    alias:
+    - 地区 ID
+    - 区域 ID
+- name: fact_order
+  role: fact
+  description: 订单事实表，记录订单数量和金额等核心指标。
+  columns:
+  - name: order_amount
+    type: float
+    role: measure
+    examples:
+    - 899.0
+    - 8999.0
+    - 40.0
+    - 200.0
+    - 299.0
+    - 6999.0
+    - 9499.0
+    - 60.0
+    - 125.0
+    - 1399.0
+    description: 订单金额。
+    alias:
+    - 销售额
+    - 订单金额
+    - 收入
+  - name: order_quantity
+    type: int
+    role: measure
+    examples:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 8
+    - 10
+    - 12
+    - 25
+    description: 订单中商品的购买数量。
+    alias:
+    - 销量
+    - 购买数量
+    - 件数
+  - name: customer_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - C008
+    - C005
+    - C015
+    - C001
+    - C012
+    - C002
+    - C003
+    - C019
+    - C007
+    - C010
+    description: 关联客户维度的外键。
+    alias:
+    - 客户 ID
+    - 用户 ID
+  - name: date_id
+    type: int
+    role: foreign_key
+    examples:
+    - 20250101
+    - 20250102
+    - 20250103
+    - 20250104
+    - 20250105
+    - 20250106
+    - 20250107
+    - 20250108
+    - 20250109
+    - 20250110
+    description: 关联时间维度的外键。
+    alias:
+    - 日期
+    - 下单日期
+  - name: order_id
+    type: varchar(30)
+    role: primary_key
+    examples:
+    - ORD20250103002
+    - ORD20250105002
+    - ORD20250102002
+    - ORD20250105001
+    - ORD20250103001
+    - ORD20250104001
+    - ORD20250102001
+    - ORD20250101001
+    - ORD20250106001
+    - ORD20250101002
+    description: 订单唯一标识。
+    alias:
+    - 订单 ID
+  - name: product_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - P014
+    - P001
+    - P008
+    - P006
+    - P011
+    - P002
+    - P012
+    - P003
+    - P010
+    - P013
+    description: 关联商品维度的外键。
+    alias:
+    - 商品 ID
+    - 产品 ID
+  - name: region_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - R004
+    - R005
+    - R001
+    - R003
+    - R006
+    - R002
+    description: 关联地区维度的外键。
+    alias:
+    - 地区 ID
+    - 区域 ID
+
+2026-06-25 17:33:37.857 | INFO     | app.agent.nodes.filter_table:filter_table:28 - LLM 选定: {'dim_region': ['region_name', 'region_id'], 'fact_order': ['order_amount', 'region_id']}
+2026-06-25 17:33:37.857 | INFO     | app.agent.nodes.filter_table:filter_table:38 - 过滤后: 2 张表
+2026-06-25 17:33:37.984 | INFO     | app.agent.nodes.filter_metric:filter_metric:30 - LLM 选定: ['GMV']
+2026-06-25 17:33:37.984 | INFO     | app.agent.nodes.filter_metric:filter_metric:33 - 过滤后: 1 个指标
+2026-06-25 17:33:37.988 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:32 - 日期上下文: {'date': '2026-06-25', 'weekday': 'Thursday', 'quarter': 'Q2'}
+2026-06-25 17:33:37.988 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:33 - 数据库上下文: {'dialect': 'MySQL', 'version': '8.0.46'}
+2026-06-25 17:33:39.773 | INFO     | app.agent.nodes.generate_sql:generate_sql:38 - 生成的 SQL:
+SELECT SUM(fo.order_amount) AS total_sales
+FROM fact_order fo
+JOIN dim_region dr ON fo.region_id = dr.region_id
+WHERE dr.region_name = '华北';
+2026-06-25 17:36:19.386 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['华北地区销售总额', '销售总额', '华北地区']
+2026-06-25 17:36:21.741 | INFO     | app.agent.nodes.recall_column:recall_column:30 - 结巴关键词: ['华北地区销售总额', '销售总额', '华北地区']
+2026-06-25 17:36:21.742 | INFO     | app.agent.nodes.recall_column:recall_column:31 - LLM扩展词: ['地区', '销售金额']
+2026-06-25 17:36:21.742 | INFO     | app.agent.nodes.recall_column:recall_column:32 - 最终召回关键词: ['华北地区', '地区', '华北地区销售总额', '销售总额', '销售金额']
+2026-06-25 17:36:24.813 | INFO     | app.agent.nodes.recall_metric:recall_metric:31 - 结巴关键词: ['华北地区销售总额', '销售总额', '华北地区']
+2026-06-25 17:36:24.814 | INFO     | app.agent.nodes.recall_metric:recall_metric:32 - LLM扩展词: ['销售总额', '销售额', '成交额', 'GMV', '交易总额']
+2026-06-25 17:36:24.814 | INFO     | app.agent.nodes.recall_metric:recall_metric:33 - 最终指标召回关键词: ['交易总额', 'GMV', '华北地区', '销售额', '华北地区销售总额', '销售总额', '成交额']
+2026-06-25 17:36:26.172 | INFO     | app.agent.nodes.recall_value:recall_value:30 - 结巴关键词: ['华北地区销售总额', '销售总额', '华北地区']
+2026-06-25 17:36:26.172 | INFO     | app.agent.nodes.recall_value:recall_value:31 - LLM扩展词: ['华北']
+2026-06-25 17:36:26.172 | INFO     | app.agent.nodes.recall_value:recall_value:32 - 最终取值召回关键词: ['华北地区销售总额', '销售总额', '华北', '华北地区']
+2026-06-25 17:36:26.213 | INFO     | app.agent.nodes.recall_value:recall_value:46 - 取值召回结果: 1 条
+2026-06-25 17:36:26.213 | INFO     | app.agent.nodes.recall_value:recall_value:47 - 召回取值: ['华北']
+2026-06-25 17:36:27.134 | INFO     | app.agent.nodes.recall_column:recall_column:48 - 字段召回结果: 3 个字段
+2026-06-25 17:36:27.134 | INFO     | app.agent.nodes.recall_column:recall_column:49 - 召回字段: ['dim_region.region_name', 'fact_order.order_amount', 'fact_order.order_quantity']
+2026-06-25 17:36:27.958 | INFO     | app.agent.nodes.recall_metric:recall_metric:48 - 指标召回结果: 2 个指标
+2026-06-25 17:36:27.958 | INFO     | app.agent.nodes.recall_metric:recall_metric:49 - 召回指标: ['GMV', 'AOV']
+2026-06-25 17:36:27.983 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:46 - MySQL 补全: 11 个字段(含主外键), 2 张表
+2026-06-25 17:36:27.983 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:79 - 合并结果: 2 张表, 2 个指标
+2026-06-25 17:36:27.984 | INFO     | app.agent.nodes.filter_metric:filter_metric:25 - 候选指标: ["GMV", "AOV"]
+2026-06-25 17:36:27.989 | INFO     | app.agent.nodes.filter_table:filter_table:23 - 候选表 YAML:
+- name: dim_region
+  role: dim
+  description: 地区维度表，用于描述订单发生的地理区域信息。
+  columns:
+  - name: region_name
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 西南
+    - 华中
+    - 华南
+    - 华北
+    - 华东
+    description: 订单所属的大区名称，如华东、华南等。
+    alias:
+    - 地区
+    - 区域
+    - 大区
+  - name: country
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 中国
+    description: 地区所属国家名称。
+    alias:
+    - 国家
+    - 国家名称
+  - name: province
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 上海市
+    - 湖北省
+    - 浙江省
+    - 北京市
+    - 广东省
+    - 四川省
+    description: 订单所属的省份名称。
+    alias:
+    - 省份
+    - 省
+    - 所在省份
+  - name: region_id
+    type: varchar(20)
+    role: primary_key
+    examples:
+    - R001
+    - R005
+    - R004
+    - R003
+    - R006
+    - R002
+    description: 地区唯一标识。
+    alias:
+    - 地区 ID
+    - 区域 ID
+- name: fact_order
+  role: fact
+  description: 订单事实表，记录订单数量和金额等核心指标。
+  columns:
+  - name: order_amount
+    type: float
+    role: measure
+    examples:
+    - 899.0
+    - 8999.0
+    - 40.0
+    - 200.0
+    - 299.0
+    - 6999.0
+    - 9499.0
+    - 60.0
+    - 125.0
+    - 1399.0
+    description: 订单金额。
+    alias:
+    - 销售额
+    - 订单金额
+    - 收入
+  - name: order_quantity
+    type: int
+    role: measure
+    examples:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 8
+    - 10
+    - 12
+    - 25
+    description: 订单中商品的购买数量。
+    alias:
+    - 销量
+    - 购买数量
+    - 件数
+  - name: customer_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - C001
+    - C003
+    - C007
+    - C002
+    - C012
+    - C005
+    - C008
+    - C010
+    - C015
+    - C019
+    description: 关联客户维度的外键。
+    alias:
+    - 客户 ID
+    - 用户 ID
+  - name: date_id
+    type: int
+    role: foreign_key
+    examples:
+    - 20250101
+    - 20250102
+    - 20250103
+    - 20250104
+    - 20250105
+    - 20250106
+    - 20250107
+    - 20250108
+    - 20250109
+    - 20250110
+    description: 关联时间维度的外键。
+    alias:
+    - 日期
+    - 下单日期
+  - name: order_id
+    type: varchar(30)
+    role: primary_key
+    examples:
+    - ORD20250105002
+    - ORD20250103001
+    - ORD20250106001
+    - ORD20250102001
+    - ORD20250101001
+    - ORD20250103002
+    - ORD20250102002
+    - ORD20250104001
+    - ORD20250105001
+    - ORD20250101002
+    description: 订单唯一标识。
+    alias:
+    - 订单 ID
+  - name: product_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - P013
+    - P010
+    - P012
+    - P002
+    - P001
+    - P008
+    - P003
+    - P006
+    - P014
+    - P011
+    description: 关联商品维度的外键。
+    alias:
+    - 商品 ID
+    - 产品 ID
+  - name: region_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - R001
+    - R005
+    - R004
+    - R003
+    - R006
+    - R002
+    description: 关联地区维度的外键。
+    alias:
+    - 地区 ID
+    - 区域 ID
+
+2026-06-25 17:36:29.899 | INFO     | app.agent.nodes.filter_metric:filter_metric:30 - LLM 选定: []
+2026-06-25 17:36:29.899 | INFO     | app.agent.nodes.filter_metric:filter_metric:33 - 过滤后: 0 个指标
+2026-06-25 17:36:32.877 | INFO     | app.agent.nodes.filter_table:filter_table:28 - LLM 选定: {'dim_region': ['region_name', 'region_id'], 'fact_order': ['order_amount', 'region_id']}
+2026-06-25 17:36:32.877 | INFO     | app.agent.nodes.filter_table:filter_table:38 - 过滤后: 2 张表
+2026-06-25 17:36:32.880 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:32 - 日期上下文: {'date': '2026-06-25', 'weekday': 'Thursday', 'quarter': 'Q2'}
+2026-06-25 17:36:32.880 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:33 - 数据库上下文: {'dialect': 'MySQL', 'version': '8.0.46'}
+2026-06-25 17:36:35.199 | INFO     | app.agent.nodes.generate_sql:generate_sql:38 - 生成的 SQL:
+SELECT SUM(f.order_amount) AS total_sales
+FROM fact_order f
+JOIN dim_region r ON f.region_id = r.region_id
+WHERE r.region_name = '华北';
+2026-06-25 17:37:46.799 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['销售总额', '华北地区', '华北地区销售总额']
+2026-06-25 17:37:49.733 | INFO     | app.agent.nodes.recall_column:recall_column:30 - 结巴关键词: ['销售总额', '华北地区', '华北地区销售总额']
+2026-06-25 17:37:49.733 | INFO     | app.agent.nodes.recall_column:recall_column:31 - LLM扩展词: ['地区', '销售金额']
+2026-06-25 17:37:49.733 | INFO     | app.agent.nodes.recall_column:recall_column:32 - 最终召回关键词: ['华北地区', '地区', '销售金额', '销售总额', '华北地区销售总额']
+2026-06-25 17:37:53.313 | INFO     | app.agent.nodes.recall_metric:recall_metric:31 - 结巴关键词: ['销售总额', '华北地区', '华北地区销售总额']
+2026-06-25 17:37:53.313 | INFO     | app.agent.nodes.recall_metric:recall_metric:32 - LLM扩展词: ['销售总额', '销售额', '销售收入', '交易额', 'GMV']
+2026-06-25 17:37:53.314 | INFO     | app.agent.nodes.recall_metric:recall_metric:33 - 最终指标召回关键词: ['华北地区', '销售总额', 'GMV', '华北地区销售总额', '交易额', '销售收入', '销售额']
+2026-06-25 17:37:53.745 | INFO     | app.agent.nodes.recall_value:recall_value:30 - 结巴关键词: ['销售总额', '华北地区', '华北地区销售总额']
+2026-06-25 17:37:53.745 | INFO     | app.agent.nodes.recall_value:recall_value:31 - LLM扩展词: ['华北地区', '销售']
+2026-06-25 17:37:53.746 | INFO     | app.agent.nodes.recall_value:recall_value:32 - 最终取值召回关键词: ['销售', '销售总额', '华北地区', '华北地区销售总额']
+2026-06-25 17:37:53.791 | INFO     | app.agent.nodes.recall_value:recall_value:46 - 取值召回结果: 1 条
+2026-06-25 17:37:53.791 | INFO     | app.agent.nodes.recall_value:recall_value:47 - 召回取值: ['华北']
+2026-06-25 17:37:55.149 | INFO     | app.agent.nodes.recall_column:recall_column:48 - 字段召回结果: 3 个字段
+2026-06-25 17:37:55.149 | INFO     | app.agent.nodes.recall_column:recall_column:49 - 召回字段: ['dim_region.region_name', 'fact_order.order_amount', 'fact_order.order_quantity']
+2026-06-25 17:37:56.509 | INFO     | app.agent.nodes.recall_metric:recall_metric:48 - 指标召回结果: 2 个指标
+2026-06-25 17:37:56.510 | INFO     | app.agent.nodes.recall_metric:recall_metric:49 - 召回指标: ['GMV', 'AOV']
+2026-06-25 17:37:56.531 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:46 - MySQL 补全: 11 个字段(含主外键), 2 张表
+2026-06-25 17:37:56.531 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:79 - 合并结果: 2 张表, 2 个指标
+2026-06-25 17:37:56.532 | INFO     | app.agent.nodes.filter_metric:filter_metric:25 - 候选指标: ["GMV", "AOV"]
+2026-06-25 17:37:56.536 | INFO     | app.agent.nodes.filter_table:filter_table:23 - 候选表 YAML:
+- name: dim_region
+  role: dim
+  description: 地区维度表，用于描述订单发生的地理区域信息。
+  columns:
+  - name: region_name
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 西南
+    - 华东
+    - 华南
+    - 华北
+    - 华中
+    description: 订单所属的大区名称，如华东、华南等。
+    alias:
+    - 地区
+    - 区域
+    - 大区
+  - name: country
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 中国
+    description: 地区所属国家名称。
+    alias:
+    - 国家
+    - 国家名称
+  - name: province
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 北京市
+    - 浙江省
+    - 上海市
+    - 湖北省
+    - 广东省
+    - 四川省
+    description: 订单所属的省份名称。
+    alias:
+    - 省份
+    - 省
+    - 所在省份
+  - name: region_id
+    type: varchar(20)
+    role: primary_key
+    examples:
+    - R002
+    - R003
+    - R004
+    - R005
+    - R006
+    - R001
+    description: 地区唯一标识。
+    alias:
+    - 地区 ID
+    - 区域 ID
+- name: fact_order
+  role: fact
+  description: 订单事实表，记录订单数量和金额等核心指标。
+  columns:
+  - name: order_amount
+    type: float
+    role: measure
+    examples:
+    - 899.0
+    - 8999.0
+    - 40.0
+    - 200.0
+    - 299.0
+    - 6999.0
+    - 9499.0
+    - 60.0
+    - 125.0
+    - 1399.0
+    description: 订单金额。
+    alias:
+    - 销售额
+    - 订单金额
+    - 收入
+  - name: order_quantity
+    type: int
+    role: measure
+    examples:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 8
+    - 10
+    - 12
+    - 25
+    description: 订单中商品的购买数量。
+    alias:
+    - 销量
+    - 购买数量
+    - 件数
+  - name: customer_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - C001
+    - C007
+    - C002
+    - C019
+    - C012
+    - C003
+    - C015
+    - C010
+    - C005
+    - C008
+    description: 关联客户维度的外键。
+    alias:
+    - 客户 ID
+    - 用户 ID
+  - name: date_id
+    type: int
+    role: foreign_key
+    examples:
+    - 20250101
+    - 20250102
+    - 20250103
+    - 20250104
+    - 20250105
+    - 20250106
+    - 20250107
+    - 20250108
+    - 20250109
+    - 20250110
+    description: 关联时间维度的外键。
+    alias:
+    - 日期
+    - 下单日期
+  - name: order_id
+    type: varchar(30)
+    role: primary_key
+    examples:
+    - ORD20250103001
+    - ORD20250101002
+    - ORD20250104001
+    - ORD20250105001
+    - ORD20250106001
+    - ORD20250103002
+    - ORD20250102002
+    - ORD20250105002
+    - ORD20250102001
+    - ORD20250101001
+    description: 订单唯一标识。
+    alias:
+    - 订单 ID
+  - name: product_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - P006
+    - P010
+    - P008
+    - P001
+    - P014
+    - P002
+    - P011
+    - P013
+    - P012
+    - P003
+    description: 关联商品维度的外键。
+    alias:
+    - 商品 ID
+    - 产品 ID
+  - name: region_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - R002
+    - R003
+    - R004
+    - R005
+    - R006
+    - R001
+    description: 关联地区维度的外键。
+    alias:
+    - 地区 ID
+    - 区域 ID
+
+2026-06-25 17:37:58.393 | INFO     | app.agent.nodes.filter_metric:filter_metric:30 - LLM 选定: ['GMV']
+2026-06-25 17:37:58.393 | INFO     | app.agent.nodes.filter_metric:filter_metric:33 - 过滤后: 1 个指标
+2026-06-25 17:37:59.304 | INFO     | app.agent.nodes.filter_table:filter_table:28 - LLM 选定: {'dim_region': ['region_name', 'region_id'], 'fact_order': ['order_amount', 'region_id']}
+2026-06-25 17:37:59.304 | INFO     | app.agent.nodes.filter_table:filter_table:38 - 过滤后: 2 张表
+2026-06-25 17:37:59.309 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:32 - 日期上下文: {'date': '2026-06-25', 'weekday': 'Thursday', 'quarter': 'Q2'}
+2026-06-25 17:37:59.309 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:33 - 数据库上下文: {'dialect': 'MySQL', 'version': '8.0.46'}
+2026-06-25 17:38:02.468 | INFO     | app.agent.nodes.generate_sql:generate_sql:38 - 生成的 SQL:
+SELECT SUM(f.order_amount) AS 销售总额
+FROM fact_order f
+JOIN dim_region r ON f.region_id = r.region_id
+WHERE r.region_name = '华北';
+2026-06-25 17:39:09.716 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 17:39:12.657 | INFO     | app.agent.nodes.recall_metric:recall_metric:31 - 结巴关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 17:39:12.657 | INFO     | app.agent.nodes.recall_metric:recall_metric:32 - LLM扩展词: ['销售总额', '总销售额', '销售收入总额', '营业额', '交易总额', 'GMV']
+2026-06-25 17:39:12.657 | INFO     | app.agent.nodes.recall_metric:recall_metric:33 - 最终指标召回关键词: ['华北地区销售总额', '营业额', '销售总额', '交易总额', 'GMV', '总销售额', '销售收入总额', '华北地区']
+2026-06-25 17:39:17.713 | INFO     | app.agent.nodes.recall_column:recall_column:30 - 结巴关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 17:39:17.713 | INFO     | app.agent.nodes.recall_column:recall_column:31 - LLM扩展词: ['地区', '销售金额']
+2026-06-25 17:39:17.713 | INFO     | app.agent.nodes.recall_column:recall_column:32 - 最终召回关键词: ['华北地区销售总额', '销售金额', '地区', '销售总额', '华北地区']
+2026-06-25 17:39:17.860 | INFO     | app.agent.nodes.recall_metric:recall_metric:48 - 指标召回结果: 2 个指标
+2026-06-25 17:39:17.861 | INFO     | app.agent.nodes.recall_metric:recall_metric:49 - 召回指标: ['GMV', 'AOV']
+2026-06-25 17:39:18.616 | INFO     | app.agent.nodes.recall_value:recall_value:30 - 结巴关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 17:39:18.616 | INFO     | app.agent.nodes.recall_value:recall_value:31 - LLM扩展词: ['华北地区', '销售']
+2026-06-25 17:39:18.616 | INFO     | app.agent.nodes.recall_value:recall_value:32 - 最终取值召回关键词: ['华北地区销售总额', '华北地区', '销售总额', '销售']
+2026-06-25 17:39:18.651 | INFO     | app.agent.nodes.recall_value:recall_value:46 - 取值召回结果: 1 条
+2026-06-25 17:39:18.651 | INFO     | app.agent.nodes.recall_value:recall_value:47 - 召回取值: ['华北']
+2026-06-25 17:39:19.050 | INFO     | app.agent.nodes.recall_column:recall_column:48 - 字段召回结果: 3 个字段
+2026-06-25 17:39:19.050 | INFO     | app.agent.nodes.recall_column:recall_column:49 - 召回字段: ['fact_order.order_amount', 'fact_order.order_quantity', 'dim_region.region_name']
+2026-06-25 17:39:19.083 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:46 - MySQL 补全: 11 个字段(含主外键), 2 张表
+2026-06-25 17:39:19.084 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:79 - 合并结果: 2 张表, 2 个指标
+2026-06-25 17:39:19.084 | INFO     | app.agent.nodes.filter_metric:filter_metric:25 - 候选指标: ["GMV", "AOV"]
+2026-06-25 17:39:19.089 | INFO     | app.agent.nodes.filter_table:filter_table:23 - 候选表 YAML:
+- name: dim_region
+  role: dim
+  description: 地区维度表，用于描述订单发生的地理区域信息。
+  columns:
+  - name: region_name
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 华中
+    - 华北
+    - 华东
+    - 西南
+    - 华南
+    description: 订单所属的大区名称，如华东、华南等。
+    alias:
+    - 地区
+    - 区域
+    - 大区
+  - name: country
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 中国
+    description: 地区所属国家名称。
+    alias:
+    - 国家
+    - 国家名称
+  - name: province
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 北京市
+    - 浙江省
+    - 广东省
+    - 上海市
+    - 四川省
+    - 湖北省
+    description: 订单所属的省份名称。
+    alias:
+    - 省份
+    - 省
+    - 所在省份
+  - name: region_id
+    type: varchar(20)
+    role: primary_key
+    examples:
+    - R005
+    - R001
+    - R002
+    - R006
+    - R004
+    - R003
+    description: 地区唯一标识。
+    alias:
+    - 地区 ID
+    - 区域 ID
+- name: fact_order
+  role: fact
+  description: 订单事实表，记录订单数量和金额等核心指标。
+  columns:
+  - name: order_amount
+    type: float
+    role: measure
+    examples:
+    - 899.0
+    - 8999.0
+    - 40.0
+    - 200.0
+    - 299.0
+    - 6999.0
+    - 9499.0
+    - 60.0
+    - 125.0
+    - 1399.0
+    description: 订单金额。
+    alias:
+    - 销售额
+    - 订单金额
+    - 收入
+  - name: order_quantity
+    type: int
+    role: measure
+    examples:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 8
+    - 10
+    - 12
+    - 25
+    description: 订单中商品的购买数量。
+    alias:
+    - 销量
+    - 购买数量
+    - 件数
+  - name: customer_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - C001
+    - C007
+    - C003
+    - C005
+    - C019
+    - C012
+    - C008
+    - C002
+    - C015
+    - C010
+    description: 关联客户维度的外键。
+    alias:
+    - 客户 ID
+    - 用户 ID
+  - name: date_id
+    type: int
+    role: foreign_key
+    examples:
+    - 20250101
+    - 20250102
+    - 20250103
+    - 20250104
+    - 20250105
+    - 20250106
+    - 20250107
+    - 20250108
+    - 20250109
+    - 20250110
+    description: 关联时间维度的外键。
+    alias:
+    - 日期
+    - 下单日期
+  - name: order_id
+    type: varchar(30)
+    role: primary_key
+    examples:
+    - ORD20250103002
+    - ORD20250104001
+    - ORD20250106001
+    - ORD20250101001
+    - ORD20250103001
+    - ORD20250105001
+    - ORD20250105002
+    - ORD20250101002
+    - ORD20250102001
+    - ORD20250102002
+    description: 订单唯一标识。
+    alias:
+    - 订单 ID
+  - name: product_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - P013
+    - P008
+    - P002
+    - P012
+    - P001
+    - P010
+    - P006
+    - P011
+    - P003
+    - P014
+    description: 关联商品维度的外键。
+    alias:
+    - 商品 ID
+    - 产品 ID
+  - name: region_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - R005
+    - R001
+    - R002
+    - R006
+    - R004
+    - R003
+    description: 关联地区维度的外键。
+    alias:
+    - 地区 ID
+    - 区域 ID
+
+2026-06-25 17:39:21.539 | INFO     | app.agent.nodes.filter_metric:filter_metric:30 - LLM 选定: ['GMV']
+2026-06-25 17:39:21.540 | INFO     | app.agent.nodes.filter_metric:filter_metric:33 - 过滤后: 1 个指标
+2026-06-25 17:39:25.232 | INFO     | app.agent.nodes.filter_table:filter_table:28 - LLM 选定: {'dim_region': ['region_name', 'region_id'], 'fact_order': ['order_amount', 'region_id']}
+2026-06-25 17:39:25.232 | INFO     | app.agent.nodes.filter_table:filter_table:38 - 过滤后: 2 张表
+2026-06-25 17:39:25.235 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:32 - 日期上下文: {'date': '2026-06-25', 'weekday': 'Thursday', 'quarter': 'Q2'}
+2026-06-25 17:39:25.235 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:33 - 数据库上下文: {'dialect': 'MySQL', 'version': '8.0.46'}
+2026-06-25 17:39:29.557 | INFO     | app.agent.nodes.generate_sql:generate_sql:38 - 生成的 SQL:
+SELECT SUM(o.order_amount) AS 销售总额
+FROM fact_order o
+JOIN dim_region r ON o.region_id = r.region_id
+WHERE r.region_name = '华北'
+2026-06-25 17:40:06.489 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['华北地区销售总额', '销售总额', '华北地区']
+2026-06-25 17:40:09.657 | INFO     | app.agent.nodes.recall_metric:recall_metric:31 - 结巴关键词: ['华北地区销售总额', '销售总额', '华北地区']
+2026-06-25 17:40:09.657 | INFO     | app.agent.nodes.recall_metric:recall_metric:32 - LLM扩展词: ['销售总额', '销售收入', '销售额', '总销售金额', '销售总金额']
+2026-06-25 17:40:09.657 | INFO     | app.agent.nodes.recall_metric:recall_metric:33 - 最终指标召回关键词: ['销售额', '总销售金额', '销售总金额', '销售收入', '华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 17:40:12.731 | INFO     | app.agent.nodes.recall_column:recall_column:30 - 结巴关键词: ['华北地区销售总额', '销售总额', '华北地区']
+2026-06-25 17:40:12.731 | INFO     | app.agent.nodes.recall_column:recall_column:31 - LLM扩展词: ['地区', '销售金额']
+2026-06-25 17:40:12.731 | INFO     | app.agent.nodes.recall_column:recall_column:32 - 最终召回关键词: ['地区', '华北地区销售总额', '销售金额', '华北地区', '销售总额']
+2026-06-25 17:40:15.667 | INFO     | app.agent.nodes.recall_column:recall_column:48 - 字段召回结果: 3 个字段
+2026-06-25 17:40:15.667 | INFO     | app.agent.nodes.recall_column:recall_column:49 - 召回字段: ['dim_region.region_name', 'fact_order.order_amount', 'fact_order.order_quantity']
+2026-06-25 17:40:16.162 | INFO     | app.agent.nodes.recall_metric:recall_metric:48 - 指标召回结果: 2 个指标
+2026-06-25 17:40:16.162 | INFO     | app.agent.nodes.recall_metric:recall_metric:49 - 召回指标: ['GMV', 'AOV']
+2026-06-25 17:40:20.400 | INFO     | app.agent.nodes.recall_value:recall_value:30 - 结巴关键词: ['华北地区销售总额', '销售总额', '华北地区']
+2026-06-25 17:40:20.400 | INFO     | app.agent.nodes.recall_value:recall_value:31 - LLM扩展词: ['华北', '销售']
+2026-06-25 17:40:20.400 | INFO     | app.agent.nodes.recall_value:recall_value:32 - 最终取值召回关键词: ['华北', '销售', '华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 17:40:20.466 | INFO     | app.agent.nodes.recall_value:recall_value:46 - 取值召回结果: 1 条
+2026-06-25 17:40:20.466 | INFO     | app.agent.nodes.recall_value:recall_value:47 - 召回取值: ['华北']
+2026-06-25 17:40:20.508 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:46 - MySQL 补全: 11 个字段(含主外键), 2 张表
+2026-06-25 17:40:20.508 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:79 - 合并结果: 2 张表, 2 个指标
+2026-06-25 17:40:20.509 | INFO     | app.agent.nodes.filter_metric:filter_metric:25 - 候选指标: ["GMV", "AOV"]
+2026-06-25 17:40:20.514 | INFO     | app.agent.nodes.filter_table:filter_table:23 - 候选表 YAML:
+- name: dim_region
+  role: dim
+  description: 地区维度表，用于描述订单发生的地理区域信息。
+  columns:
+  - name: region_name
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 华东
+    - 华北
+    - 华中
+    - 西南
+    - 华南
+    description: 订单所属的大区名称，如华东、华南等。
+    alias:
+    - 地区
+    - 区域
+    - 大区
+  - name: country
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 中国
+    description: 地区所属国家名称。
+    alias:
+    - 国家
+    - 国家名称
+  - name: province
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 四川省
+    - 湖北省
+    - 浙江省
+    - 北京市
+    - 广东省
+    - 上海市
+    description: 订单所属的省份名称。
+    alias:
+    - 省份
+    - 省
+    - 所在省份
+  - name: region_id
+    type: varchar(20)
+    role: primary_key
+    examples:
+    - R006
+    - R003
+    - R004
+    - R005
+    - R001
+    - R002
+    description: 地区唯一标识。
+    alias:
+    - 地区 ID
+    - 区域 ID
+- name: fact_order
+  role: fact
+  description: 订单事实表，记录订单数量和金额等核心指标。
+  columns:
+  - name: order_amount
+    type: float
+    role: measure
+    examples:
+    - 899.0
+    - 8999.0
+    - 40.0
+    - 200.0
+    - 299.0
+    - 6999.0
+    - 9499.0
+    - 60.0
+    - 125.0
+    - 1399.0
+    description: 订单金额。
+    alias:
+    - 销售额
+    - 订单金额
+    - 收入
+  - name: order_quantity
+    type: int
+    role: measure
+    examples:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 8
+    - 10
+    - 12
+    - 25
+    description: 订单中商品的购买数量。
+    alias:
+    - 销量
+    - 购买数量
+    - 件数
+  - name: customer_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - C005
+    - C008
+    - C012
+    - C019
+    - C003
+    - C010
+    - C007
+    - C001
+    - C002
+    - C015
+    description: 关联客户维度的外键。
+    alias:
+    - 客户 ID
+    - 用户 ID
+  - name: date_id
+    type: int
+    role: foreign_key
+    examples:
+    - 20250101
+    - 20250102
+    - 20250103
+    - 20250104
+    - 20250105
+    - 20250106
+    - 20250107
+    - 20250108
+    - 20250109
+    - 20250110
+    description: 关联时间维度的外键。
+    alias:
+    - 日期
+    - 下单日期
+  - name: order_id
+    type: varchar(30)
+    role: primary_key
+    examples:
+    - ORD20250102001
+    - ORD20250102002
+    - ORD20250104001
+    - ORD20250101002
+    - ORD20250103001
+    - ORD20250105002
+    - ORD20250106001
+    - ORD20250105001
+    - ORD20250101001
+    - ORD20250103002
+    description: 订单唯一标识。
+    alias:
+    - 订单 ID
+  - name: product_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - P006
+    - P008
+    - P010
+    - P003
+    - P012
+    - P001
+    - P014
+    - P011
+    - P002
+    - P013
+    description: 关联商品维度的外键。
+    alias:
+    - 商品 ID
+    - 产品 ID
+  - name: region_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - R006
+    - R003
+    - R004
+    - R005
+    - R001
+    - R002
+    description: 关联地区维度的外键。
+    alias:
+    - 地区 ID
+    - 区域 ID
+
+2026-06-25 17:40:22.380 | INFO     | app.agent.nodes.filter_metric:filter_metric:30 - LLM 选定: ['GMV']
+2026-06-25 17:40:22.380 | INFO     | app.agent.nodes.filter_metric:filter_metric:33 - 过滤后: 1 个指标
+2026-06-25 17:40:24.118 | INFO     | app.agent.nodes.filter_table:filter_table:28 - LLM 选定: {'dim_region': ['region_name', 'region_id'], 'fact_order': ['order_amount', 'region_id']}
+2026-06-25 17:40:24.118 | INFO     | app.agent.nodes.filter_table:filter_table:38 - 过滤后: 2 张表
+2026-06-25 17:40:24.122 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:32 - 日期上下文: {'date': '2026-06-25', 'weekday': 'Thursday', 'quarter': 'Q2'}
+2026-06-25 17:40:24.123 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:33 - 数据库上下文: {'dialect': 'MySQL', 'version': '8.0.46'}
+2026-06-25 17:40:28.474 | INFO     | app.agent.nodes.generate_sql:generate_sql:38 - 生成的 SQL:
+SELECT SUM(f.order_amount) AS 销售总额
+FROM fact_order f
+JOIN dim_region r ON f.region_id = r.region_id
+WHERE r.region_name = '华北';
+2026-06-25 17:41:08.061 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['华北地区', '销售总额', '华北地区销售总额']
+2026-06-25 17:41:11.394 | INFO     | app.agent.nodes.recall_metric:recall_metric:31 - 结巴关键词: ['华北地区', '销售总额', '华北地区销售总额']
+2026-06-25 17:41:11.394 | INFO     | app.agent.nodes.recall_metric:recall_metric:32 - LLM扩展词: ['销售总额', '销售额', '销售金额', 'GMV', '总销售额', '成交总额']
+2026-06-25 17:41:11.394 | INFO     | app.agent.nodes.recall_metric:recall_metric:33 - 最终指标召回关键词: ['销售总额', '华北地区销售总额', '总销售额', '成交总额', '华北地区', 'GMV', '销售金额', '销售额']
+2026-06-25 17:41:14.438 | INFO     | app.agent.nodes.recall_column:recall_column:30 - 结巴关键词: ['华北地区', '销售总额', '华北地区销售总额']
+2026-06-25 17:41:14.438 | INFO     | app.agent.nodes.recall_column:recall_column:31 - LLM扩展词: ['地区', '销售金额']
+2026-06-25 17:41:14.438 | INFO     | app.agent.nodes.recall_column:recall_column:32 - 最终召回关键词: ['销售总额', '华北地区销售总额', '地区', '华北地区', '销售金额']
+2026-06-25 17:41:17.167 | INFO     | app.agent.nodes.recall_value:recall_value:30 - 结巴关键词: ['华北地区', '销售总额', '华北地区销售总额']
+2026-06-25 17:41:17.167 | INFO     | app.agent.nodes.recall_value:recall_value:31 - LLM扩展词: ['华北地区', '华北']
+2026-06-25 17:41:17.167 | INFO     | app.agent.nodes.recall_value:recall_value:32 - 最终取值召回关键词: ['华北地区', '销售总额', '华北地区销售总额', '华北']
+2026-06-25 17:41:17.218 | INFO     | app.agent.nodes.recall_value:recall_value:46 - 取值召回结果: 1 条
+2026-06-25 17:41:17.218 | INFO     | app.agent.nodes.recall_value:recall_value:47 - 召回取值: ['华北']
+2026-06-25 17:41:17.348 | INFO     | app.agent.nodes.recall_column:recall_column:48 - 字段召回结果: 3 个字段
+2026-06-25 17:41:17.349 | INFO     | app.agent.nodes.recall_column:recall_column:49 - 召回字段: ['fact_order.order_amount', 'fact_order.order_quantity', 'dim_region.region_name']
+2026-06-25 17:41:18.132 | INFO     | app.agent.nodes.recall_metric:recall_metric:48 - 指标召回结果: 2 个指标
+2026-06-25 17:41:18.133 | INFO     | app.agent.nodes.recall_metric:recall_metric:49 - 召回指标: ['GMV', 'AOV']
+2026-06-25 17:41:18.155 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:46 - MySQL 补全: 11 个字段(含主外键), 2 张表
+2026-06-25 17:41:18.155 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:79 - 合并结果: 2 张表, 2 个指标
+2026-06-25 17:41:18.156 | INFO     | app.agent.nodes.filter_metric:filter_metric:25 - 候选指标: ["GMV", "AOV"]
+2026-06-25 17:41:18.160 | INFO     | app.agent.nodes.filter_table:filter_table:23 - 候选表 YAML:
+- name: dim_region
+  role: dim
+  description: 地区维度表，用于描述订单发生的地理区域信息。
+  columns:
+  - name: region_name
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 华中
+    - 华东
+    - 华北
+    - 华南
+    - 西南
+    description: 订单所属的大区名称，如华东、华南等。
+    alias:
+    - 地区
+    - 区域
+    - 大区
+  - name: country
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 中国
+    description: 地区所属国家名称。
+    alias:
+    - 国家
+    - 国家名称
+  - name: province
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 浙江省
+    - 湖北省
+    - 四川省
+    - 广东省
+    - 北京市
+    - 上海市
+    description: 订单所属的省份名称。
+    alias:
+    - 省份
+    - 省
+    - 所在省份
+  - name: region_id
+    type: varchar(20)
+    role: primary_key
+    examples:
+    - R005
+    - R001
+    - R004
+    - R006
+    - R002
+    - R003
+    description: 地区唯一标识。
+    alias:
+    - 地区 ID
+    - 区域 ID
+- name: fact_order
+  role: fact
+  description: 订单事实表，记录订单数量和金额等核心指标。
+  columns:
+  - name: order_amount
+    type: float
+    role: measure
+    examples:
+    - 899.0
+    - 8999.0
+    - 40.0
+    - 200.0
+    - 299.0
+    - 6999.0
+    - 9499.0
+    - 60.0
+    - 125.0
+    - 1399.0
+    description: 订单金额。
+    alias:
+    - 销售额
+    - 订单金额
+    - 收入
+  - name: order_quantity
+    type: int
+    role: measure
+    examples:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 8
+    - 10
+    - 12
+    - 25
+    description: 订单中商品的购买数量。
+    alias:
+    - 销量
+    - 购买数量
+    - 件数
+  - name: customer_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - C008
+    - C010
+    - C019
+    - C005
+    - C003
+    - C002
+    - C001
+    - C007
+    - C012
+    - C015
+    description: 关联客户维度的外键。
+    alias:
+    - 客户 ID
+    - 用户 ID
+  - name: date_id
+    type: int
+    role: foreign_key
+    examples:
+    - 20250101
+    - 20250102
+    - 20250103
+    - 20250104
+    - 20250105
+    - 20250106
+    - 20250107
+    - 20250108
+    - 20250109
+    - 20250110
+    description: 关联时间维度的外键。
+    alias:
+    - 日期
+    - 下单日期
+  - name: order_id
+    type: varchar(30)
+    role: primary_key
+    examples:
+    - ORD20250104001
+    - ORD20250102001
+    - ORD20250101002
+    - ORD20250103001
+    - ORD20250105001
+    - ORD20250103002
+    - ORD20250102002
+    - ORD20250106001
+    - ORD20250105002
+    - ORD20250101001
+    description: 订单唯一标识。
+    alias:
+    - 订单 ID
+  - name: product_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - P011
+    - P008
+    - P006
+    - P001
+    - P014
+    - P013
+    - P012
+    - P010
+    - P002
+    - P003
+    description: 关联商品维度的外键。
+    alias:
+    - 商品 ID
+    - 产品 ID
+  - name: region_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - R005
+    - R001
+    - R004
+    - R006
+    - R002
+    - R003
+    description: 关联地区维度的外键。
+    alias:
+    - 地区 ID
+    - 区域 ID
+
+2026-06-25 17:41:20.469 | INFO     | app.agent.nodes.filter_metric:filter_metric:30 - LLM 选定: ['GMV']
+2026-06-25 17:41:20.469 | INFO     | app.agent.nodes.filter_metric:filter_metric:33 - 过滤后: 1 个指标
+2026-06-25 17:41:21.310 | INFO     | app.agent.nodes.filter_table:filter_table:28 - LLM 选定: {'dim_region': ['region_name', 'region_id'], 'fact_order': ['order_amount', 'region_id']}
+2026-06-25 17:41:21.310 | INFO     | app.agent.nodes.filter_table:filter_table:38 - 过滤后: 2 张表
+2026-06-25 17:41:21.313 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:32 - 日期上下文: {'date': '2026-06-25', 'weekday': 'Thursday', 'quarter': 'Q2'}
+2026-06-25 17:41:21.313 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:33 - 数据库上下文: {'dialect': 'MySQL', 'version': '8.0.46'}
+2026-06-25 17:41:21.314 | INFO     | app.agent.nodes.generate_sql:generate_sql:49 - 表结构:
+表: dim_region [dim] — 地区维度表，用于描述订单发生的地理区域信息。
+    region_name (varchar(50)) [dimension] — 订单所属的大区名称，如华东、华南等。
+    region_id (varchar(20)) [primary_key] — 地区唯一标识。  [主键]
+
+表: fact_order [fact] — 订单事实表，记录订单数量和金额等核心指标。
+    order_amount (float) [measure] — 订单金额。
+    region_id (varchar(20)) [foreign_key] — 关联地区维度的外键。  ← 关联 dim_region.region_id
+2026-06-25 17:41:24.940 | INFO     | app.agent.nodes.generate_sql:generate_sql:65 - 生成的 SQL:
+SELECT SUM(fact_order.order_amount) AS 华北地区销售总额
+FROM fact_order
+JOIN dim_region ON fact_order.region_id = dim_region.region_id
+WHERE dim_region.region_name = '华北'
+2026-06-25 17:41:51.515 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['销售总额', '华北地区', '华北地区销售总额']
+2026-06-25 17:41:52.434 | INFO     | app.agent.nodes.recall_column:recall_column:30 - 结巴关键词: ['销售总额', '华北地区', '华北地区销售总额']
+2026-06-25 17:41:52.435 | INFO     | app.agent.nodes.recall_column:recall_column:31 - LLM扩展词: ['销售金额', '地区', '统计日期']
+2026-06-25 17:41:52.435 | INFO     | app.agent.nodes.recall_column:recall_column:32 - 最终召回关键词: ['销售总额', '华北地区', '销售金额', '统计日期', '华北地区销售总额', '地区']
+2026-06-25 17:41:55.522 | INFO     | app.agent.nodes.recall_metric:recall_metric:31 - 结巴关键词: ['销售总额', '华北地区', '华北地区销售总额']
+2026-06-25 17:41:55.523 | INFO     | app.agent.nodes.recall_metric:recall_metric:32 - LLM扩展词: ['销售总额', '销售额', '销售收入', '总销售额', 'GMV']
+2026-06-25 17:41:55.523 | INFO     | app.agent.nodes.recall_metric:recall_metric:33 - 最终指标召回关键词: ['销售总额', '销售额', '华北地区', 'GMV', '销售收入', '总销售额', '华北地区销售总额']
+2026-06-25 17:41:55.524 | INFO     | app.agent.nodes.recall_value:recall_value:30 - 结巴关键词: ['销售总额', '华北地区', '华北地区销售总额']
+2026-06-25 17:41:55.524 | INFO     | app.agent.nodes.recall_value:recall_value:31 - LLM扩展词: ['华北地区', '销售总额']
+2026-06-25 17:41:55.524 | INFO     | app.agent.nodes.recall_value:recall_value:32 - 最终取值召回关键词: ['销售总额', '华北地区', '华北地区销售总额']
+2026-06-25 17:41:55.560 | INFO     | app.agent.nodes.recall_value:recall_value:46 - 取值召回结果: 1 条
+2026-06-25 17:41:55.561 | INFO     | app.agent.nodes.recall_value:recall_value:47 - 召回取值: ['华北']
+2026-06-25 17:41:58.942 | INFO     | app.agent.nodes.recall_column:recall_column:48 - 字段召回结果: 5 个字段
+2026-06-25 17:41:58.942 | INFO     | app.agent.nodes.recall_column:recall_column:49 - 召回字段: ['fact_order.order_amount', 'fact_order.order_quantity', 'dim_region.region_name', 'fact_order.date_id', 'dim_date.date_id']
+2026-06-25 17:41:59.549 | INFO     | app.agent.nodes.recall_metric:recall_metric:48 - 指标召回结果: 2 个指标
+2026-06-25 17:41:59.549 | INFO     | app.agent.nodes.recall_metric:recall_metric:49 - 召回指标: ['GMV', 'AOV']
+2026-06-25 17:41:59.574 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:46 - MySQL 补全: 16 个字段(含主外键), 3 张表
+2026-06-25 17:41:59.574 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:79 - 合并结果: 3 张表, 2 个指标
+2026-06-25 17:41:59.575 | INFO     | app.agent.nodes.filter_metric:filter_metric:25 - 候选指标: ["GMV", "AOV"]
+2026-06-25 17:41:59.581 | INFO     | app.agent.nodes.filter_table:filter_table:23 - 候选表 YAML:
+- name: dim_date
+  role: dim
+  description: 时间维度表，用于多时间粒度分析。
+  columns:
+  - name: date_id
+    type: int
+    role: primary_key
+    examples:
+    - 20250101
+    - 20250102
+    - 20250103
+    - 20250104
+    - 20250105
+    - 20250106
+    - 20250107
+    - 20250108
+    - 20250109
+    - 20250110
+    description: 日期唯一标识，格式 yyyyMMdd。
+    alias:
+    - 日期 ID
+    - 日期
+  - name: day
+    type: int
+    role: dimension
+    examples:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    description: 日。
+    alias:
+    - 日
+    - 天
+  - name: month
+    type: int
+    role: dimension
+    examples:
+    - 1
+    - 2
+    - 3
+    description: 月份。
+    alias:
+    - 月
+    - 月份
+  - name: quarter
+    type: varchar(2)
+    role: dimension
+    examples:
+    - Q1
+    description: 季度。
+    alias:
+    - 季度
+  - name: year
+    type: int
+    role: dimension
+    examples:
+    - 2025
+    description: 年份。
+    alias:
+    - 年
+    - 年份
+- name: dim_region
+  role: dim
+  description: 地区维度表，用于描述订单发生的地理区域信息。
+  columns:
+  - name: region_name
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 西南
+    - 华东
+    - 华南
+    - 华北
+    - 华中
+    description: 订单所属的大区名称，如华东、华南等。
+    alias:
+    - 地区
+    - 区域
+    - 大区
+  - name: country
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 中国
+    description: 地区所属国家名称。
+    alias:
+    - 国家
+    - 国家名称
+  - name: province
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 上海市
+    - 北京市
+    - 四川省
+    - 湖北省
+    - 广东省
+    - 浙江省
+    description: 订单所属的省份名称。
+    alias:
+    - 省份
+    - 省
+    - 所在省份
+  - name: region_id
+    type: varchar(20)
+    role: primary_key
+    examples:
+    - R003
+    - R006
+    - R002
+    - R004
+    - R001
+    - R005
+    description: 地区唯一标识。
+    alias:
+    - 地区 ID
+    - 区域 ID
+- name: fact_order
+  role: fact
+  description: 订单事实表，记录订单数量和金额等核心指标。
+  columns:
+  - name: date_id
+    type: int
+    role: foreign_key
+    examples:
+    - 20250101
+    - 20250102
+    - 20250103
+    - 20250104
+    - 20250105
+    - 20250106
+    - 20250107
+    - 20250108
+    - 20250109
+    - 20250110
+    description: 关联时间维度的外键。
+    alias:
+    - 日期
+    - 下单日期
+  - name: order_amount
+    type: float
+    role: measure
+    examples:
+    - 899.0
+    - 8999.0
+    - 40.0
+    - 200.0
+    - 299.0
+    - 6999.0
+    - 9499.0
+    - 60.0
+    - 125.0
+    - 1399.0
+    description: 订单金额。
+    alias:
+    - 销售额
+    - 订单金额
+    - 收入
+  - name: order_quantity
+    type: int
+    role: measure
+    examples:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 8
+    - 10
+    - 12
+    - 25
+    description: 订单中商品的购买数量。
+    alias:
+    - 销量
+    - 购买数量
+    - 件数
+  - name: customer_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - C007
+    - C019
+    - C012
+    - C015
+    - C002
+    - C005
+    - C003
+    - C008
+    - C010
+    - C001
+    description: 关联客户维度的外键。
+    alias:
+    - 客户 ID
+    - 用户 ID
+  - name: order_id
+    type: varchar(30)
+    role: primary_key
+    examples:
+    - ORD20250103001
+    - ORD20250103002
+    - ORD20250102002
+    - ORD20250102001
+    - ORD20250104001
+    - ORD20250105001
+    - ORD20250106001
+    - ORD20250101002
+    - ORD20250101001
+    - ORD20250105002
+    description: 订单唯一标识。
+    alias:
+    - 订单 ID
+  - name: product_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - P013
+    - P001
+    - P008
+    - P014
+    - P010
+    - P003
+    - P006
+    - P002
+    - P011
+    - P012
+    description: 关联商品维度的外键。
+    alias:
+    - 商品 ID
+    - 产品 ID
+  - name: region_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - R003
+    - R006
+    - R002
+    - R004
+    - R001
+    - R005
+    description: 关联地区维度的外键。
+    alias:
+    - 地区 ID
+    - 区域 ID
+
+2026-06-25 17:42:00.221 | INFO     | app.agent.nodes.filter_metric:filter_metric:30 - LLM 选定: ['GMV']
+2026-06-25 17:42:00.221 | INFO     | app.agent.nodes.filter_metric:filter_metric:33 - 过滤后: 1 个指标
+2026-06-25 17:42:00.630 | INFO     | app.agent.nodes.filter_table:filter_table:28 - LLM 选定: {'dim_region': ['region_name', 'region_id'], 'fact_order': ['order_amount', 'region_id']}
+2026-06-25 17:42:00.631 | INFO     | app.agent.nodes.filter_table:filter_table:38 - 过滤后: 2 张表
+2026-06-25 17:42:00.634 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:32 - 日期上下文: {'date': '2026-06-25', 'weekday': 'Thursday', 'quarter': 'Q2'}
+2026-06-25 17:42:00.635 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:33 - 数据库上下文: {'dialect': 'MySQL', 'version': '8.0.46'}
+2026-06-25 17:42:00.636 | INFO     | app.agent.nodes.generate_sql:generate_sql:49 - 表结构:
+表: dim_region [dim] — 地区维度表，用于描述订单发生的地理区域信息。
+    region_name (varchar(50)) [dimension] — 订单所属的大区名称，如华东、华南等。
+    region_id (varchar(20)) [primary_key] — 地区唯一标识。  [主键]
+
+表: fact_order [fact] — 订单事实表，记录订单数量和金额等核心指标。
+    order_amount (float) [measure] — 订单金额。
+    region_id (varchar(20)) [foreign_key] — 关联地区维度的外键。  ← 关联 dim_region.region_id
+2026-06-25 17:42:01.554 | INFO     | app.agent.nodes.generate_sql:generate_sql:65 - 生成的 SQL:
+SELECT SUM(fo.order_amount) AS 销售总额
+FROM fact_order fo
+JOIN dim_region dr ON fo.region_id = dr.region_id
+WHERE dr.region_name = '华北';
+2026-06-25 17:42:22.194 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 17:42:23.122 | INFO     | app.agent.nodes.recall_value:recall_value:30 - 结巴关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 17:42:23.122 | INFO     | app.agent.nodes.recall_value:recall_value:31 - LLM扩展词: ['华北地区', '销售总额']
+2026-06-25 17:42:23.122 | INFO     | app.agent.nodes.recall_value:recall_value:32 - 最终取值召回关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 17:42:23.183 | INFO     | app.agent.nodes.recall_column:recall_column:30 - 结巴关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 17:42:23.183 | INFO     | app.agent.nodes.recall_column:recall_column:31 - LLM扩展词: ['地区', '销售金额', '统计日期']
+2026-06-25 17:42:23.183 | INFO     | app.agent.nodes.recall_column:recall_column:32 - 最终召回关键词: ['销售金额', '华北地区', '销售总额', '地区', '华北地区销售总额', '统计日期']
+2026-06-25 17:42:26.219 | INFO     | app.agent.nodes.recall_value:recall_value:46 - 取值召回结果: 1 条
+2026-06-25 17:42:26.220 | INFO     | app.agent.nodes.recall_value:recall_value:47 - 召回取值: ['华北']
+2026-06-25 17:42:26.222 | INFO     | app.agent.nodes.recall_metric:recall_metric:31 - 结巴关键词: ['华北地区销售总额', '华北地区', '销售总额']
+2026-06-25 17:42:26.223 | INFO     | app.agent.nodes.recall_metric:recall_metric:32 - LLM扩展词: ['销售总额', '销售额', 'GMV', '总销售额', '销售收入']
+2026-06-25 17:42:26.223 | INFO     | app.agent.nodes.recall_metric:recall_metric:33 - 最终指标召回关键词: ['GMV', '华北地区', '销售总额', '销售收入', '华北地区销售总额', '总销售额', '销售额']
+2026-06-25 17:42:29.665 | INFO     | app.agent.nodes.recall_column:recall_column:48 - 字段召回结果: 5 个字段
+2026-06-25 17:42:29.666 | INFO     | app.agent.nodes.recall_column:recall_column:49 - 召回字段: ['fact_order.order_amount', 'dim_region.region_name', 'fact_order.order_quantity', 'fact_order.date_id', 'dim_date.date_id']
+2026-06-25 17:42:30.300 | INFO     | app.agent.nodes.recall_metric:recall_metric:48 - 指标召回结果: 2 个指标
+2026-06-25 17:42:30.300 | INFO     | app.agent.nodes.recall_metric:recall_metric:49 - 召回指标: ['GMV', 'AOV']
+2026-06-25 17:42:30.324 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:46 - MySQL 补全: 16 个字段(含主外键), 3 张表
+2026-06-25 17:42:30.324 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:79 - 合并结果: 3 张表, 2 个指标
+2026-06-25 17:42:30.325 | INFO     | app.agent.nodes.filter_metric:filter_metric:25 - 候选指标: ["GMV", "AOV"]
+2026-06-25 17:42:30.332 | INFO     | app.agent.nodes.filter_table:filter_table:23 - 候选表 YAML:
+- name: dim_date
+  role: dim
+  description: 时间维度表，用于多时间粒度分析。
+  columns:
+  - name: date_id
+    type: int
+    role: primary_key
+    examples:
+    - 20250101
+    - 20250102
+    - 20250103
+    - 20250104
+    - 20250105
+    - 20250106
+    - 20250107
+    - 20250108
+    - 20250109
+    - 20250110
+    description: 日期唯一标识，格式 yyyyMMdd。
+    alias:
+    - 日期 ID
+    - 日期
+  - name: day
+    type: int
+    role: dimension
+    examples:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    description: 日。
+    alias:
+    - 日
+    - 天
+  - name: month
+    type: int
+    role: dimension
+    examples:
+    - 1
+    - 2
+    - 3
+    description: 月份。
+    alias:
+    - 月
+    - 月份
+  - name: quarter
+    type: varchar(2)
+    role: dimension
+    examples:
+    - Q1
+    description: 季度。
+    alias:
+    - 季度
+  - name: year
+    type: int
+    role: dimension
+    examples:
+    - 2025
+    description: 年份。
+    alias:
+    - 年
+    - 年份
+- name: dim_region
+  role: dim
+  description: 地区维度表，用于描述订单发生的地理区域信息。
+  columns:
+  - name: region_name
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 西南
+    - 华东
+    - 华中
+    - 华南
+    - 华北
+    description: 订单所属的大区名称，如华东、华南等。
+    alias:
+    - 地区
+    - 区域
+    - 大区
+  - name: country
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 中国
+    description: 地区所属国家名称。
+    alias:
+    - 国家
+    - 国家名称
+  - name: province
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 湖北省
+    - 广东省
+    - 四川省
+    - 浙江省
+    - 北京市
+    - 上海市
+    description: 订单所属的省份名称。
+    alias:
+    - 省份
+    - 省
+    - 所在省份
+  - name: region_id
+    type: varchar(20)
+    role: primary_key
+    examples:
+    - R002
+    - R001
+    - R003
+    - R005
+    - R004
+    - R006
+    description: 地区唯一标识。
+    alias:
+    - 地区 ID
+    - 区域 ID
+- name: fact_order
+  role: fact
+  description: 订单事实表，记录订单数量和金额等核心指标。
+  columns:
+  - name: date_id
+    type: int
+    role: foreign_key
+    examples:
+    - 20250101
+    - 20250102
+    - 20250103
+    - 20250104
+    - 20250105
+    - 20250106
+    - 20250107
+    - 20250108
+    - 20250109
+    - 20250110
+    description: 关联时间维度的外键。
+    alias:
+    - 日期
+    - 下单日期
+  - name: order_amount
+    type: float
+    role: measure
+    examples:
+    - 899.0
+    - 8999.0
+    - 40.0
+    - 200.0
+    - 299.0
+    - 6999.0
+    - 9499.0
+    - 60.0
+    - 125.0
+    - 1399.0
+    description: 订单金额。
+    alias:
+    - 销售额
+    - 订单金额
+    - 收入
+  - name: order_quantity
+    type: int
+    role: measure
+    examples:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 8
+    - 10
+    - 12
+    - 25
+    description: 订单中商品的购买数量。
+    alias:
+    - 销量
+    - 购买数量
+    - 件数
+  - name: customer_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - C010
+    - C019
+    - C007
+    - C003
+    - C008
+    - C012
+    - C015
+    - C005
+    - C001
+    - C002
+    description: 关联客户维度的外键。
+    alias:
+    - 客户 ID
+    - 用户 ID
+  - name: order_id
+    type: varchar(30)
+    role: primary_key
+    examples:
+    - ORD20250104001
+    - ORD20250105001
+    - ORD20250102001
+    - ORD20250103001
+    - ORD20250106001
+    - ORD20250105002
+    - ORD20250101002
+    - ORD20250101001
+    - ORD20250103002
+    - ORD20250102002
+    description: 订单唯一标识。
+    alias:
+    - 订单 ID
+  - name: product_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - P001
+    - P011
+    - P003
+    - P013
+    - P002
+    - P006
+    - P014
+    - P010
+    - P012
+    - P008
+    description: 关联商品维度的外键。
+    alias:
+    - 商品 ID
+    - 产品 ID
+  - name: region_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - R002
+    - R001
+    - R003
+    - R005
+    - R004
+    - R006
+    description: 关联地区维度的外键。
+    alias:
+    - 地区 ID
+    - 区域 ID
+
+2026-06-25 17:42:30.991 | INFO     | app.agent.nodes.filter_metric:filter_metric:30 - LLM 选定: ['GMV']
+2026-06-25 17:42:30.991 | INFO     | app.agent.nodes.filter_metric:filter_metric:33 - 过滤后: 1 个指标
+2026-06-25 17:42:31.369 | INFO     | app.agent.nodes.filter_table:filter_table:28 - LLM 选定: {'dim_region': ['region_name', 'region_id'], 'fact_order': ['order_amount', 'region_id']}
+2026-06-25 17:42:31.369 | INFO     | app.agent.nodes.filter_table:filter_table:38 - 过滤后: 2 张表
+2026-06-25 17:42:31.372 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:32 - 日期上下文: {'date': '2026-06-25', 'weekday': 'Thursday', 'quarter': 'Q2'}
+2026-06-25 17:42:31.372 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:33 - 数据库上下文: {'dialect': 'MySQL', 'version': '8.0.46'}
+2026-06-25 17:42:31.373 | INFO     | app.agent.nodes.generate_sql:generate_sql:49 - 表结构:
+表: dim_region [dim] — 地区维度表，用于描述订单发生的地理区域信息。
+    region_name (varchar(50)) [dimension] — 订单所属的大区名称，如华东、华南等。
+    region_id (varchar(20)) [primary_key] — 地区唯一标识。  [主键]
+
+表: fact_order [fact] — 订单事实表，记录订单数量和金额等核心指标。
+    order_amount (float) [measure] — 订单金额。
+    region_id (varchar(20)) [foreign_key] — 关联地区维度的外键。  ← 关联 dim_region.region_id
+2026-06-25 17:42:32.149 | INFO     | app.agent.nodes.generate_sql:generate_sql:65 - 生成的 SQL:
+SELECT SUM(fo.order_amount) AS 销售总额
+FROM fact_order fo
+JOIN dim_region dr ON fo.region_id = dr.region_id
+WHERE dr.region_name = '华北';
+2026-06-25 17:43:39.506 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['销售总额', '华北地区', '华北地区销售总额']
+2026-06-25 17:43:42.868 | INFO     | app.agent.nodes.recall_metric:recall_metric:31 - 结巴关键词: ['销售总额', '华北地区', '华北地区销售总额']
+2026-06-25 17:43:42.868 | INFO     | app.agent.nodes.recall_metric:recall_metric:32 - LLM扩展词: ['销售总额', '销售额', '总销售金额', 'GMV', '营收']
+2026-06-25 17:43:42.868 | INFO     | app.agent.nodes.recall_metric:recall_metric:33 - 最终指标召回关键词: ['华北地区', 'GMV', '销售总额', '总销售金额', '华北地区销售总额', '销售额', '营收']
+2026-06-25 17:43:45.904 | INFO     | app.agent.nodes.recall_column:recall_column:30 - 结巴关键词: ['销售总额', '华北地区', '华北地区销售总额']
+2026-06-25 17:43:45.904 | INFO     | app.agent.nodes.recall_column:recall_column:31 - LLM扩展词: ['地区', '销售金额']
+2026-06-25 17:43:45.904 | INFO     | app.agent.nodes.recall_column:recall_column:32 - 最终召回关键词: ['华北地区', '销售总额', '华北地区销售总额', '地区', '销售金额']
+2026-06-25 17:43:48.650 | INFO     | app.agent.nodes.recall_column:recall_column:48 - 字段召回结果: 3 个字段
+2026-06-25 17:43:48.651 | INFO     | app.agent.nodes.recall_column:recall_column:49 - 召回字段: ['dim_region.region_name', 'fact_order.order_amount', 'fact_order.order_quantity']
+2026-06-25 17:43:49.112 | INFO     | app.agent.nodes.recall_value:recall_value:30 - 结巴关键词: ['销售总额', '华北地区', '华北地区销售总额']
+2026-06-25 17:43:49.113 | INFO     | app.agent.nodes.recall_value:recall_value:31 - LLM扩展词: ['华北地区']
+2026-06-25 17:43:49.113 | INFO     | app.agent.nodes.recall_value:recall_value:32 - 最终取值召回关键词: ['销售总额', '华北地区', '华北地区销售总额']
+2026-06-25 17:43:49.134 | INFO     | app.agent.nodes.recall_metric:recall_metric:48 - 指标召回结果: 2 个指标
+2026-06-25 17:43:49.134 | INFO     | app.agent.nodes.recall_metric:recall_metric:49 - 召回指标: ['GMV', 'AOV']
+2026-06-25 17:43:49.143 | INFO     | app.agent.nodes.recall_value:recall_value:46 - 取值召回结果: 1 条
+2026-06-25 17:43:49.143 | INFO     | app.agent.nodes.recall_value:recall_value:47 - 召回取值: ['华北']
+2026-06-25 17:43:49.166 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:46 - MySQL 补全: 11 个字段(含主外键), 2 张表
+2026-06-25 17:43:49.166 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:79 - 合并结果: 2 张表, 2 个指标
+2026-06-25 17:43:49.167 | INFO     | app.agent.nodes.filter_metric:filter_metric:25 - 候选指标: ["GMV", "AOV"]
+2026-06-25 17:43:49.171 | INFO     | app.agent.nodes.filter_table:filter_table:23 - 候选表 YAML:
+- name: dim_region
+  role: dim
+  description: 地区维度表，用于描述订单发生的地理区域信息。
+  columns:
+  - name: region_name
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 西南
+    - 华北
+    - 华南
+    - 华中
+    - 华东
+    description: 订单所属的大区名称，如华东、华南等。
+    alias:
+    - 地区
+    - 区域
+    - 大区
+  - name: country
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 中国
+    description: 地区所属国家名称。
+    alias:
+    - 国家
+    - 国家名称
+  - name: province
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 上海市
+    - 四川省
+    - 广东省
+    - 浙江省
+    - 湖北省
+    - 北京市
+    description: 订单所属的省份名称。
+    alias:
+    - 省份
+    - 省
+    - 所在省份
+  - name: region_id
+    type: varchar(20)
+    role: primary_key
+    examples:
+    - R006
+    - R003
+    - R001
+    - R004
+    - R005
+    - R002
+    description: 地区唯一标识。
+    alias:
+    - 地区 ID
+    - 区域 ID
+- name: fact_order
+  role: fact
+  description: 订单事实表，记录订单数量和金额等核心指标。
+  columns:
+  - name: order_amount
+    type: float
+    role: measure
+    examples:
+    - 899.0
+    - 8999.0
+    - 40.0
+    - 200.0
+    - 299.0
+    - 6999.0
+    - 9499.0
+    - 60.0
+    - 125.0
+    - 1399.0
+    description: 订单金额。
+    alias:
+    - 销售额
+    - 订单金额
+    - 收入
+  - name: order_quantity
+    type: int
+    role: measure
+    examples:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 8
+    - 10
+    - 12
+    - 25
+    description: 订单中商品的购买数量。
+    alias:
+    - 销量
+    - 购买数量
+    - 件数
+  - name: customer_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - C007
+    - C012
+    - C001
+    - C010
+    - C005
+    - C015
+    - C003
+    - C008
+    - C019
+    - C002
+    description: 关联客户维度的外键。
+    alias:
+    - 客户 ID
+    - 用户 ID
+  - name: date_id
+    type: int
+    role: foreign_key
+    examples:
+    - 20250101
+    - 20250102
+    - 20250103
+    - 20250104
+    - 20250105
+    - 20250106
+    - 20250107
+    - 20250108
+    - 20250109
+    - 20250110
+    description: 关联时间维度的外键。
+    alias:
+    - 日期
+    - 下单日期
+  - name: order_id
+    type: varchar(30)
+    role: primary_key
+    examples:
+    - ORD20250103001
+    - ORD20250105001
+    - ORD20250102001
+    - ORD20250103002
+    - ORD20250104001
+    - ORD20250106001
+    - ORD20250102002
+    - ORD20250105002
+    - ORD20250101002
+    - ORD20250101001
+    description: 订单唯一标识。
+    alias:
+    - 订单 ID
+  - name: product_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - P012
+    - P011
+    - P008
+    - P003
+    - P002
+    - P014
+    - P001
+    - P010
+    - P013
+    - P006
+    description: 关联商品维度的外键。
+    alias:
+    - 商品 ID
+    - 产品 ID
+  - name: region_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - R006
+    - R003
+    - R001
+    - R004
+    - R005
+    - R002
+    description: 关联地区维度的外键。
+    alias:
+    - 地区 ID
+    - 区域 ID
+
+2026-06-25 17:43:51.537 | INFO     | app.agent.nodes.filter_metric:filter_metric:30 - LLM 选定: ['GMV']
+2026-06-25 17:43:51.537 | INFO     | app.agent.nodes.filter_metric:filter_metric:33 - 过滤后: 1 个指标
+2026-06-25 17:43:52.078 | INFO     | app.agent.nodes.filter_table:filter_table:28 - LLM 选定: {'dim_region': ['region_id', 'region_name'], 'fact_order': ['region_id', 'order_amount']}
+2026-06-25 17:43:52.078 | INFO     | app.agent.nodes.filter_table:filter_table:38 - 过滤后: 2 张表
+2026-06-25 17:43:52.085 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:32 - 日期上下文: {'date': '2026-06-25', 'weekday': 'Thursday', 'quarter': 'Q2'}
+2026-06-25 17:43:52.085 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:33 - 数据库上下文: {'dialect': 'MySQL', 'version': '8.0.46'}
+2026-06-25 17:43:52.086 | INFO     | app.agent.nodes.generate_sql:generate_sql:49 - 表结构:
+表: dim_region [dim] — 地区维度表，用于描述订单发生的地理区域信息。
+    region_name (varchar(50)) [dimension] — 订单所属的大区名称，如华东、华南等。
+    region_id (varchar(20)) [primary_key] — 地区唯一标识。  [主键]
+
+表: fact_order [fact] — 订单事实表，记录订单数量和金额等核心指标。
+    order_amount (float) [measure] — 订单金额。
+    region_id (varchar(20)) [foreign_key] — 关联地区维度的外键。  ← 关联 dim_region.region_id
+2026-06-25 17:43:55.305 | INFO     | app.agent.nodes.generate_sql:generate_sql:65 - 生成的 SQL:
+SELECT SUM(f.order_amount) AS 销售总额
+FROM fact_order f
+JOIN dim_region r ON f.region_id = r.region_id
+WHERE r.region_name = '华北'
+2026-06-25 17:50:54.055 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['华北地区', '华北地区销售总额', '销售总额']
+2026-06-25 17:50:56.209 | INFO     | app.agent.nodes.recall_metric:recall_metric:31 - 结巴关键词: ['华北地区', '华北地区销售总额', '销售总额']
+2026-06-25 17:50:56.209 | INFO     | app.agent.nodes.recall_metric:recall_metric:32 - LLM扩展词: ['销售总额', '销售收入', '总销售额', 'GMV', '交易总额']
+2026-06-25 17:50:56.209 | INFO     | app.agent.nodes.recall_metric:recall_metric:33 - 最终指标召回关键词: ['华北地区', '总销售额', '销售收入', '华北地区销售总额', '交易总额', '销售总额', 'GMV']
+2026-06-25 17:50:59.287 | INFO     | app.agent.nodes.recall_column:recall_column:30 - 结巴关键词: ['华北地区', '华北地区销售总额', '销售总额']
+2026-06-25 17:50:59.287 | INFO     | app.agent.nodes.recall_column:recall_column:31 - LLM扩展词: ['地区', '销售金额']
+2026-06-25 17:50:59.287 | INFO     | app.agent.nodes.recall_column:recall_column:32 - 最终召回关键词: ['华北地区', '地区', '销售金额', '华北地区销售总额', '销售总额']
+2026-06-25 17:50:59.288 | INFO     | app.agent.nodes.recall_value:recall_value:30 - 结巴关键词: ['华北地区', '华北地区销售总额', '销售总额']
+2026-06-25 17:50:59.288 | INFO     | app.agent.nodes.recall_value:recall_value:31 - LLM扩展词: ['华北']
+2026-06-25 17:50:59.288 | INFO     | app.agent.nodes.recall_value:recall_value:32 - 最终取值召回关键词: ['华北地区', '华北', '销售总额', '华北地区销售总额']
+2026-06-25 17:50:59.343 | INFO     | app.agent.nodes.recall_value:recall_value:46 - 取值召回结果: 1 条
+2026-06-25 17:50:59.343 | INFO     | app.agent.nodes.recall_value:recall_value:47 - 召回取值: ['华北']
+2026-06-25 17:51:01.917 | INFO     | app.agent.nodes.recall_column:recall_column:48 - 字段召回结果: 3 个字段
+2026-06-25 17:51:01.918 | INFO     | app.agent.nodes.recall_column:recall_column:49 - 召回字段: ['dim_region.region_name', 'fact_order.order_amount', 'fact_order.order_quantity']
+2026-06-25 17:51:02.412 | INFO     | app.agent.nodes.recall_metric:recall_metric:48 - 指标召回结果: 2 个指标
+2026-06-25 17:51:02.412 | INFO     | app.agent.nodes.recall_metric:recall_metric:49 - 召回指标: ['GMV', 'AOV']
+2026-06-25 17:51:02.434 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:46 - MySQL 补全: 11 个字段(含主外键), 2 张表
+2026-06-25 17:51:02.434 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:79 - 合并结果: 2 张表, 2 个指标
+2026-06-25 17:51:02.435 | INFO     | app.agent.nodes.filter_metric:filter_metric:25 - 候选指标: ["GMV", "AOV"]
+2026-06-25 17:51:02.440 | INFO     | app.agent.nodes.filter_table:filter_table:23 - 候选表 YAML:
+- name: dim_region
+  role: dim
+  description: 地区维度表，用于描述订单发生的地理区域信息。
+  columns:
+  - name: region_name
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 华中
+    - 华南
+    - 华东
+    - 华北
+    - 西南
+    description: 订单所属的大区名称，如华东、华南等。
+    alias:
+    - 地区
+    - 区域
+    - 大区
+  - name: country
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 中国
+    description: 地区所属国家名称。
+    alias:
+    - 国家
+    - 国家名称
+  - name: province
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 四川省
+    - 广东省
+    - 浙江省
+    - 上海市
+    - 湖北省
+    - 北京市
+    description: 订单所属的省份名称。
+    alias:
+    - 省份
+    - 省
+    - 所在省份
+  - name: region_id
+    type: varchar(20)
+    role: primary_key
+    examples:
+    - R004
+    - R001
+    - R002
+    - R006
+    - R005
+    - R003
+    description: 地区唯一标识。
+    alias:
+    - 地区 ID
+    - 区域 ID
+- name: fact_order
+  role: fact
+  description: 订单事实表，记录订单数量和金额等核心指标。
+  columns:
+  - name: order_amount
+    type: float
+    role: measure
+    examples:
+    - 899.0
+    - 8999.0
+    - 40.0
+    - 200.0
+    - 299.0
+    - 6999.0
+    - 9499.0
+    - 60.0
+    - 125.0
+    - 1399.0
+    description: 订单金额。
+    alias:
+    - 销售额
+    - 订单金额
+    - 收入
+  - name: order_quantity
+    type: int
+    role: measure
+    examples:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 8
+    - 10
+    - 12
+    - 25
+    description: 订单中商品的购买数量。
+    alias:
+    - 销量
+    - 购买数量
+    - 件数
+  - name: customer_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - C010
+    - C012
+    - C005
+    - C003
+    - C015
+    - C007
+    - C002
+    - C001
+    - C008
+    - C019
+    description: 关联客户维度的外键。
+    alias:
+    - 客户 ID
+    - 用户 ID
+  - name: date_id
+    type: int
+    role: foreign_key
+    examples:
+    - 20250101
+    - 20250102
+    - 20250103
+    - 20250104
+    - 20250105
+    - 20250106
+    - 20250107
+    - 20250108
+    - 20250109
+    - 20250110
+    description: 关联时间维度的外键。
+    alias:
+    - 日期
+    - 下单日期
+  - name: order_id
+    type: varchar(30)
+    role: primary_key
+    examples:
+    - ORD20250103001
+    - ORD20250103002
+    - ORD20250102002
+    - ORD20250104001
+    - ORD20250101002
+    - ORD20250106001
+    - ORD20250105001
+    - ORD20250102001
+    - ORD20250105002
+    - ORD20250101001
+    description: 订单唯一标识。
+    alias:
+    - 订单 ID
+  - name: product_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - P008
+    - P011
+    - P012
+    - P002
+    - P003
+    - P014
+    - P001
+    - P006
+    - P013
+    - P010
+    description: 关联商品维度的外键。
+    alias:
+    - 商品 ID
+    - 产品 ID
+  - name: region_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - R004
+    - R001
+    - R002
+    - R006
+    - R005
+    - R003
+    description: 关联地区维度的外键。
+    alias:
+    - 地区 ID
+    - 区域 ID
+
+2026-06-25 17:51:04.720 | INFO     | app.agent.nodes.filter_metric:filter_metric:30 - LLM 选定: ['GMV']
+2026-06-25 17:51:04.720 | INFO     | app.agent.nodes.filter_metric:filter_metric:33 - 过滤后: 1 个指标
+2026-06-25 17:51:05.669 | INFO     | app.agent.nodes.filter_table:filter_table:28 - LLM 选定: {'dim_region': ['region_name', 'region_id'], 'fact_order': ['order_amount', 'region_id']}
+2026-06-25 17:51:05.669 | INFO     | app.agent.nodes.filter_table:filter_table:38 - 过滤后: 2 张表
+2026-06-25 17:51:05.672 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:32 - 日期上下文: {'date': '2026-06-25', 'weekday': 'Thursday', 'quarter': 'Q2'}
+2026-06-25 17:51:05.672 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:33 - 数据库上下文: {'dialect': 'MySQL', 'version': '8.0.46'}
+2026-06-25 17:51:05.673 | INFO     | app.agent.nodes.generate_sql:generate_sql:49 - 表结构:
+表: dim_region [dim] — 地区维度表，用于描述订单发生的地理区域信息。
+    region_name (varchar(50)) [dimension] — 订单所属的大区名称，如华东、华南等。
+    region_id (varchar(20)) [primary_key] — 地区唯一标识。  [主键]
+
+表: fact_order [fact] — 订单事实表，记录订单数量和金额等核心指标。
+    order_amount (float) [measure] — 订单金额。
+    region_id (varchar(20)) [foreign_key] — 关联地区维度的外键。  ← 关联 dim_region.region_id
+2026-06-25 17:51:08.449 | INFO     | app.agent.nodes.generate_sql:generate_sql:65 - 生成的 SQL:
+SELECT SUM(fact_order.order_amount) AS '销售总额'
+FROM fact_order
+JOIN dim_region ON fact_order.region_id = dim_region.region_id
+WHERE dim_region.region_name = '华北';
+2026-06-25 17:51:08.449 | INFO     | app.agent.nodes.validate_sql:validate_sql:16 - 待校验 SQL: SELECT SUM(fact_order.order_amount) AS '销售总额'
+FROM fact_order
+JOIN dim_region ON fact_order.region_id = dim_region.region_id
+WHERE dim_region.region_name = '华北';
+2026-06-25 17:51:08.601 | INFO     | app.agent.nodes.validate_sql:validate_sql:23 - SQL 校验通过
+2026-06-25 17:58:05.334 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['销售总额', '华北地区', '华北地区销售总额']
+2026-06-25 17:58:07.572 | INFO     | app.agent.nodes.recall_column:recall_column:30 - 结巴关键词: ['销售总额', '华北地区', '华北地区销售总额']
+2026-06-25 17:58:07.573 | INFO     | app.agent.nodes.recall_column:recall_column:31 - LLM扩展词: ['地区', '销售金额']
+2026-06-25 17:58:07.573 | INFO     | app.agent.nodes.recall_column:recall_column:32 - 最终召回关键词: ['华北地区', '地区', '销售金额', '华北地区销售总额', '销售总额']
+2026-06-25 17:58:10.666 | INFO     | app.agent.nodes.recall_value:recall_value:30 - 结巴关键词: ['销售总额', '华北地区', '华北地区销售总额']
+2026-06-25 17:58:10.666 | INFO     | app.agent.nodes.recall_value:recall_value:31 - LLM扩展词: ['华北']
+2026-06-25 17:58:10.666 | INFO     | app.agent.nodes.recall_value:recall_value:32 - 最终取值召回关键词: ['销售总额', '华北地区', '华北', '华北地区销售总额']
+2026-06-25 17:58:10.667 | INFO     | app.agent.nodes.recall_metric:recall_metric:31 - 结巴关键词: ['销售总额', '华北地区', '华北地区销售总额']
+2026-06-25 17:58:10.667 | INFO     | app.agent.nodes.recall_metric:recall_metric:32 - LLM扩展词: ['销售总额', '销售额', '总销售额', '成交总额', '交易总额', 'GMV']
+2026-06-25 17:58:10.667 | INFO     | app.agent.nodes.recall_metric:recall_metric:33 - 最终指标召回关键词: ['交易总额', '成交总额', '华北地区', '销售额', 'GMV', '华北地区销售总额', '销售总额', '总销售额']
+2026-06-25 17:58:10.709 | INFO     | app.agent.nodes.recall_value:recall_value:46 - 取值召回结果: 1 条
+2026-06-25 17:58:10.710 | INFO     | app.agent.nodes.recall_value:recall_value:47 - 召回取值: ['华北']
+2026-06-25 17:58:13.706 | INFO     | app.agent.nodes.recall_column:recall_column:48 - 字段召回结果: 3 个字段
+2026-06-25 17:58:13.706 | INFO     | app.agent.nodes.recall_column:recall_column:49 - 召回字段: ['dim_region.region_name', 'fact_order.order_amount', 'fact_order.order_quantity']
+2026-06-25 17:58:14.986 | INFO     | app.agent.nodes.recall_metric:recall_metric:48 - 指标召回结果: 2 个指标
+2026-06-25 17:58:14.986 | INFO     | app.agent.nodes.recall_metric:recall_metric:49 - 召回指标: ['GMV', 'AOV']
+2026-06-25 17:58:15.010 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:46 - MySQL 补全: 11 个字段(含主外键), 2 张表
+2026-06-25 17:58:15.010 | INFO     | app.agent.nodes.merge_retrieved_info:merge_retrieved_info:79 - 合并结果: 2 张表, 2 个指标
+2026-06-25 17:58:15.011 | INFO     | app.agent.nodes.filter_metric:filter_metric:25 - 候选指标: ["GMV", "AOV"]
+2026-06-25 17:58:15.016 | INFO     | app.agent.nodes.filter_table:filter_table:23 - 候选表 YAML:
+- name: dim_region
+  role: dim
+  description: 地区维度表，用于描述订单发生的地理区域信息。
+  columns:
+  - name: region_name
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 华南
+    - 华东
+    - 西南
+    - 华北
+    - 华中
+    description: 订单所属的大区名称，如华东、华南等。
+    alias:
+    - 地区
+    - 区域
+    - 大区
+  - name: country
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 中国
+    description: 地区所属国家名称。
+    alias:
+    - 国家
+    - 国家名称
+  - name: province
+    type: varchar(50)
+    role: dimension
+    examples:
+    - 北京市
+    - 湖北省
+    - 浙江省
+    - 上海市
+    - 四川省
+    - 广东省
+    description: 订单所属的省份名称。
+    alias:
+    - 省份
+    - 省
+    - 所在省份
+  - name: region_id
+    type: varchar(20)
+    role: primary_key
+    examples:
+    - R005
+    - R001
+    - R003
+    - R002
+    - R006
+    - R004
+    description: 地区唯一标识。
+    alias:
+    - 地区 ID
+    - 区域 ID
+- name: fact_order
+  role: fact
+  description: 订单事实表，记录订单数量和金额等核心指标。
+  columns:
+  - name: order_amount
+    type: float
+    role: measure
+    examples:
+    - 899.0
+    - 8999.0
+    - 40.0
+    - 200.0
+    - 299.0
+    - 6999.0
+    - 9499.0
+    - 60.0
+    - 125.0
+    - 1399.0
+    description: 订单金额。
+    alias:
+    - 销售额
+    - 订单金额
+    - 收入
+  - name: order_quantity
+    type: int
+    role: measure
+    examples:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 8
+    - 10
+    - 12
+    - 25
+    description: 订单中商品的购买数量。
+    alias:
+    - 销量
+    - 购买数量
+    - 件数
+  - name: customer_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - C008
+    - C007
+    - C015
+    - C010
+    - C002
+    - C019
+    - C003
+    - C001
+    - C005
+    - C012
+    description: 关联客户维度的外键。
+    alias:
+    - 客户 ID
+    - 用户 ID
+  - name: date_id
+    type: int
+    role: foreign_key
+    examples:
+    - 20250101
+    - 20250102
+    - 20250103
+    - 20250104
+    - 20250105
+    - 20250106
+    - 20250107
+    - 20250108
+    - 20250109
+    - 20250110
+    description: 关联时间维度的外键。
+    alias:
+    - 日期
+    - 下单日期
+  - name: order_id
+    type: varchar(30)
+    role: primary_key
+    examples:
+    - ORD20250102001
+    - ORD20250101001
+    - ORD20250103002
+    - ORD20250104001
+    - ORD20250105001
+    - ORD20250103001
+    - ORD20250101002
+    - ORD20250105002
+    - ORD20250102002
+    - ORD20250106001
+    description: 订单唯一标识。
+    alias:
+    - 订单 ID
+  - name: product_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - P008
+    - P014
+    - P002
+    - P011
+    - P001
+    - P012
+    - P006
+    - P003
+    - P010
+    - P013
+    description: 关联商品维度的外键。
+    alias:
+    - 商品 ID
+    - 产品 ID
+  - name: region_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - R005
+    - R001
+    - R004
+    - R002
+    - R006
+    - R003
+    description: 关联地区维度的外键。
+    alias:
+    - 地区 ID
+    - 区域 ID
+
+2026-06-25 17:58:16.823 | INFO     | app.agent.nodes.filter_metric:filter_metric:30 - LLM 选定: ['GMV']
+2026-06-25 17:58:16.823 | INFO     | app.agent.nodes.filter_metric:filter_metric:33 - 过滤后: 1 个指标
+2026-06-25 17:58:18.235 | INFO     | app.agent.nodes.filter_table:filter_table:28 - LLM 选定: {'dim_region': ['region_name', 'region_id'], 'fact_order': ['region_id', 'order_amount']}
+2026-06-25 17:58:18.235 | INFO     | app.agent.nodes.filter_table:filter_table:38 - 过滤后: 2 张表
+2026-06-25 17:58:18.238 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:32 - 日期上下文: {'date': '2026-06-25', 'weekday': 'Thursday', 'quarter': 'Q2'}
+2026-06-25 17:58:18.239 | INFO     | app.agent.nodes.add_extra_context:add_extra_context:33 - 数据库上下文: {'dialect': 'MySQL', 'version': '8.0.46'}
+2026-06-25 17:58:18.239 | INFO     | app.agent.nodes.generate_sql:generate_sql:49 - 表结构:
+表: dim_region [dim] — 地区维度表，用于描述订单发生的地理区域信息。
+    region_name (varchar(50)) [dimension] — 订单所属的大区名称，如华东、华南等。
+    region_id (varchar(20)) [primary_key] — 地区唯一标识。  [主键]
+
+表: fact_order [fact] — 订单事实表，记录订单数量和金额等核心指标。
+    order_amount (float) [measure] — 订单金额。
+    region_id (varchar(20)) [foreign_key] — 关联地区维度的外键。  ← 关联 dim_region.region_id
+2026-06-25 17:58:23.029 | INFO     | app.agent.nodes.generate_sql:generate_sql:65 - 生成的 SQL:
+SELECT SUM(f.order_amount) AS 销售总额
+FROM fact_order f
+JOIN dim_region r ON f.region_id = r.region_id
+WHERE r.region_name = '华北'
+2026-06-25 17:58:23.029 | INFO     | app.agent.nodes.validate_sql:validate_sql:16 - 待校验 SQL: SELECT SUM(f.order_amount) AS 销售总额
+FROM fact_order f
+JOIN dim_region r ON f.region_id = r.region_id
+WHERE r.region_name = '华北'
+2026-06-25 17:58:23.041 | INFO     | app.agent.nodes.validate_sql:validate_sql:23 - SQL 校验通过
+2026-06-25 17:58:23.043 | INFO     | app.agent.nodes.run_sql:run_sql:24 - SQL 结果: 1 行
+2026-06-25 17:58:23.044 | INFO     | app.agent.nodes.run_sql:run_sql:25 - 数据: [{'销售总额': 41099.5}]

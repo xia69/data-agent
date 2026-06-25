@@ -48,3 +48,28 @@ class MetaMySQLRepository:
         if conditions:
             await self.session.execute(delete(ColumnMetricMySQL).where(or_(*conditions)))
         self.session.add_all([ColumnMetricMapper.to_model(column_metric) for column_metric in column_metrics])
+
+    async def get_column_infos_by_ids(self, column_ids: list[str]) -> list[ColumnInfo]:
+        if not column_ids:
+            return []
+        from sqlalchemy import select
+        result = await self.session.execute(
+            select(ColumnInfoMySQL).where(ColumnInfoMySQL.id.in_(column_ids))
+        )
+        return [ColumnInfoMapper.to_entity(row) for row in result.scalars()]
+
+    async def get_table_infos_by_ids(self, table_ids: list[str]) -> list[TableInfo]:
+        if not table_ids:
+            return []
+        from sqlalchemy import select
+        result = await self.session.execute(
+            select(TableInfoMySQL).where(TableInfoMySQL.id.in_(table_ids))
+        )
+        return [TableInfoMapper.to_entity(row) for row in result.scalars()]
+
+    async def get_all_columns_by_table_id(self, table_id: str) -> list[ColumnInfo]:
+        from sqlalchemy import select
+        result = await self.session.execute(
+            select(ColumnInfoMySQL).where(ColumnInfoMySQL.table_id == table_id)
+        )
+        return [ColumnInfoMapper.to_entity(row) for row in result.scalars()]

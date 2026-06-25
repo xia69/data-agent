@@ -1,35 +1,239 @@
-Building prefix dict from the default dictionary ...
-Loading model from cache C:\Users\xjx\AppData\Local\Temp\jieba.cache
 D:\agent\data-agent\.venv\Lib\site-packages\qdrant_client\async_qdrant_remote.py:225: UserWarning: Qdrant client version 1.18.0 is incompatible with server version 1.16.3. Major versions should match and minor version difference must not exceed 1. Set check_compatibility=False to skip version check.
   show_warning(
-Loading model cost 0.576 seconds.
+Building prefix dict from the default dictionary ...
+Loading model from cache C:\Users\xjx\AppData\Local\Temp\jieba.cache
+Loading model cost 0.600 seconds.
 Prefix dict has been built successfully.
 ¿ªÊ¼²âÊÔ Agent Í¼...
-[32m2026-06-25 14:28:34.814[0m | [1mINFO    [0m | [36mapp.agent.nodes.extract_keywords[0m:[36mextract_keywords[0m:[36m34[0m - [1m¹Ø¼ü´Ê: ['»ª±±µØÇøÏúÊÛ×Ü¶î', '»ª±±µØÇø', 'ÏúÊÛ×Ü¶î'][0m
+[32m2026-06-25 17:32:46.890[0m | [1mINFO    [0m | [36mapp.agent.nodes.extract_keywords[0m:[36mextract_keywords[0m:[36m34[0m - [1m¹Ø¼ü´Ê: ['ÏúÊÛ×Ü¶î', '»ª±±µØÇøÏúÊÛ×Ü¶î', '»ª±±µØÇø'][0m
 ÌáÈ¡¹Ø¼ü´Ê...
 ÕÙ»Ø×Ö¶ÎÖĞ...
 ÕÙ»ØÖ¸±êÖĞ...
 ÕÙ»ØÈ¡ÖµÖĞ...
-[32m2026-06-25 14:28:36.382[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_metric[0m:[36mrecall_metric[0m:[36m31[0m - [1m½á°Í¹Ø¼ü´Ê: ['»ª±±µØÇøÏúÊÛ×Ü¶î', '»ª±±µØÇø', 'ÏúÊÛ×Ü¶î'][0m
-[32m2026-06-25 14:28:36.383[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_metric[0m:[36mrecall_metric[0m:[36m32[0m - [1mLLMÀ©Õ¹´Ê: ['ÏúÊÛ×Ü¶î', 'ÏúÊÛ¶î', 'ÏúÊÛÊÕÈë', 'GMV', '½»Ò×¶î'][0m
-[32m2026-06-25 14:28:36.383[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_metric[0m:[36mrecall_metric[0m:[36m33[0m - [1m×îÖÕÖ¸±êÕÙ»Ø¹Ø¼ü´Ê: ['»ª±±µØÇø', 'ÏúÊÛ×Ü¶î', 'ÏúÊÛ¶î', 'ÏúÊÛÊÕÈë', '»ª±±µØÇøÏúÊÛ×Ü¶î', 'GMV', '½»Ò×¶î'][0m
-[32m2026-06-25 14:28:38.198[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_value[0m:[36mrecall_value[0m:[36m30[0m - [1m½á°Í¹Ø¼ü´Ê: ['»ª±±µØÇøÏúÊÛ×Ü¶î', '»ª±±µØÇø', 'ÏúÊÛ×Ü¶î'][0m
-[32m2026-06-25 14:28:38.198[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_value[0m:[36mrecall_value[0m:[36m31[0m - [1mLLMÀ©Õ¹´Ê: ['»ª±±µØÇø', 'ÏúÊÛ'][0m
-[32m2026-06-25 14:28:38.198[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_value[0m:[36mrecall_value[0m:[36m32[0m - [1m×îÖÕÈ¡ÖµÕÙ»Ø¹Ø¼ü´Ê: ['ÏúÊÛ', '»ª±±µØÇø', '»ª±±µØÇøÏúÊÛ×Ü¶î', 'ÏúÊÛ×Ü¶î'][0m
-[32m2026-06-25 14:28:38.266[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_value[0m:[36mrecall_value[0m:[36m46[0m - [1mÈ¡ÖµÕÙ»Ø½á¹û: 1 Ìõ[0m
-[32m2026-06-25 14:28:38.266[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_value[0m:[36mrecall_value[0m:[36m47[0m - [1mÕÙ»ØÈ¡Öµ: ['»ª±±'][0m
-[32m2026-06-25 14:28:38.381[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_column[0m:[36mrecall_column[0m:[36m30[0m - [1m½á°Í¹Ø¼ü´Ê: ['»ª±±µØÇøÏúÊÛ×Ü¶î', '»ª±±µØÇø', 'ÏúÊÛ×Ü¶î'][0m
-[32m2026-06-25 14:28:38.381[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_column[0m:[36mrecall_column[0m:[36m31[0m - [1mLLMÀ©Õ¹´Ê: ['ÏúÊÛ½ğ¶î', 'µØÇø'][0m
-[32m2026-06-25 14:28:38.381[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_column[0m:[36mrecall_column[0m:[36m32[0m - [1m×îÖÕÕÙ»Ø¹Ø¼ü´Ê: ['µØÇø', '»ª±±µØÇø', 'ÏúÊÛ×Ü¶î', '»ª±±µØÇøÏúÊÛ×Ü¶î', 'ÏúÊÛ½ğ¶î'][0m
-[32m2026-06-25 14:28:38.579[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_metric[0m:[36mrecall_metric[0m:[36m48[0m - [1mÖ¸±êÕÙ»Ø½á¹û: 2 ¸öÖ¸±ê[0m
-[32m2026-06-25 14:28:38.579[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_metric[0m:[36mrecall_metric[0m:[36m49[0m - [1mÕÙ»ØÖ¸±ê: ['GMV', 'AOV'][0m
-[32m2026-06-25 14:28:39.867[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_column[0m:[36mrecall_column[0m:[36m48[0m - [1m×Ö¶ÎÕÙ»Ø½á¹û: 3 ¸ö×Ö¶Î[0m
-[32m2026-06-25 14:28:39.867[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_column[0m:[36mrecall_column[0m:[36m49[0m - [1mÕÙ»Ø×Ö¶Î: ['dim_region.region_name', 'fact_order.order_amount', 'fact_order.order_quantity'][0m
+[32m2026-06-25 17:32:49.619[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_value[0m:[36mrecall_value[0m:[36m30[0m - [1m½á°Í¹Ø¼ü´Ê: ['ÏúÊÛ×Ü¶î', '»ª±±µØÇøÏúÊÛ×Ü¶î', '»ª±±µØÇø'][0m
+[32m2026-06-25 17:32:49.619[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_value[0m:[36mrecall_value[0m:[36m31[0m - [1mLLMÀ©Õ¹´Ê: ['»ª±±µØÇø'][0m
+[32m2026-06-25 17:32:49.620[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_value[0m:[36mrecall_value[0m:[36m32[0m - [1m×îÖÕÈ¡ÖµÕÙ»Ø¹Ø¼ü´Ê: ['ÏúÊÛ×Ü¶î', '»ª±±µØÇøÏúÊÛ×Ü¶î', '»ª±±µØÇø'][0m
+[32m2026-06-25 17:32:49.638[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_value[0m:[36mrecall_value[0m:[36m46[0m - [1mÈ¡ÖµÕÙ»Ø½á¹û: 1 Ìõ[0m
+[32m2026-06-25 17:32:49.638[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_value[0m:[36mrecall_value[0m:[36m47[0m - [1mÕÙ»ØÈ¡Öµ: ['»ª±±'][0m
+[32m2026-06-25 17:32:49.811[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_metric[0m:[36mrecall_metric[0m:[36m31[0m - [1m½á°Í¹Ø¼ü´Ê: ['ÏúÊÛ×Ü¶î', '»ª±±µØÇøÏúÊÛ×Ü¶î', '»ª±±µØÇø'][0m
+[32m2026-06-25 17:32:49.812[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_metric[0m:[36mrecall_metric[0m:[36m32[0m - [1mLLMÀ©Õ¹´Ê: ['ÏúÊÛ×Ü¶î', 'ÏúÊÛ¶î', 'ÏúÊÛÊÕÈë', '×ÜÏúÊÛ¶î', 'ÏúÊÛ½ğ¶î', 'GMV'][0m
+[32m2026-06-25 17:32:49.812[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_metric[0m:[36mrecall_metric[0m:[36m33[0m - [1m×îÖÕÖ¸±êÕÙ»Ø¹Ø¼ü´Ê: ['ÏúÊÛ×Ü¶î', '»ª±±µØÇøÏúÊÛ×Ü¶î', '×ÜÏúÊÛ¶î', 'GMV', '»ª±±µØÇø', 'ÏúÊÛ¶î', 'ÏúÊÛÊÕÈë', 'ÏúÊÛ½ğ¶î'][0m
+[32m2026-06-25 17:32:52.154[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_column[0m:[36mrecall_column[0m:[36m30[0m - [1m½á°Í¹Ø¼ü´Ê: ['ÏúÊÛ×Ü¶î', '»ª±±µØÇøÏúÊÛ×Ü¶î', '»ª±±µØÇø'][0m
+[32m2026-06-25 17:32:52.155[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_column[0m:[36mrecall_column[0m:[36m31[0m - [1mLLMÀ©Õ¹´Ê: ['µØÇø', 'ÏúÊÛ¶î'][0m
+[32m2026-06-25 17:32:52.155[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_column[0m:[36mrecall_column[0m:[36m32[0m - [1m×îÖÕÕÙ»Ø¹Ø¼ü´Ê: ['ÏúÊÛ×Ü¶î', '»ª±±µØÇøÏúÊÛ×Ü¶î', 'µØÇø', '»ª±±µØÇø', 'ÏúÊÛ¶î'][0m
+[32m2026-06-25 17:32:58.596[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_column[0m:[36mrecall_column[0m:[36m48[0m - [1m×Ö¶ÎÕÙ»Ø½á¹û: 3 ¸ö×Ö¶Î[0m
+[32m2026-06-25 17:32:58.596[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_column[0m:[36mrecall_column[0m:[36m49[0m - [1mÕÙ»Ø×Ö¶Î: ['fact_order.order_amount', 'fact_order.order_quantity', 'dim_region.region_name'][0m
+[32m2026-06-25 17:33:00.207[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_metric[0m:[36mrecall_metric[0m:[36m48[0m - [1mÖ¸±êÕÙ»Ø½á¹û: 2 ¸öÖ¸±ê[0m
+[32m2026-06-25 17:33:00.207[0m | [1mINFO    [0m | [36mapp.agent.nodes.recall_metric[0m:[36mrecall_metric[0m:[36m49[0m - [1mÕÙ»ØÖ¸±ê: ['GMV', 'AOV'][0m
 ºÏ²¢ÕÙ»ØĞÅÏ¢...
+[32m2026-06-25 17:33:00.236[0m | [1mINFO    [0m | [36mapp.agent.nodes.merge_retrieved_info[0m:[36mmerge_retrieved_info[0m:[36m46[0m - [1mMySQL ²¹È«: 11 ¸ö×Ö¶Î(º¬Ö÷Íâ¼ü), 2 ÕÅ±í[0m
+[32m2026-06-25 17:33:00.237[0m | [1mINFO    [0m | [36mapp.agent.nodes.merge_retrieved_info[0m:[36mmerge_retrieved_info[0m:[36m79[0m - [1mºÏ²¢½á¹û: 2 ÕÅ±í, 2 ¸öÖ¸±ê[0m
+[32m2026-06-25 17:33:00.238[0m | [1mINFO    [0m | [36mapp.agent.nodes.filter_metric[0m:[36mfilter_metric[0m:[36m25[0m - [1mºòÑ¡Ö¸±ê: ["GMV", "AOV"][0m
+[32m2026-06-25 17:33:00.246[0m | [1mINFO    [0m | [36mapp.agent.nodes.filter_table[0m:[36mfilter_table[0m:[36m23[0m - [1mºòÑ¡±í YAML:
+- name: dim_region
+  role: dim
+  description: µØÇøÎ¬¶È±í£¬ÓÃÓÚÃèÊö¶©µ¥·¢ÉúµÄµØÀíÇøÓòĞÅÏ¢¡£
+  columns:
+  - name: region_name
+    type: varchar(50)
+    role: dimension
+    examples:
+    - »ª±±
+    - »ªÄÏ
+    - »ªÖĞ
+    - »ª¶«
+    - Î÷ÄÏ
+    description: ¶©µ¥ËùÊôµÄ´óÇøÃû³Æ£¬Èç»ª¶«¡¢»ªÄÏµÈ¡£
+    alias:
+    - µØÇø
+    - ÇøÓò
+    - ´óÇø
+  - name: country
+    type: varchar(50)
+    role: dimension
+    examples:
+    - ÖĞ¹ú
+    description: µØÇøËùÊô¹ú¼ÒÃû³Æ¡£
+    alias:
+    - ¹ú¼Ò
+    - ¹ú¼ÒÃû³Æ
+  - name: province
+    type: varchar(50)
+    role: dimension
+    examples:
+    - ÉÏº£ÊĞ
+    - ËÄ´¨Ê¡
+    - Õã½­Ê¡
+    - ºş±±Ê¡
+    - ±±¾©ÊĞ
+    - ¹ã¶«Ê¡
+    description: ¶©µ¥ËùÊôµÄÊ¡·İÃû³Æ¡£
+    alias:
+    - Ê¡·İ
+    - Ê¡
+    - ËùÔÚÊ¡·İ
+  - name: region_id
+    type: varchar(20)
+    role: primary_key
+    examples:
+    - R005
+    - R001
+    - R003
+    - R004
+    - R002
+    - R006
+    description: µØÇøÎ¨Ò»±êÊ¶¡£
+    alias:
+    - µØÇø ID
+    - ÇøÓò ID
+- name: fact_order
+  role: fact
+  description: ¶©µ¥ÊÂÊµ±í£¬¼ÇÂ¼¶©µ¥ÊıÁ¿ºÍ½ğ¶îµÈºËĞÄÖ¸±ê¡£
+  columns:
+  - name: order_amount
+    type: float
+    role: measure
+    examples:
+    - 899.0
+    - 8999.0
+    - 40.0
+    - 200.0
+    - 299.0
+    - 6999.0
+    - 9499.0
+    - 60.0
+    - 125.0
+    - 1399.0
+    description: ¶©µ¥½ğ¶î¡£
+    alias:
+    - ÏúÊÛ¶î
+    - ¶©µ¥½ğ¶î
+    - ÊÕÈë
+  - name: order_quantity
+    type: int
+    role: measure
+    examples:
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 8
+    - 10
+    - 12
+    - 25
+    description: ¶©µ¥ÖĞÉÌÆ·µÄ¹ºÂòÊıÁ¿¡£
+    alias:
+    - ÏúÁ¿
+    - ¹ºÂòÊıÁ¿
+    - ¼şÊı
+  - name: customer_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - C001
+    - C007
+    - C019
+    - C015
+    - C005
+    - C012
+    - C002
+    - C010
+    - C003
+    - C008
+    description: ¹ØÁª¿Í»§Î¬¶ÈµÄÍâ¼ü¡£
+    alias:
+    - ¿Í»§ ID
+    - ÓÃ»§ ID
+  - name: date_id
+    type: int
+    role: foreign_key
+    examples:
+    - 20250101
+    - 20250102
+    - 20250103
+    - 20250104
+    - 20250105
+    - 20250106
+    - 20250107
+    - 20250108
+    - 20250109
+    - 20250110
+    description: ¹ØÁªÊ±¼äÎ¬¶ÈµÄÍâ¼ü¡£
+    alias:
+    - ÈÕÆÚ
+    - ÏÂµ¥ÈÕÆÚ
+  - name: order_id
+    type: varchar(30)
+    role: primary_key
+    examples:
+    - ORD20250102002
+    - ORD20250101002
+    - ORD20250105002
+    - ORD20250103001
+    - ORD20250102001
+    - ORD20250103002
+    - ORD20250105001
+    - ORD20250104001
+    - ORD20250106001
+    - ORD20250101001
+    description: ¶©µ¥Î¨Ò»±êÊ¶¡£
+    alias:
+    - ¶©µ¥ ID
+  - name: product_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - P012
+    - P003
+    - P013
+    - P014
+    - P011
+    - P010
+    - P008
+    - P001
+    - P002
+    - P006
+    description: ¹ØÁªÉÌÆ·Î¬¶ÈµÄÍâ¼ü¡£
+    alias:
+    - ÉÌÆ· ID
+    - ²úÆ· ID
+  - name: region_id
+    type: varchar(20)
+    role: foreign_key
+    examples:
+    - R005
+    - R001
+    - R003
+    - R004
+    - R002
+    - R006
+    description: ¹ØÁªµØÇøÎ¬¶ÈµÄÍâ¼ü¡£
+    alias:
+    - µØÇø ID
+    - ÇøÓò ID
+[0m
 É¸Ñ¡Ö¸±êÖĞ...
 É¸Ñ¡±íÖĞ...
+[32m2026-06-25 17:33:02.272[0m | [1mINFO    [0m | [36mapp.agent.nodes.filter_metric[0m:[36mfilter_metric[0m:[36m30[0m - [1mLLM Ñ¡¶¨: ['GMV'][0m
+[32m2026-06-25 17:33:02.273[0m | [1mINFO    [0m | [36mapp.agent.nodes.filter_metric[0m:[36mfilter_metric[0m:[36m33[0m - [1m¹ıÂËºó: 1 ¸öÖ¸±ê[0m
+[32m2026-06-25 17:33:02.698[0m | [1mINFO    [0m | [36mapp.agent.nodes.filter_table[0m:[36mfilter_table[0m:[36m28[0m - [1mLLM Ñ¡¶¨: {'dim_region': ['region_name', 'region_id'], 'fact_order': ['order_amount', 'region_id']}[0m
+[32m2026-06-25 17:33:02.698[0m | [1mINFO    [0m | [36mapp.agent.nodes.filter_table[0m:[36mfilter_table[0m:[36m38[0m - [1m¹ıÂËºó: 2 ÕÅ±í[0m
 Ìí¼Ó¶îÍâÉÏÏÂÎÄ
+[32m2026-06-25 17:33:02.702[0m | [1mINFO    [0m | [36mapp.agent.nodes.add_extra_context[0m:[36madd_extra_context[0m:[36m32[0m - [1mÈÕÆÚÉÏÏÂÎÄ: {'date': '2026-06-25', 'weekday': 'Thursday', 'quarter': 'Q2'}[0m
+[32m2026-06-25 17:33:02.702[0m | [1mINFO    [0m | [36mapp.agent.nodes.add_extra_context[0m:[36madd_extra_context[0m:[36m33[0m - [1mÊı¾İ¿âÉÏÏÂÎÄ: {'dialect': 'MySQL', 'version': '8.0.46'}[0m
 Éú³ÉSQLÖĞ...
+[32m2026-06-25 17:33:04.565[0m | [1mINFO    [0m | [36mapp.agent.nodes.generate_sql[0m:[36mgenerate_sql[0m:[36m38[0m - [1mÉú³ÉµÄ SQL:
+SELECT SUM(fo.order_amount) AS total_sales
+FROM fact_order fo
+JOIN dim_region dr ON fo.region_id = dr.region_id
+WHERE dr.region_name = '»ª±±';[0m
+SQL: SELECT SUM(fo.order_amount) AS total_sales
+FROM fact_order fo
+JOIN dim_region dr ON fo.region_id = dr.region_id
+WHERE dr.region_name = '»ª±±';
 Ğ£ÑéSQLÖĞ...
 Ö´ĞĞSQLÖĞ...
 ²âÊÔÍê±Ï
+[OK] Êı¾İ¿âÁ¬½Ó³ØÒÑ°²È«¹Ø±Õ
