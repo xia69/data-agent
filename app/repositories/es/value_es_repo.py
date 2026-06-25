@@ -40,3 +40,13 @@ class ValueESRepository:
                 )
                 batch_operations.append(asdict(value_info))
             await self.client.bulk(operations=batch_operations)
+
+    async def search(self, query: str, size: int = 10) -> list[dict]:
+        result = await self.client.search(
+            index=self.index_name,
+            body={
+                "query": {"match": {"value": query}},
+                "size": size,
+            },
+        )
+        return [hit["_source"] for hit in result["hits"]["hits"]]
