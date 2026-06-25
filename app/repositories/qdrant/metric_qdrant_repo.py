@@ -33,3 +33,14 @@ class MetricQdrantRepository:
         ]
         for i in range(0, len(points), batch_size):
             await self.client.upsert(collection_name=self.collection_name, points=points[i:i + batch_size])
+
+    async def search(
+        self, vector: list[float], score_threshold: float = 0.7, limit: int = 10,
+    ) -> list[dict]:
+        results = await self.client.query_points(
+            collection_name=self.collection_name,
+            query=vector,
+            limit=limit,
+            score_threshold=score_threshold,
+        )
+        return [point.payload for point in results.points]

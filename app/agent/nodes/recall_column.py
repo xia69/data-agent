@@ -47,4 +47,4 @@ async def recall_column(state: DataAgentState, runtime: Runtime[DataAgentContext
 
     logger.info(f"字段召回结果: {len(retrieved_column_infos)} 个字段")
     logger.info(f"召回字段: {[c.id for c in retrieved_column_infos]}")
-    return {"keywords": keywords, "retrieved_column_infos": retrieved_column_infos}
+    return {"retrieved_column_infos": retrieved_column_infos}

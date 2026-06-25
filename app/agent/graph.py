@@ -25,8 +25,11 @@ from app.agent.nodes import (
 )
 from app.agent.state import DataAgentState
 from app.clients.embedding_client_manager import embedding_client_manager
+from app.clients.es_client_manager import es_client_manager
 from app.clients.qdrant_client_manager import qdrant_client_manager
 from app.repositories.qdrant.column_qdrant_repo import ColumnQdrantRepository
+from app.repositories.es.value_es_repo import ValueESRepository
+from app.repositories.qdrant.metric_qdrant_repo import MetricQdrantRepository
 
 # StateGraph: LangGraph 的核心构造器
 #   - state_schema: 共享状态结构，所有节点都能读写
@@ -81,10 +84,13 @@ if __name__ == '__main__':
         # 引入基建
         qdrant_client_manager.init()
         embedding_client_manager.init()
+        es_client_manager.init()
 
         state = DataAgentState(query="华北地区销售总额")
         context = DataAgentContext(
             column_qdrant_repository=ColumnQdrantRepository(qdrant_client_manager.client),
+            metric_qdrant_repository=MetricQdrantRepository(qdrant_client_manager.client),
+            value_es_repository=ValueESRepository(es_client_manager.client),
             embedding_client=embedding_client_manager.client,
         )
 
@@ -95,5 +101,6 @@ if __name__ == '__main__':
 
         print("测试完毕")
         await qdrant_client_manager.close()
+        await es_client_manager.close()
 
     asyncio.run(test())

@@ -12,3 +12,19 @@
 2026-06-24 17:00:21.287 | INFO     | app.agent.nodes.recall_column:recall_column:32 - 最终召回关键词: ['地区', '销售金额', '销售总额', '华北地区', '华北地区销售总额']
 2026-06-24 17:00:25.363 | INFO     | app.agent.nodes.recall_column:recall_column:48 - 字段召回结果: 3 个字段
 2026-06-24 17:00:25.363 | INFO     | app.agent.nodes.recall_column:recall_column:49 - 召回字段: ['dim_region.region_name', 'fact_order.order_amount', 'fact_order.order_quantity']
+2026-06-25 14:42:50.307 | INFO     | app.agent.nodes.extract_keywords:extract_keywords:34 - 关键词: ['华北地区', '华北地区销售总额', '销售总额']
+2026-06-25 14:42:52.323 | INFO     | app.agent.nodes.recall_value:recall_value:30 - 结巴关键词: ['华北地区', '华北地区销售总额', '销售总额']
+2026-06-25 14:42:52.323 | INFO     | app.agent.nodes.recall_value:recall_value:31 - LLM扩展词: ['华北地区']
+2026-06-25 14:42:52.323 | INFO     | app.agent.nodes.recall_value:recall_value:32 - 最终取值召回关键词: ['华北地区', '华北地区销售总额', '销售总额']
+2026-06-25 14:42:52.345 | INFO     | app.agent.nodes.recall_value:recall_value:46 - 取值召回结果: 1 条
+2026-06-25 14:42:52.346 | INFO     | app.agent.nodes.recall_value:recall_value:47 - 召回取值: ['华北']
+2026-06-25 14:42:52.849 | INFO     | app.agent.nodes.recall_column:recall_column:30 - 结巴关键词: ['华北地区', '华北地区销售总额', '销售总额']
+2026-06-25 14:42:52.849 | INFO     | app.agent.nodes.recall_column:recall_column:31 - LLM扩展词: ['地区', '销售额']
+2026-06-25 14:42:52.850 | INFO     | app.agent.nodes.recall_column:recall_column:32 - 最终召回关键词: ['华北地区', '销售总额', '地区', '销售额', '华北地区销售总额']
+2026-06-25 14:42:53.231 | INFO     | app.agent.nodes.recall_metric:recall_metric:31 - 结巴关键词: ['华北地区', '华北地区销售总额', '销售总额']
+2026-06-25 14:42:53.231 | INFO     | app.agent.nodes.recall_metric:recall_metric:32 - LLM扩展词: ['销售总额', '销售额', '总销售额', '销售收入', '销售金额', 'GMV', '地区销售额']
+2026-06-25 14:42:53.231 | INFO     | app.agent.nodes.recall_metric:recall_metric:33 - 最终指标召回关键词: ['华北地区', '地区销售额', 'GMV', '销售总额', '销售收入', '总销售额', '销售额', '华北地区销售总额', '销售金额']
+2026-06-25 14:42:55.178 | INFO     | app.agent.nodes.recall_column:recall_column:48 - 字段召回结果: 3 个字段
+2026-06-25 14:42:55.178 | INFO     | app.agent.nodes.recall_column:recall_column:49 - 召回字段: ['dim_region.region_name', 'fact_order.order_amount', 'fact_order.order_quantity']
+2026-06-25 14:42:56.282 | INFO     | app.agent.nodes.recall_metric:recall_metric:48 - 指标召回结果: 2 个指标
+2026-06-25 14:42:56.282 | INFO     | app.agent.nodes.recall_metric:recall_metric:49 - 召回指标: ['GMV', 'AOV']
