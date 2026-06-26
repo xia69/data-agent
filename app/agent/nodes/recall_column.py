@@ -6,6 +6,7 @@ from langgraph.runtime import Runtime
 
 from app.agent.context import DataAgentContext
 from app.agent.llm import llm
+from app.agent.sse_event import progress
 from app.agent.state import DataAgentState
 from app.core.log import logger
 from app.entities.column_info import ColumnInfo
@@ -14,7 +15,7 @@ from app.prompt.prompt_load import load_prompt
 
 async def recall_column(state: DataAgentState, runtime: Runtime[DataAgentContext]):
     writer = runtime.stream_writer
-    writer("召回字段中...")
+    writer(progress("召回字段", "running"))
 
     query = state["query"]
     jieba_keywords: list[str] = state["keywords"]
@@ -47,4 +48,5 @@ async def recall_column(state: DataAgentState, runtime: Runtime[DataAgentContext
 
     logger.info(f"字段召回结果: {len(retrieved_column_infos)} 个字段")
     logger.info(f"召回字段: {[c.id for c in retrieved_column_infos]}")
+    writer(progress("召回字段", "success"))
     return {"retrieved_column_infos": retrieved_column_infos}

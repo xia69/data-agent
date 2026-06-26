@@ -6,13 +6,14 @@ from langgraph.runtime import Runtime
 
 from app.agent.context import DataAgentContext
 from app.agent.llm import llm
+from app.agent.sse_event import progress
 from app.agent.state import DataAgentState
 from app.core.log import logger
 from app.prompt.prompt_load import load_prompt
 
 async def recall_metric(state: DataAgentState, runtime: Runtime[DataAgentContext]):
     writer = runtime.stream_writer
-    writer("召回指标中...")
+    writer(progress("召回指标", "running"))
 
     query = state["query"]
     keywords: list[str] = state["keywords"]
@@ -47,6 +48,7 @@ async def recall_metric(state: DataAgentState, runtime: Runtime[DataAgentContext
 
     logger.info(f"指标召回结果: {len(retrieved_metric_infos)} 个指标")
     logger.info(f"召回指标: {[m.id for m in retrieved_metric_infos]}")
+    writer(progress("召回指标", "success"))
     return {"retrieved_metric_infos": retrieved_metric_infos}
 
 

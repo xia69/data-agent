@@ -4,13 +4,14 @@ from langgraph.runtime import Runtime
 from sqlalchemy import text
 
 from app.agent.context import DataAgentContext
+from app.agent.sse_event import progress, result as result_event
 from app.agent.state import DataAgentState
 from app.core.log import logger
 
 
 async def run_sql(state: DataAgentState, runtime: Runtime[DataAgentContext]):
     writer = runtime.stream_writer
-    writer("执行SQL中...")
+    writer(progress("执行SQL", "running"))
 
     sql: str = state["sql"]
     dw_mgr = runtime.context["dw_mysql_client_manager"]
@@ -24,4 +25,6 @@ async def run_sql(state: DataAgentState, runtime: Runtime[DataAgentContext]):
     logger.info(f"SQL 结果: {len(data)} 行")
     logger.info(f"数据: {data}")
 
+    writer(progress("执行SQL", "success"))
+    writer(result_event(data))
     return {"result": data}

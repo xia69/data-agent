@@ -7,6 +7,7 @@ from langgraph.runtime import Runtime
 
 from app.agent.context import DataAgentContext
 from app.agent.llm import llm
+from app.agent.sse_event import progress
 from app.agent.state import DataAgentState
 from app.core.log import logger
 from app.prompt.prompt_load import load_prompt
@@ -42,7 +43,7 @@ def _build_schema_text(table_infos: list) -> str:
 
 async def generate_sql(state: DataAgentState, runtime: Runtime[DataAgentContext]):
     writer = runtime.stream_writer
-    writer("生成SQL中...")
+    writer(progress("生成SQL", "running"))
 
     query = state["query"]
     table_schema_text = _build_schema_text(state["table_infos"])
@@ -64,4 +65,5 @@ async def generate_sql(state: DataAgentState, runtime: Runtime[DataAgentContext]
 
     logger.info(f"生成的 SQL:\n{sql}")
     writer(f"SQL: {sql}")
+    writer(progress("生成SQL", "success"))
     return {"sql": sql}

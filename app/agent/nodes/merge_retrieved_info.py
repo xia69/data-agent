@@ -3,6 +3,7 @@ import asyncio
 from langgraph.runtime import Runtime
 
 from app.agent.context import DataAgentContext
+from app.agent.sse_event import progress
 from app.agent.state import DataAgentState
 from app.core.log import logger
 from app.repositories.mysql.meta.meta_mysql_repository import MetaMySQLRepository
@@ -10,7 +11,7 @@ from app.repositories.mysql.meta.meta_mysql_repository import MetaMySQLRepositor
 
 async def merge_retrieved_info(state: DataAgentState, runtime: Runtime[DataAgentContext]):
     writer = runtime.stream_writer
-    writer("合并召回信息...")
+    writer(progress("合并召回信息", "running"))
 
     retrieved_column_infos = state["retrieved_column_infos"]
     retrieved_metric_infos = state["retrieved_metric_infos"]
@@ -84,4 +85,5 @@ async def merge_retrieved_info(state: DataAgentState, runtime: Runtime[DataAgent
         for m in retrieved_metric_infos
     ]
 
+    writer(progress("合并召回信息", "success"))
     return {"table_infos": table_infos, "metric_infos": metric_infos}

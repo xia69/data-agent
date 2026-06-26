@@ -6,6 +6,7 @@ from langgraph.runtime import Runtime
 
 from app.agent.context import DataAgentContext
 from app.agent.llm import llm
+from app.agent.sse_event import progress
 from app.agent.state import DataAgentState
 from app.core.log import logger
 from app.entities.value_info import ValueInfo
@@ -14,7 +15,7 @@ from app.prompt.prompt_load import load_prompt
 
 async def recall_value(state: DataAgentState, runtime: Runtime[DataAgentContext]):
     writer = runtime.stream_writer
-    writer("召回取值中...")
+    writer(progress("召回取值", "running"))
 
     query = state["query"]
     keywords: list[str] = state["keywords"]
@@ -45,4 +46,5 @@ async def recall_value(state: DataAgentState, runtime: Runtime[DataAgentContext]
     # 日志输出
     logger.info(f"取值召回结果: {len(retrieved_value_infos)} 条")
     logger.info(f"召回取值: {[v.value for v in retrieved_value_infos]}")
+    writer(progress("召回取值", "success"))
     return {"retrieved_value_infos": retrieved_value_infos}

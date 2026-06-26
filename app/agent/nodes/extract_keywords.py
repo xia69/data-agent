@@ -5,12 +5,13 @@ import jieba.analyse
 from langgraph.runtime import Runtime
 
 from app.agent.context import DataAgentContext
+from app.agent.sse_event import progress
 from app.agent.state import DataAgentState
 from app.core.log import logger
 
 async def extract_keywords(state: DataAgentState, runtime: Runtime[DataAgentContext]):
     writer = runtime.stream_writer
-    writer("提取关键词...")
+    writer(progress("提取关键词", "running"))
 
     query = state["query"]
 
@@ -33,4 +34,5 @@ async def extract_keywords(state: DataAgentState, runtime: Runtime[DataAgentCont
     keywords = list(set(keywords + [query]))
     logger.info(f"关键词: {keywords}")
 
+    writer(progress("提取关键词", "success"))
     return {"keywords": keywords}

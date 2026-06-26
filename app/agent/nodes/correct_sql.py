@@ -7,6 +7,7 @@ from langgraph.runtime import Runtime
 
 from app.agent.context import DataAgentContext
 from app.agent.llm import llm
+from app.agent.sse_event import progress
 from app.agent.state import DataAgentState
 from app.core.log import logger
 from app.prompt.prompt_load import load_prompt
@@ -14,7 +15,7 @@ from app.prompt.prompt_load import load_prompt
 
 async def correct_sql(state: DataAgentState, runtime: Runtime[DataAgentContext]):
     writer = runtime.stream_writer
-    writer("修正SQL中...")
+    writer(progress("修正SQL", "running"))
 
     query = state["query"]
     sql = state["sql"]
@@ -44,4 +45,5 @@ async def correct_sql(state: DataAgentState, runtime: Runtime[DataAgentContext])
     })
 
     logger.info(f"修正后 SQL: {corrected}")
+    writer(progress("修正SQL", "success"))
     return {"sql": corrected}

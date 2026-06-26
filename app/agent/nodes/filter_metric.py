@@ -7,6 +7,7 @@ from langgraph.runtime import Runtime
 
 from app.agent.context import DataAgentContext
 from app.agent.llm import llm
+from app.agent.sse_event import progress
 from app.agent.state import DataAgentState
 from app.core.log import logger
 from app.prompt.prompt_load import load_prompt
@@ -14,7 +15,7 @@ from app.prompt.prompt_load import load_prompt
 
 async def filter_metric(state: DataAgentState, runtime: Runtime[DataAgentContext]):
     writer = runtime.stream_writer
-    writer("筛选指标中...")
+    writer(progress("筛选指标", "running"))
 
     query = state["query"]
     metric_infos = state["metric_infos"]
@@ -31,4 +32,5 @@ async def filter_metric(state: DataAgentState, runtime: Runtime[DataAgentContext
 
     filtered = [m for m in metric_infos if m["name"] in selected]
     logger.info(f"过滤后: {len(filtered)} 个指标")
+    writer(progress("筛选指标", "success"))
     return {"metric_infos": filtered}

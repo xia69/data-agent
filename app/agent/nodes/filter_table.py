@@ -7,6 +7,7 @@ from langgraph.runtime import Runtime
 
 from app.agent.context import DataAgentContext
 from app.agent.llm import llm
+from app.agent.sse_event import progress
 from app.agent.state import DataAgentState
 from app.core.log import logger
 from app.prompt.prompt_load import load_prompt
@@ -14,7 +15,7 @@ from app.prompt.prompt_load import load_prompt
 
 async def filter_table(state: DataAgentState, runtime: Runtime[DataAgentContext]):
     writer = runtime.stream_writer
-    writer("筛选表中...")
+    writer(progress("筛选表", "running"))
 
     query = state["query"]
     table_infos = state["table_infos"]
@@ -36,4 +37,5 @@ async def filter_table(state: DataAgentState, runtime: Runtime[DataAgentContext]
             filtered.append({**table, "columns": filtered_columns})
 
     logger.info(f"过滤后: {len(filtered)} 张表")
+    writer(progress("筛选表", "success"))
     return {"table_infos": filtered}
